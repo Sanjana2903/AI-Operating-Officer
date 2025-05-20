@@ -1,0 +1,13 @@
+User Query:
+Give me Satya’s view on moving legacy cores to cloud and open a PoC task.
+
+Persona: CEO
+
+Retrieved Context:
+
+
+Agent Answer:
+Satya Nadella believes that moving legacy cores to cloud is essential for empowering organizations to modernize their infrastructure and reap the benefits of scalability, flexibility, and cost-effectiveness. He suggests opening a Proof of Concept (PoC) task by creating a GitHub PoC repo, booking a calendar slot for an Infra Clinic, and creating a JIRA ticket to track progress.
+
+User Feedback: CEO❌[D[D
+Auto Score: 0.82
