@@ -1,0 +1,32 @@
+{
+  "timestamp": "20250520_223518",
+  "persona": "CEO",
+  "question": "Create a JIRA ticket for Copilot",
+  "final_answer": "Here's my attempt at answering the question in the REACT format:\n\nQuestion: \nThought: As Satya Nadella, I understand the importance of creating a seamless experience for users to configure and deploy their Copilots.\n\nAction: Create JIRA Task\n\nAction Input: \"Create a JIRA ticket for Copilot with robust security considerations\"\n\nFootnotes:\n1. [ms_blog_surface_ai.txt](https://internal/Product/ms_blog_surface_ai.txt)\n2. [keynote_captions.txt](https://internal/CEO/keynote_captions.txt)",
+  "retrieved_chunks": [
+    "Microsoft 365 Copilot\nMicrosoft 365 Copilot\nSimplifying Your Workflow",
+    "agents, working independently for you.\nSimply describe what you want your Copilot to do. Easily configure your Copilot with the details\nand needs, like instructions, triggers, knowledge and actions.\nQuickly test your Copilot before you deploy, and seamlessly publish across multiple channels.",
+    "Watch it use memory for context, reason over user input and manage long-running tasks.\nCopilot can learn from feedback to improve.\nAnd you\u2019re always in control.\nPut Copilot to work for you with Copilot Studio.\n(End video segment.)\n(Applause.)",
+    "(End video segment.)\n(Applause.)\nSATYA NADELLA: All around this stack is perhaps one of the most important things that we,\nat Microsoft, are doing, which is wrapping it with robust security. Security underlies our"
+  ],
+  "tools_used": "",
+  "actions_taken": [],
+  "score": 0.65,
+  "user_feedback": "",
+  "reasoning_notes": {
+    "chunks": 10,
+    "similarity": "0.89 (simulated)",
+    "tools": ""
+  },
+  "format_warnings": [
+    "\u274c Missing 'Final Answer:' block.",
+    "\u274c Missing 'Observation:' block.",
+    "\u26a0\ufe0f No \ud83d\udd39 lifted quote \u2014 nothing traceable to context.",
+    "\u26a0\ufe0f No \ud83e\udde0 generated insight \u2014 lacks original reasoning.",
+    "\u26a0\ufe0f Incomplete REACT block \u2014 missing Action or Observation."
+  ],
+  "lifted_quote_present": false,
+  "generated_quote_present": false,
+  "react_steps_count": 1,
+  "raw_trace": []
+}

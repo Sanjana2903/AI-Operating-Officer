@@ -1,0 +1,31 @@
+{
+  "timestamp": "20250520_223949",
+  "persona": "ceo",
+  "question": "Create a JIRA ticket for Copilot",
+  "final_answer": "As Satya Nadella, I believe that Copilot has immense potential to revolutionize workflows and empower every person and organization. To ensure its success, we must prioritize robust security, seamless integration with Azure OpenAI service, and asynchronous behavior. By delegating authority to Copilots, we can automate long-running business processes and enable them to ask for help when needed. I'm excited to see the impact it will have in the next year. \ud83d\udd39 \"The magic here is that Copilot is your personal assistant that's helping you with any task, helping you stay, quite frankly, in the flow in the moment...\" \ud83e\udde0 As we move forward, let's focus on creating a proof-of-concept repository for Copilot and schedule meetings with the infra team to discuss its integration and testing requirements.\n\nFootnotes:\n1. [ms_blog_surface_ai.txt](https://internal/Product/ms_blog_surface_ai.txt)\n2. [keynote_captions.txt](https://internal/CEO/keynote_captions.txt)",
+  "retrieved_chunks": [
+    "Microsoft 365 Copilot\nMicrosoft 365 Copilot\nSimplifying Your Workflow",
+    "agents, working independently for you.\nSimply describe what you want your Copilot to do. Easily configure your Copilot with the details\nand needs, like instructions, triggers, knowledge and actions.\nQuickly test your Copilot before you deploy, and seamlessly publish across multiple channels.\nWatch it use memory for context, reason over user input and manage long-running tasks.\nCopilot can learn from feedback to improve.\nAnd you\u2019re always in control.\nPut Copilot to work for you with Copilot Studio.\n(End video segment.)\n(Applause.)\nSATYA NADELLA: All around this stack is perhaps one of the most important things that we,\nat Microsoft, are doing, which is wrapping it with robust security. Security underlies our",
+    "the side of a hill, do it now. Just make sure it can\u2019t reach you.\nRYAN: All right, I think I might be safe now.\nCOPILOT: Whew, that was a close one. Great job finding shelter.\n(End of demo experience.)\nSATYA NADELLA: It\u2019s really cool to see that. The magic here is that Copilot is your personal\nassistant that\u2019s helping you with any task, helping you stay, quite frankly, in the flow in the\nmoment, whether it\u2019s a game, a document or a line of code. As OpenAI innovates, our promise is\nthat we will bring all that innovation to Azure too.\nIn fact, the same day that OpenAI announced PGPT-4o, we made the model available for testing\non Azure OpenAI service. And today, I\u2019m excited to say that it\u2019s generally available on Azure\nAI.",
+    "necessary knowledge and actions, and Copilot will work in the background and act\nasynchronously for you. That\u2019s, I think, one of the key things that\u2019s going to really change in the\nnext year, where you\u2019re going to have Copilot plus agents with this async behavior.\nYou can delegate authority to Copilots to automate long-running business processes. Copilot can\neven ask for help when it encounters situations that it does not know much about and it can\u2019t\nhandle. And to show you all of this, let\u2019s roll the video.\n(Begin video segment.)\nVOICEOVER: Redefine business processes with Copilot Studio. Create Copilots that act as\nagents, working independently for you.\nSimply describe what you want your Copilot to do. Easily configure your Copilot with the details"
+  ],
+  "tools_used": "",
+  "actions_taken": [],
+  "score": 0.65,
+  "user_feedback": "\u2705",
+  "reasoning_notes": {
+    "chunks": 4,
+    "similarity": "0.86 (simulated)",
+    "tools": ""
+  },
+  "format_warnings": [
+    "\u274c Missing 'Final Answer:' block.",
+    "\u274c Missing 'Thought:' block.",
+    "\u274c Missing 'Action:' block.",
+    "\u274c Missing 'Observation:' block."
+  ],
+  "lifted_quote_present": true,
+  "generated_quote_present": true,
+  "react_steps_count": 0,
+  "raw_trace": []
+}
