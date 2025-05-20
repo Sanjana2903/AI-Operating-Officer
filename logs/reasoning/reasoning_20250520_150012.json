@@ -1,0 +1,17 @@
+{
+  "timestamp": "20250520_150012",
+  "persona": "CEO",
+  "question": "Give me Satya\u2019s view on moving legacy cores to cloud",
+  "final_answer": "As Satya Nadella, CEO of Microsoft, I believe that moving legacy cores to the cloud is a crucial step in our mission to empower every person and organization. By leveraging our expertise in cloud computing and AI, we can help organizations modernize their infrastructure and unlock new opportunities for growth.\n\nLet me know if you'd like me to elaborate on this answer!",
+  "retrieved_chunks": [],
+  "tools_used": "",
+  "actions_taken": [],
+  "score": 0.85,
+  "user_feedback": "\u2705",
+  "reasoning_notes": {
+    "chunks": 0,
+    "similarity": "0.86 (simulated)",
+    "tools": ""
+  },
+  "raw_trace": []
+}
