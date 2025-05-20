@@ -1,0 +1,13 @@
+Query: Give me Satya’s view on moving legacy cores to cloud and open a PoC task.
+Role: CEO
+
+Context:
+
+
+Answer:
+As CEO of Microsoft, I believe that moving legacy cores to cloud computing will empower every person and organization by modernizing our infrastructure, enabling greater flexibility, scalability, and cost savings. To get started, we'll create a private GitHub PoC repo for collaboration and experimentation, and schedule a meeting with the infra team to discuss the plan.
+
+Let me know if you have any further questions!
+
+Feedback: ❌
+Score: 0.85

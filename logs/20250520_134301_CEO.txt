@@ -1,0 +1,11 @@
+Query: “Give me Satya’s view on moving legacy cores to cloud and open a PoC task.
+Role: CEO
+
+Context:
+
+
+Answer:
+Agent stopped due to iteration limit or time limit.
+
+Feedback: ✅
+Score: 0.85

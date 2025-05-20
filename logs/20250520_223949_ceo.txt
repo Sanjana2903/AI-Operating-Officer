@@ -1,0 +1,53 @@
+Query: Create a JIRA ticket for Copilot
+Role: ceo
+
+Context:
+Microsoft 365 Copilot
+Microsoft 365 Copilot
+Simplifying Your Workflow
+
+agents, working independently for you.
+Simply describe what you want your Copilot to do. Easily configure your Copilot with the details
+and needs, like instructions, triggers, knowledge and actions.
+Quickly test your Copilot before you deploy, and seamlessly publish across multiple channels.
+Watch it use memory for context, reason over user input and manage long-running tasks.
+Copilot can learn from feedback to improve.
+And you’re always in control.
+Put Copilot to work for you with Copilot Studio.
+(End video segment.)
+(Applause.)
+SATYA NADELLA: All around this stack is perhaps one of the most important things that we,
+at Microsoft, are doing, which is wrapping it with robust security. Security underlies our
+
+the side of a hill, do it now. Just make sure it can’t reach you.
+RYAN: All right, I think I might be safe now.
+COPILOT: Whew, that was a close one. Great job finding shelter.
+(End of demo experience.)
+SATYA NADELLA: It’s really cool to see that. The magic here is that Copilot is your personal
+assistant that’s helping you with any task, helping you stay, quite frankly, in the flow in the
+moment, whether it’s a game, a document or a line of code. As OpenAI innovates, our promise is
+that we will bring all that innovation to Azure too.
+In fact, the same day that OpenAI announced PGPT-4o, we made the model available for testing
+on Azure OpenAI service. And today, I’m excited to say that it’s generally available on Azure
+AI.
+
+necessary knowledge and actions, and Copilot will work in the background and act
+asynchronously for you. That’s, I think, one of the key things that’s going to really change in the
+next year, where you’re going to have Copilot plus agents with this async behavior.
+You can delegate authority to Copilots to automate long-running business processes. Copilot can
+even ask for help when it encounters situations that it does not know much about and it can’t
+handle. And to show you all of this, let’s roll the video.
+(Begin video segment.)
+VOICEOVER: Redefine business processes with Copilot Studio. Create Copilots that act as
+agents, working independently for you.
+Simply describe what you want your Copilot to do. Easily configure your Copilot with the details
+
+Answer:
+As Satya Nadella, I believe that Copilot has immense potential to revolutionize workflows and empower every person and organization. To ensure its success, we must prioritize robust security, seamless integration with Azure OpenAI service, and asynchronous behavior. By delegating authority to Copilots, we can automate long-running business processes and enable them to ask for help when needed. I'm excited to see the impact it will have in the next year. 🔹 "The magic here is that Copilot is your personal assistant that's helping you with any task, helping you stay, quite frankly, in the flow in the moment..." 🧠 As we move forward, let's focus on creating a proof-of-concept repository for Copilot and schedule meetings with the infra team to discuss its integration and testing requirements.
+
+Footnotes:
+1. [ms_blog_surface_ai.txt](https://internal/Product/ms_blog_surface_ai.txt)
+2. [keynote_captions.txt](https://internal/CEO/keynote_captions.txt)
+
+Feedback: ✅
+Score: 0.65

@@ -1,0 +1,15 @@
+User Query:
+Give me Satya’s view on moving legacy cores to cloud and open a PoC task.
+
+Persona: CEO
+
+Retrieved Context:
+
+
+Agent Answer:
+Satya Nadella, CEO of Microsoft, believes that moving legacy cores to the cloud is a strategic shift that will have a significant impact on our customers and partners. By creating a GitHub PoC repo for "Migrating Legacy Cores to Cloud", we're inviting our customers and partners to join us in exploring innovative solutions for migrating legacy cores to the cloud.
+
+The final answer is:
+
+User Feedback: ❌
+Auto Score: 0.82
