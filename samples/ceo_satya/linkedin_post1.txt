@@ -1,0 +1,1345 @@
+## Microsoft + GitHub = Empowering Developers
+
+Today, we announced an agreement to acquire GitHub, the world’s leading software development platform. I want to share what this acquisition will mean for our industry and for developers.
+The era of the intelligent cloud and intelligent edge is upon us. Computing is becoming embedded in the world, with every part of our daily life and work and every aspect of our society and economy being transformed by digital technology.
+Developers are the builders of this new era, writing the world’s code. And GitHub is their home.
+As every industry – from precision medicine to precision agriculture, from personalized education to personalized banking – is being impacted by technology, the developer community will only grow in numbers and importance. Developer workflows will drive and influence business processes and functions across the organization – from marketing, sales and service, to IT and HR. And value creation and growth across every industry will increasingly be determined by the choices developers make.
+In short, developers will be at the center of solving the world’s most pressing challenges. However, the real power comes when every developer can create together, collaborate, share code and build on each other’s work. In all walks of life, we see the power of communities, and this is true for software development and developers.
+That is why we are so excited about today’s announcement. More than 28 million developers already collaborate on GitHub, and it is home to more than 85 million code repositories used by people in nearly every country. From the largest corporations to the smallest startups, GitHub is the destination for developers to learn, share and work together to create software. It’s a destination for Microsoft too. We are the most active organization on GitHub, with more than 2 million “commits,” or updates, made to projects.
+Microsoft has been a developer-focused company from the very first product we created to the platforms and tools we offer today. Building technology so that others can build technology is core to our mission to empower every person and every organization on the planet to achieve more.
+Microsoft is also committed to empowering communities, from the world’s professionals to IT professionals to gamers. We believe in the power of communities to achieve much more than what their members can do on their own. It’s our ability to work together that helps our dreams become reality, and we are dedicated to cultivating and growing communities to do just that.
+And Microsoft is all-in on open source. We have been on a journey with open source, and today we are active in the open source ecosystem, we contribute to open source projects, and some of our most vibrant developer tools and frameworks are open source. When it comes to our commitment to open source, judge us by the actions we have taken in the recent past, our actions today, and in the future.
+Given all of this, together with GitHub, we see three clear opportunities ahead.
+First, we will empower developers at every stage of the development lifecycle – from ideation to collaboration to deployment to the cloud. Going forward, GitHub will remain an open platform, which any developer can plug into and extend. Developers will continue to be able to use the programming languages, tools and operating systems of their choice for their projects – and will still be able to deploy their code on any cloud and any device.
+Second, we will accelerate enterprise developers’ use of GitHub, with our direct sales and partner channels and access to Microsoft’s global cloud infrastructure and services.
+Finally, we will bring Microsoft’s developer tools and services to new audiences.
+Most importantly, we recognize the responsibility we take on with this agreement. We are committed to being stewards of the GitHub community, which will retain its developer-first ethos, operate independently and remain an open platform. We will always listen to developer feedback and invest in both fundamentals and new capabilities.
+Once the acquisition closes later this year, GitHub will be led by CEO Nat Friedman, an open source veteran and founder of Xamarin, who will continue to report to Microsoft Cloud + AI Group Executive Vice President Scott Guthrie; GitHub CEO and Co-Founder Chris Wanstrath will be a technical fellow at Microsoft, also reporting to Scott. You can see how Chris, Nat and I envision the opportunity ahead in this public presentation.
+Together we will continue to advance GitHub as a platform loved by developers and trusted by organizations.
+
+## Empowering people to do great work
+On Thursday, Satya Nadella participated in the White House “Champions of Change” event, where President Obama honored individuals who have helped bring about change for working families within their companies, communities or organizations. Nadella introduced the President and spoke about the policy Microsoft recently announced to ensure our suppliers provide 15 days of annual paid time off to their U.S. employees who are doing substantial work for Microsoft.
+I have always believed that technology has the potential to help people achieve their dreams and propel businesses and societies forward. I’ve seen this at work firsthand in my own life, in the lives of my family members and in the communities where I’ve lived — from Hyderabad, India, to Chicago, Ill., to Clyde Hill, Wash.
+I now have the privilege to lead a team of innovative and passionate people who want to deliver technology that makes a meaningful impact in our world. This is the core of who we are at Microsoft. We aspire to empower every individual and every organization on the planet to achieve more.
+We think about the word “empowering” expansively. Empowering everyone means building platforms and products for everyone — small-business owners, researchers, students, professionals, developers, entrepreneurs, people with any ability and people with any income level. It also means investing in the next generation and creating new job opportunities — from inspiring students to pursue careers in computer science to providing IT training for active duty military personnel to enter the civilian workforce.
+We have big ambitions, and reaching them starts with empowering the people who work at Microsoft and the people who work on our behalf to bring their “A” game every day. We want people to be healthy and work in an inclusive environment that values diverse perspectives, experiences and backgrounds.
+We also realize that a healthy work life extends outside the office walls. Microsoft has long provided industry-leading benefits to employees and their families, including comprehensive health and wellness programs, family care support, paid vacation time, paid sick leave, and paid leave for new parents. Our benefits extend to married couples and partners, whether same-sex or opposite-sex, and are designed to support and respond to the varying needs of our diverse workforce in meaningful ways. Over the past few months, as the national conversation about income inequality and the challenges facing workers and their families has intensified, we began to think more broadly about the people who do work on our behalf.
+Like others, Microsoft relies on outside companies that provide us goods and services such as building maintenance, campus security and software localization. As we considered the contributions these individuals make, we concluded that the people who work for our suppliers are critical to our success, and we want them to have the benefit of paid time off.  As a result, last month we announced a policy to ensure that our suppliers provide at least 15 days of annual paid time off to their U.S. employees doing substantial work for Microsoft.
+Paid time off is good for business — it’s been shown to lead to increased productivity for workers, improved employee retention and lower healthcare costs.
+It’s also good for people and our society — paid time off supports healthier workers and families and stronger family ties. Moreover, lack of paid time off disproportionately impacts low-wage earners and minorities. According to one study, only 49 percent of people in the bottom quarter of earners get paid time off. As an industry and society, we can do more to help everyone reap the benefits of paid time off.
+I want Microsoft to be a place where our employees and everyone who works on our behalf can bring their very best every day, and this policy change was the right next step for us. We hope that we can share our learnings and experiences with others and will continue to evolve our company to better serve and delight our customers.
+It was a privilege and an honor to participate in the Champions of Change discussion at the White House to share why Microsoft is taking this step — just one in our journey to empower every individual and organization on the planet to achieve more.
+
+## A cloud for everyone, on every device
+In my initial remarks as CEO, I spoke about how Microsoft is embracing the new “mobile-first cloud-first” world. I’ve gotten great feedback around this declaration from customers, employees and partners who are excited to see us communicate this commitment so emphatically. I’ve also been asked a number of interesting questions about the language I used. A common one is actually the simplest and most important to answer: How can two things be first?
+My honest answer is that I don’t think of the cloud and mobile as two things. They are two facets of one thing. The cloud was created to enable mobility. And mobile devices are really uninteresting without the cloud.
+That’s why I talk about them together. Mobile without cloud is limiting. The cloud without mobile is mostly latent potential. But the place where they meet is magic. And in the full arc of time, we will get to a world of ubiquitous computing and ambient intelligence that powers all our daily experiences. That’s my focus for this blog post: not everything that Microsoft does but specifically how Microsoft’s cloud is enabling a world where mobile devices can do more and help people be more productive starting today.
+We live in a world where device types, shapes, sizes and form factors are exploding and will continue to do so. Devices extend our abilities in ways that are uniquely suited to task, context and occasion. As long as human curiosity and ambition drive us to create new things, capture moments and collaborate to get things done, we should expect the world of devices to follow suit. In fact, that’s what drives our ongoing evolution of Windows: the desire to maximize the capabilities of these diverse device types while fitting perfectly into those unique moments and environments. But just because human activity will continue to be multidevice doesn’t mean we must tolerate islands of isolated capability. Instead, device diversification dramatically increases the importance of creating a more seamless experience. And the way we get there is through the cloud.
+The cloud is how a phone, a tablet, a computer and a TV all get on the same page and enable movement between them without extra effort. The cloud is how a device becomes your device. And the cloud is how your device becomes part of your life, by connecting to all the people, information and experiences that matter to you. And for us, the cloud is also how a tablet becomes a useful and powerful tool.
+So with that in mind, I’d like to talk about how we’re enabling a world in which anyone can make things happen, on their terms.
+A great idea shouldn’t have to wait for you to get back to a particular device. An impromptu call with a customer shouldn’t be delayed because you don’t have the right data on hand. Life moves too fast to put limits on where and how you work. Just as the best camera is the one you have with you, sometimes the right device is the one closest at hand. Simply put, our vision is to deliver the best cloud-connected experience on every device.
+We’re bringing Office, the gold standard in getting things done, to the iPad. A billion people rely on Office every day, and we’ve worked diligently to create a version of Word, Excel and PowerPoint that delivers the best productivity experience available on the iPad. It’s built from the ground up for touch, is unmistakably Office in its design, and is optimized for iPad. Office for iPad offers unmatched rendering of content and delivers unparalleled authoring, analysis and presentation experiences that Office customers expect on all of their devices. Download it today for free.
+We’ve offered Office on the Mac for more than 20 years. Taking the next step and making it available for iPad users too is another way Office delivers on its promise to give anyone the power to make things, and make things happen, any moment of the day.
+And we are fully committed to offering market-leading productivity solutions across all popular platforms and devices. Word, Excel and PowerPoint for iPad join other cross-platform apps including Skype, Dynamics, Xbox Music, Bing, Lync, Yammer, OneNote, Office Mobile for iPhone and Android phones, Mac Office, and Office Online. Our goal continues to be to delight users wherever they are and on whatever device they are using by giving them the full power of native Office apps.
+Of course, people engage in an amazingly diverse array of activities on the job today, and it would be naive to think that Office could cover every task, scenario or requirement out of the box. That’s why developers are so important. They imagine and build the additional and more specialized capabilities that drive business forward. So we make the same platforms that we use to develop and deliver these cross-platform services available to developers. They can use Azure Mobile Services to build back-ends for iOS, Android and Windows devices. Azure AD API enables single sign-on and other directory services. We have APIs for all components of Office 365 including OneDrive, OneNote, Exchange and SharePoint so that any mobile application on any device platform can seamlessly access user data. Developers are living on the frontier of this mobile-first cloud-first world, and we’re committed to helping them make the most of their unique position and opportunity. They share our commitment and passion for giving people the power to get things done.
+At the same time, that power needs to be managed. I’m sure you know the story of the “Sorcerer’s Apprentice.” It’s all great until it isn’t. And if management and security take more time and money than they save you, where’s the productivity gain?
+That’s why we aren’t just focused on one dimension of the experience. The people who use apps and services want things to be seamless. One sign-on, one set of files, one consistent identity, regardless of device type. It’s a reasonable request, but the people who support these users know it isn’t always that simple. So we’re also introducing our new Enterprise Mobility Suite to make managing and securing these devices as easy as using them. So employees are free to go where they want, without data ending up where it shouldn’t. And it can also extend your enterprise identity to other apps and services like Salesforce.com, Box and Google Docs. Now, the same cloud that helps people get more done with less work will help IT do the same.
+We’re a few days away from BUILD, our developer conference, where next week we’ll share where we’re going with key platforms like Windows, Windows Phone, Xbox and Azure. BUILD is also a great forum for highlighting one of the defining characteristics of our company: From our very first days as a company we have always been equally committed to meeting the diverse but intertwined needs of developers, businesses and the people who use our products. We unite these three audiences around a common set of experiences, technologies and tools. Tools for writing and deploying apps and services, tools for managing and securing devices and tools for getting things done. All working in concert with one another, all through the cloud. For the cloud to realize its full potential, the needs of these three constituencies must be addressed in a holistic, integrated way. Microsoft is in a unique position to do that.
+The cloud is enabling a world where you can walk up to any supported device, sign in, collaborate, communicate and share your creations with the world. Doesn’t matter what you make, where you make it or what device you use. The cloud is there to help.
+That’s where we’re headed together. Into a world where the devices you love work with the services you love in a way that IT and developers love. For work, play and everything in between.
+
+## CNBC Interview
+WHEN: Today, Tuesday, November 19, 2024
+
+WHERE: CNBC’s “Money Movers”
+
+Following is the unofficial transcript of a CNBC exclusive interview with Microsoft Chairman & CEO Satya Nadella on CNBC’s “Money Movers” (M-F, 11AM-12PM ET) today, Tuesday, November 19. Video will be available on CNBC.com.  
+
+All references must be sourced to CNBC.
+
+JON FORTT:  Hey, Carl. Yes, a very special guest, Satya Nadella, CEO of Microsoft. Thanks for having CNBC here. Want to get right to these announcements, heavy emphasis, it seems, on how Copilot is working. There’s a lot of, well, noise, chatter, a lot of opinions out there about whether this works or not. Marc Benioff at Salesforce has been taking shots at Microsoft. What’s your goal here in what you’re saying about Copilot and what your customers are getting out of it?
+
+SATYA NADELLA:  Yes, first of all, thank you so much, Jon, for being here at Ignite. It’s a pretty exciting day for us. I mean, there are two major parts to what we’re doing. One is Copilot, Copilot Studio and agents. Essentially, this is the next phase of business transformation in digital technology, where you’re really doing A.I.-driven transformation. In fact, the best way I describe it is just imagine what happened in manufact — or just think about what lean did for manufacturing, right, which is really increased value, reduced waste. A.I. is doing that for all knowledge work, whether it’s in customer service, whether it’s in marketing, whether it’s in finance, whether it’s in sales. And this Copilot, Copilot Studio and agents has been transformative. It’s the fastest — I mean, just to put it in perspective, it’s the fastest-selling adopted suite of Microsoft 365 ever in our history. You know, 70-plus percent of the Fortune 500 have deployed it. They’re coming back for more suites, so we are excited about this next phase. The other side of it is also pretty exciting for us, because we are taking everything we have built as the platform underneath Copilots and making it first class, available to developers to build their own agents and their own Copilots. That’s where what we have done with Azure A.I. Foundry, which is the new app server for the A.I. age, or Fabric at the data layer, and, of course, GitHub Copilot, that’s the platform for code force development and then Copilot for being able to do transformation.
+
+FORTT:  A lot of investors got excited when you announced the $30 charge on top for A.I. And now I think some have gotten scared that maybe the demand for that isn’t sustainable at that price. What does it take? I know you have got some product announcements today that get into the analytics of how Copilot is working. What do you think it takes to get customers not only to buy this initially, but to buy more of it—
+
+NADELLA:  Yes, in fact, I mean, we are seeing it empirically happen, right, which is, at the end of the day, what you said is right, which is, people have to deploy it, use it intensely, and then see the ROI, and then scale it. And that’s what — like, for example, today, UBS has scaled it throughout their enterprise. So is Vodafone. So is BlackRock. So, we already have at-scale deployment of big companies that’s happening and, in fact, 200 plus customers that we’re talking about who are going in throughout. But the thing that we announced today is something called Copilot analytics, right, where you literally can take a high-level KPI. Let’s say you’re a territory manager in sales and you want to say, hey, am I closing deals faster? Like that’s ultimately the ROI. And then what’s the correlation between Copilot usage and that metric? And that’s the kind of things that now business leaders everywhere in the organization, not just the CFO, but put it in the hands of all managers, leaders, so that they can literally, in fact, look at their KPIs, look at the usage, because one of the things is, when you think about lean or any other methodology, this is a change management, right? So it’s not just about, oh, I just used the tool. The way I use the tool changes what I work on, how I work and the workflow. And that’s the process we’re going through.
+
+FORTT:  One of the criticisms of Copilots, not just Copilots, A.I. in general, is that it’s pulling data from places in the enterprise where, oops, we really don’t want it to go, maybe salary data, maybe other sensitive data, and it’s giving that in outputs. Now, this might not be a Microsoft-specific issue. Maybe some companies just haven’t organized their data in the right way. But how long does it take to fix that, so that these enterprises can take full advantage of your software without running into big problems?
+
+NADELLA:  Yes, I mean, I think, first of all, you can even think of this as just — helps you do that hygiene that — which you should be doing in the first place, right? I mean, that’s sort of fundamental. And also, if you think about it, today, if you think you’re sitting inside an enterprise and people are not extracting that data and putting it into a consumer tool, because that — that train has left the station. So, if anything, it is probably very important for corporations to deploy something like Purview, right? In fact, one of the other products at Microsoft that’s really taken off in this A.I. age is data governance, right? With Purview, people want to know exactly that the permissions are there and that the data is being used only where you want it to be used and provenance is kept. And, essentially, you’re able to manage the total governance with an A.I. application workflow. And that’s why I think it’s important to have both your data, data governance and A.I. deployment go together. And if you don’t do that, consumer applications will get used and you will anyway leak data. And so that’s sort of the challenge I think everyone has to face up to.
+
+FORTT:  I think there’s a sense out there that so much of the market, the equity market in general, hinges on the trajectory of A.I., right? If you’re seeing demand at Microsoft for people who want to use A.I. and the software tools that you’re using, then you’re going to keep buying chips from Nvidia. And if you keep buying chips from Nvidia, then Nvidia is going to make a lot of money and its stock price is going to go — et cetera, et cetera. And some of these smaller software companies that are trying to figure out these applications as part of your ecosystem, well, they will get funding and they will do well. How bumpy is this journey going to be? Because, even with the web, we went through this valley of doubt.
+
+NADELLA:  Yes, I mean, I think it’s a good one to sort of look at, right, which is there’s a supply side to it and then there’s a demand side to it. And it’s never linear. But the point is, they’re secular. I mean, that’s the thing, right, which is, when you’re building a company, when you’re really in the middle of it, for us, it’s — the core thing is, are we building products that are getting used, that are delivering value, right? I mean, if you saw, I’m not obsessed about exactly is this a linear path, which we know it cannot be a linear path, because the adoption cycles are adoption cycles. The build cycles are no one — the network effects happen. So you have to sort of get out there, build the product first. And so I think we’re in that phase. One thing I’d say, Jon, is that, perhaps having lived through — let’s take even the last big one, the cloud one. What happened in the cloud over 10 years, let’s say, is happening with A.I. in a compressed period, like maybe half the time. I mean, if you think about, let’s say we built two, three gigawatts of cloud capacity over the 15 years. We’re going to add something like that in the next couple of years, right? So that’s the time. And you could even say that’s catchup, because there’s not a single application that’s not going to be an A.I. application. So, a little bit of the supply side you’re seeing here is a real catchup growth, because applications are all changing and being morphed by the new platform.
+
+FORTT:  Last year, February was, to me, a big moment, was sitting down with you again. You were rolling out Bing search with A.I. added. The hope was gaining share from Google. Last I checked, Google still got 90 percent, roughly, search share globally. OpenAI is now rolling out its own search capabilities. What went wrong?
+
+NADELLA:  Well, nothing went wrong. I mean, like, in the last quarter, one of the fastest growing businesses at Microsoft, aside from our commercial cloud, is actually Bing search. We talked about X stack, you know, strong double-digit growth, which is — which is above market, by the way. So that’s fantastic. And so Bing continues to innovate. Emerson continues to innovate and Copilot. So that ecosystem, the three things that come together for us, has actually become a big business that’s growing. And so—
+
+FORTT:  So, is search share the wrong way to look at it?
+
+NADELLA:  No, I mean, search share is one. Like, I mean, it’s a game of, let’s call it, 100 basis points, a quarter is great. Like, I mean, it’s all progress. You mentioned ChatGPT. We are thrilled about the success they’re having, their partnership with Apple. Guess what? That’s all incremental for even us, because it’s all running on Azure. And, more importantly, we are giving them the Bing index and powering ChatGPT search using our APIs. So, overall, I’m thrilled about their progress. And it’s a place where inches matter, and I’m good with the progress we’re making.
+
+FORTT:  Speaking of OpenAI, last November, I was out here at Ignite, and then, a week later, huge blowup over there. You joined me on CNBC. What a moment that was. And I think there were a lot of questions about how healthy the relationship between Microsoft and OpenAI was going to be going forward. Was Sam Altman going to be back at OpenAI? Was he going to be working for Microsoft? Where is that relationship now? And what was the significance of that moment for the relationship?
+
+NADELLA:  Yes, for us, first of all, we are very thrilled about sort of how far this partnership has come, right? I mean, we sponsored OpenAI, whatever, five, seven years ago, when we first sort of started. They were a research lab. And here we are. It’s probably one of the most successful private start-ups out there. And so we are thrilled to be an investor. We’re thrilled to be a partner around I.P. They’re one of our biggest customers now. We also compete in some areas. And so the partnership has all of those dimensions to it. But, all up, we cheer every day for their success because every day they succeed, we succeed along with them.
+
+FORTT:  Now going more broad to geopolitics, macro, the world is changing once again. Globalization is under even more pressure once again with an incoming second Trump administration. There’s a report from Bloomberg that the Justice Department is going to push to force Google to sell Chrome. Last week, Elon Musk amended his lawsuit against OpenAI to name Microsoft as well. How much of a wild card are the courts in this transition to big data and A.I.?
+
+NADELLA:  Yes, I mean, I think you pulled on a couple of different threads, right? What happens to globalization in a world where, let’s say, the U.S. is a lot more focused on reindustrializing in the United States itself, which I think there’s a clear mandate for that? And so I think the way as a multinational company I’m grounded on is, how do we earn permission, quite frankly, one country at a time to operate, right? You never can take your operation in a country for granted. You have to be able to invest in the country. In our case, now we’re even doing capital investments in data centers, doing skilling, creating jobs so that small businesses, large businesses, public sector are all getting benefits, health outcomes, education outcomes, so one country at a time, one community at a time. Even in the United States, you have to sort of earn that. And so that’s one side of it. The second side of it is on courts and what have you. There are many issues, right, because, after all, this is a new technology, everything from what is copyright to what exactly are the big issues where the courts have to opine. And so, yes, I think that there is a time of great change of technology. I think what matters is for us as a company to be able to stick with our mission, produce the products, earn the permission from communities and countries.
+
+FORTT:  For the United States in particular, what’s it going to take? Because, say, four years ago, the U.S. versus China A.I. conversation was way different. It was an assumption that China was going to surge ahead because they got more people, they have got access to data without that little issue of rights, et cetera. What does it take for the U.S. to maintain this momentum with A.I., but do it in a way that’s safe?
+
+NADELLA:  Yes, I mean, it’s fascinating to see here we are. To your point, when a few years ago or maybe five years ago, people thought about U.S. maybe will fall behind on A.I., and except here we are pretty much across the stack, whether it’s on the semiconductor side or on the application side, it’s U.S. leading. And so I think the key thing is for us to sort of really observe what led us to lead and then double down on it. And so I think the ingenuity of the entrepreneurs here and the big companies here, the talent pool here, the skilling, that’s why I think it’s the most important. Ultimately, diffusion wins. Whoever is intensely using, going back even to your first question, you just can’t come to conferences like this and admire other people’s A.I. You have got to use A.I., like I used Excel or PowerPoint or Word in the past and sort of just became much more employable in the knowledge economy. We have got to do that at scale. That’s one. The second thing I think we also have to do is build infrastructure, right? I think it’s very clear. If you sort of say it’s tokens, per dollar, per watt, right? That’s the new performance curve. Then you need the energy, as well as the compute factory, so to speak, with all of A.I., and connectivity all have to come together as the new infrastructure that fuel economies. And so we’re really looking forward to the U.S. staying ahead, both on the infrastructure and the innovation.
+
+FORTT:  That’s where the rubber meets the road. I look forward to continuing to talk with you about it. Satya Nadella, CEO and chair of Microsoft.
+
+
+## TED
+
+[00:00:00] Adam Grant:
+Hey WorkLifers, it’s Adam Grant. Welcome back to Taken for Granted, my podcast with the TED Audio Collective. I’m an organizational psychologist. My job is to think again about how we work, lead, and live. Today, my guest is Satya Nadella, chairman and CEO of Microsoft–where he’s worked since 1992. He’s widely admired for transforming the culture, building the cloud business, and steering a 700% gain in shares. His approval rating on Glassdoor is nearly perfect, and this conversation will give you a sense of why: he exudes care, curiosity, and humility. He’s also a big fan of cricket and poetry. And as a computer scientist, of course he loves data–and Microsoft has gathered quite a bit on the future of work. So enjoy.
+
+[00:00:54]:
+There was a time and I'm not going to locate it, but you can, when Microsoft was externally known [00:01:00] for a lot of internal competition, forced rankings that pitted people against each other were pretty popular and you came in and challenged that dynamic and said, look, we want to collaborate. We want to be one Microsoft.
+
+[00:01:09] Adam Grant:
+Can you help us understand how you made that change?
+
+[00:01:13] Satya Nadella:
+Being essentially the first non founder CEO, I felt the real need to, in some sense, refound the company or borrowing the phrase that Reid Hoffman users, which I like a lot, because from time to time, companies need that moment where you need to reground yourself and starting with. The sense of purpose and mission, like why do we exist? And if we sort of disappeared with anybody, miss us to remind, because I think every one of us who work in any company need that anchoring in order to then go on to make all the decisions and work we do. And then the other one was to really put forth the culture that we aspire to.
+
+[00:01:52] Satya Nadella:
+And that's where I bought it from Carol Dweck's work on growth mindset. Uh, which has been a godsend to us because, you know, it's really helped us go from this, know it all to learn it alls. And that mission and culture has given us, perhaps Adam, more of that permission to look inwards, look to what systems, processes, behaviors, make us successful in the first place and reinforce them. And then the same thing, what systems, processes, and behaviors make us sort of not successful. And then.
+
+[00:02:25] Adam Grant:
+So, is this the future? Are we in it right now? Or what is it coming?
+
+[00:02:30] Satya Nadella:
+You know, we definitely are in it and it is going to evolve. I think our expectations of what to read and how we work have gone through a real structural shift, but I think we're still figuring it out in terms of this next phase, before long-term trends truly step up.
+
+[00:02:50] Adam Grant:
+Satya you made one of the most profound comments I've heard through the whole pandemic. When you said we should stop thinking about remote work, like a switch, and think about it more like a dial. I'd love to hear you elaborate on that and how it's affected your thinking at microsite.
+
+[00:03:03] Satya Nadella: If you take a two by two grid where you say people are either together or remote and are collaborating synchronously or asynchronously in the previous era. So to speak before the pandemic, you could get away by creating some norms and sort of forcing people into one or two quadrants. Whereas now, All the four quadrants at any given time have to be excellent in order for work to get done collaboration, to happen. Take just even one of the data points, Adam, which is the triple peak, right. We knew. And even going into the pandemic, we had a bit of it, right. But now it's clear. I mean, I, every night I'm triaging just before going to bed, all my mail preparing for my next day, this lots of asynchronous work I do. So in particular, supporting time shifted like in a multinational company, a lot of the meetings are happening across time zones. I think we now expect us to both Gordon Corey synchronously participate in them. So I think that's one area. Uh, where we have to really think about a synchronous synchronous work, as much as we think about remote work. The second thing that I would say is the physical space even is changing. Right. But why are people coming into work? What type of meeting should we even do when people come into work? Somebody said to me, space is the ultimate collaboration tool that was refined in a 200 year period, right after all. Based, they've done a lot of work to define it. We're just not going to trade it away, but we're going to use it perhaps differently.
+
+And then the last thing I'd say is me onboarded something like 50,000 employees during the pandemic. I mean, and so that means we have learned demon. What does onboarding look like? What does knowledge, capital or accumulation of knowledge, capital and learning look like inside of a corporation where you can start delivering. In the flow of your work versus you having to go offline to build that you have to substitute for some of the things that happened in a physical workplace. So those would be the three things, at least when I think about flexibility, thinking about hybrid work as a dial, it's more about really rethinking how people collaborate, how people learn, how you use physical space.
+
+[00:05:21] Adam Grant:
+Well, I'm a big fan of rethinking for obvious reasons. And I want to try to speak one of your languages. Can we double click on each of those themes that you just raised? It's double click the right lingo here is that we're looking for. Okay, good. All right. I'm trying to speak a little bit more texts. So, first one is this idea of the triple peak. Your data have shown that about 30% of people are not just becoming most work active in the morning and then the afternoon, but again, just before bedtime. I'm trying to figure out if this is a good thing or a bad thing. On the one hand, I think it meets the desire for flexible hours. On the other hand, it's probably bad for disconnecting and getting a full night's sleep. So how are you thinking about managing that?
+
+[00:05:58] Satya Nadella:
+It's a great question. And I think a lot more research, quite frankly, fundamentally has to be done, right. Because one of the ways we even think about the broader definition of productivity is more thinking about collaboration and obviously all the output metrics learning is another one, but well-being is one of the most important pieces of productivity. So the reason why I think a little bit of the hybrid peak is definitely going up is the desire that everyone has. For flexibility. And so that paradox, if you need flexibility, and yet you're trying to get work done. Some of it means the work day does get spread out. So this is one of those places where at least we are trying to say, what is the way to build even into the system of work, our work assigned. We have the right nudges, right? One little feature we added, even for example, an email like this was even before pandemic, we started, which is especially the higher up in the auger you are. And you send a lot of emails over the weekend. That's the shortest way to destroy a whole bunch of people's weekend, uh, and sort of be able to set the norm and the expectation that you don't need the response. Back some of that will also be very helpful. So I think we'll need to learn the soft skills. Adam. It's not about a tool, but it's good old fashioned good management practices that we need in order for people to have their wellbeing taken care of.
+
+[00:07:21] Adam Grant:
+Satya, are you saying that even you refrain from weekend emails?
+
+[00:07:25] Satya Nadella:
+Well, you know, I am learning at them every day. You know, one of the things that at least I'm getting better [00:07:30] at, I would say is being able to set that expectation. And quite frankly, the other thing that I feel most proud of is creating a culture where people are willing not to ake a male from the CEO and just feel that they have.
+
+[00:07:43] Adam Grant:
+Let's talk about space. You did an internal analysis at Microsoft showing that over 60,000 people, when they had to shift to remote during the pandemic, their networks got more siloed and more static. And we know from decades of evidence that that's bad for learning and innovation that you end up with all this redundant knowledge instead of fresh perspectives.
+
+[00:08:00] Adam Grant:
+So how are you tackling that? Both in a remote hybrid world, but also as people potentially aren't in the office at the same time, all that.
+
+[00:08:08] Satya Nadella:
+Just yesterday. I was reviewing some research, which our folks are doing on. What are people coming back to work for? In fact, what team norms are emerging? What are managers deciding to congregate people for? Is it onboarding? Is it some design session? Is it some mentoring? Because that's another thing that we realized that in order to do even good, one-on-one personal mentoring sometimes having the manager one-on-ones probably help a lot. So we are trying to come up even with the taxonomy right now of just even best practices that we are seeing in order to then say, this is how the physical space then has to change, how we are building out our physical space so that it's more modular, literally, you know, just like how digital tools have the malleability. Can we, to some degree create the same, even with the physical space, but that's how we're approaching it.
+
+[00:08:58] Adam Grant:
+You talked about onboarding a little bit. What are you finding about effective onboarding with 50,000 people who have never been physically in the same room together?
+
+[00:09:06] Satya Nadella:
+The biggest biggest thing that we found is that direct connection to your immediate manager, right? You had an onboarding, people went for the onboarding week or day. And there were lots of other people who sort of helped you with many things. Whereas now the full service concierge is now your manager and unless your manager cares and takes the responsibility of onboarding you, everything from, Hey, are all the benefits provisioned? Are you having any challenges with any of the paperwork? To making the introduction to all the people who are needed both inside the org, outside the org? Right. There was this one fantastic practice of a very senior leader who got hired in and I learned from one of my direct reports was how he took the, you know, real care and introducing the person who came into Microsoft to all the people personally, like he would in fact, set up the team's call and make the introduction and then leave the team's call so that then she could actually have the one-on-one with the person.
+
+That type of deep care for onboarding being taken by even the first level manager, even interns. In fact, we saw this, you know, interns who want to come back to Microsoft or those who had a great manager who took real deep care in their experience. So that perhaps is the biggest thing that we are trying to make sure we build into our managerial capability.
+
+I think tech companies in general have had this thing about, "Hey, it's all about technology and management is not the critical thing," except everybody's realizing and waking up and saying, "look, leadership and management and technological excellence, both go together. "And we actually have to put our money where our mouth is. Focus on building that managerial capability. And so we have this framework, Adam, called model coach care, which is sort of the thing that we say every manager needs to sort of exhibit in terms of real skills. And I'm glad we got that started a few years before the pandemic, and it's really helped us a lot during the pandemic. But I think that it's now become really clear to me that the company's success depends on great everyday management.
+
+[00:11:24] Adam Grant:
+That approach of model coach care, I think has been central to one of the major culture changes that you've spearheaded I've found in some of my latest research that it's not enough just to admit that you have things to learn. it's helpful to ask for feedback and open the door, but what's much more powerful is to actually criticize herself out loud.Because that way you're not just claiming that you're receptive, you are proving that you can take it. And one of the things I've admired about your leadership for a long time is the humility and vulnerability that you show that you're not afraid to admit when you don't have all the answers or when you made a mistake or got something wrong. Can you talk to us a little bit about how you built the confidence to share your mistakes and what that looks like doing it effective?
+
+[00:12:03] Satya Nadella:
+That's a great question that comes from, I think, feeling very secure, right? The psychological safety that one creates around you, especially the more senior you are becomes, I think, super important. Uh, and to your point, one technique of that is to share your own fallibility because that gives confidence to others. Feeling secure leads you to be more vulnerable. But then the real issue is systemically. How do you help people feel secure? And so that is where the cultural element of having psychological safety as being a first class thing. That's talked about where people are not jumping down people's throats. The first time they admit a mistake, which by the way, I do sometimes. And then I have to check myself right. In my last staff meeting somewhere asked me this question, "Hey, when somebody sort of sends a mail where you know, something's wrong, what do you do?" And I thought about it for a while. And I said, you know, the first thing that comes to mind of course is, I want to send back a flame mail to like the next person, but then at good times I check myself and say, God, you know, all that will do is cause that person to be more stressed. But I got to really look at the systemic issues here and then help them recognize to fix it. So the more introspective VR and creating these safe zones and psychological safety as a cultural thing, as opposed to any one individual being vulnerable from time to time, I think is probably the most.
+
+[00:13:35] Adam Grant:
+One of the things that that surfaces for me is the challenge, especially for people from marginalized groups to have that psychological safety. Um, we, we know it's that much more difficult to, to speak up, whether you're raising a problem or bringing an idea, uh, when you are not resembling the dominant majority in the room. And I know that's something you spend a lot of time on and care deeply about what guidance do you have for leaders and managers?
+
+[00:13:58] Satya Nadella:
+That's a fantastic point. In fact, that is the crux of it. Right. Which is that everyday practice or figuring out what is the lived experience of the people in your team. So when you think about when in the model, coach care that last element of care, it's that extra level. I thought that you put into-- "Who are all the people on my team?" The reality is all of us have different histories, different backgrounds, different daily events impacting us. And so being able to deeply have empathy for that and then making sure that their voice is heard in a meeting, that flexibility we talk about is being exercised to help people do their very best at work while they can take care of everything that's needed in their life. That is what I think is the big thing that I think we're all--I would say we're much more capable today just because of what the trauma of the pandemic has haught us that. Now the question is how do we exercise it? I think the impact of what's happening broadly in the world on any employee at this point cannot be separated from how the employee feels at work.
+
+[00:15:15] Adam Grant:
+Are you ready for a lightning round?
+
+Satya Nadella:
+Let's do it. Okay.
+
+Adam Grant:
+Ground rules looking for between a word and a sentence you could pass once if you want.
+
+Satya Nadella:
+Okay. Makes sense.
+
+Adam Grant:
+All right. You can pass more times if you want. But I always think it's fun when, when we dragged that extra answer out of you. So, first question is if you weren't in tech, what job would you most want to have?
+
+Satya Nadella:
+I'll trade with you.
+
+Adam Grant:
+[laughs] I don't want your job because I'm not qualified, but I think you'd be pretty good at mine. Ok, organizational psychologist, Satya's future career--teaching at a business school near you. Watch out. What is the case for working at Microsoft as opposed to other tech companies?
+
+[00:15:51] Satya Nadella:
+If you want to make others cool join Microsoft, if you want to be cool to join somebody else.
+
+[00:15:56] Adam Grant:
+I like it, making other cool. Worst career advice you've ever received.
+
+[00:16:01] Satya Nadella:
+I'll sort of say that the best career advice I got is don't wait for your next job to do your best work. So the worst would be the compliment to it.
+
+[00:16:09] Adam Grant:
+Got it. Something you've rethought in the past.
+
+[00:16:12] Satya Nadella:
+The role of multinational companies in terms of building bridges across people.
+
+[00:16:20] Adam Grant:
+More important in society, poetry or cricket
+
+[00:16:25] Satya Nadella:
+[laughter] Poetry in cricket.
+
+[00:16:28] Adam Grant:
+What does that mean? I have to ask a follow up.
+
+[00:16:29] Satya Nadella:
+Cricket to me, I can go on and on, is the game that has taught me everything that needs to be about leadership life and outlook, and I love poetry. And so anytime I see a great spin bowl or bowl to me, it's poetry now.
+
+[00:16:44] Adam Grant:
+All right, I'll take it. I have to now watch cricket to understand what that means. I'll get back to you. As far as being a learn-it-all is concerned. It seems like one of the last people in human history to successfully pull that off was DaVinci you're on your way. What is the next thing that you're excited to learn that you don't understand now?
+
+[00:17:01] Satya Nadella:
+What I am most excited about right now is: What are the drivers of next level of economic growth? I want to learn, how do we shape the democratization of technology such that healthcare is better, education is better, the energy transition happens faster. We all get better mechanisms of credit,-- because I think tech as it's today expressed is too narrow than dumps of its economic impact. And that's what needs to change. And I want to learn everything.
+
+[00:17:38] Adam Grant:
+Well, we have our marching orders for the next few years of research, then stay tuned. Stephanie, out of the lightning round. One of the things that I love most getting to sit down with leaders that I look up to is not just hearing them talk about how they think, but actually observing them in action and getting them to see them do what they do best. And speaking with your team, and also having seen you a few times over the. As we've interacted. I know one of the things you excel at is just motivating people to do things they think are impossible. And I wondered if we could do a quick role play to get a taste of how you do that. So the scene is we've got a bunch of faculty at Wharton who liked to do their own independent work.They're very much kind of living in their own silos. They don't collaborate as much as we might. Like we don't even necessarily have a school mission that they rally around. And I kind of like my independence. That's why I chose this field. I've been tenured and it's something that gives me lots of freedom. Can you motivate me to collaborate more and to show up at the office occasionally and full disclosure, I don't want to do it.
+
+[00:18:37] Satya Nadella:
+The motivation has to come from what it is that you as a researcher are trying to do and how teaming can help you do that better. Right. Even at Microsoft, quite frankly, we're trying to emphasize, Hey, great teams are important, but great teaming is the currency. And in fact, one of the phrases I use getting to yes, on unmet unarticulated needs of customers is what requires great teaming. So in your context, it would be like, "Hey, that research paper, that research output will be better. You will have more fame and fortune. If you team better with your colleagues."
+
+[00:19:14] Adam Grant:
+And if I'm not motivated by fame or fortune, but really just enjoy my freedom and my intellectual exploration.
+
+[00:19:22] Satya Nadella:
+Think about like, what is the source of intellectual exploration, it sort of your own ability to learn from others. And so therefore your colleagues, I always think about the daily routine, the number of people I meet and how I was able to go explore new things because of the people and what I learned from them.
+
+[00:19:40] Adam Grant:
+And that, I mean, when I think about what it means to be a learn it all, or a lifelong learner is you genuinely believe that you can learn something from every single person you interact with.
+
+[00:19:48] Satya Nadella:
+There's a thing that I look at as my learning system. If there is one, I picked it up from my dad. He had this diary, he would write every day where he would sort of put tasks, done. People met. Ideas generated to act on. And the source of basically the ideas generator to act on our people and also the work you did. And so to me, it's a continuous system
+
+[00:20:11] Adam Grant:
+That is such a simple way to take the, the to-do list that everybody gets stuck on and say, wait a minute, I should also have a to meet and to learn list. Absolutely. When you talked about model coach care earlier, I was wondering how your views about care have evolved, especially in the last two years.
+
+[00:20:27] Satya Nadella:
+Yeah. I mean, I think it's the biggest thing that I've realized is that the. Thinking about everybody is going through some tail event and, you know, and you need to be able to be there as a manager, as a team and a set of coworkers when that tail event happens. And that doesn't come without you being tuned to asking the question, observing what's happening around you and the needs. And so that sort of, and then again, it's a little bit of creating that safety, right. When you have the need, let's just create an environment where people come to support you. Uh, because I mean, I always think I'm going to be spend a lot of time at work and work needs to be the community that even supports you in your life. And how do we create an environment that allows for that natural flow? That's what I like the word care as part of core, management.
+
+Adam Grant:
+I do too. And it's, it's something that I think a lot of people have neglected for a long time. And in part, because they're thinking too much about how do I, how do I extract the most output out of this human and make them as much of a machine as possible, as opposed to saying, wait a minute, there are tasks that we outsourced. We want humans to do the work. That's really hard to squeeze every single ounce of, of effort out of, and that means we need them to give them the space to invest in their own wellbeing. We need to give them time to incubate creative ideas. Why, why are there still so many leaders who don't quite grasp this?
+
+[00:21:59] Satya Nadella:
+You know, in fact, one of the other things we've been thinking and studying. Knowledge work and even first-line work right for the first time re the digital tool and the proliferation and the use even in first-line has gone up very heavily. And some of the data that we are seeing there is, for example, there's a lot of stress in first-line work. A lot of the first-line workers feel disconnected from the company. The managers in first-line in fact are the most stressed because they lack the support and the connection from the company. Right. I think I've always go back to saying, how do we help managers feel like they're supported? One of the things Adam, that a lot of people sometimes come to me and my Microsoft analyst say Satya at the top, people get it, people at the bottom get it. In the middle of there's all this problem. And I look at it--for most of my 30 years of professional career, 32 years now, was in the middle. And so I do know those are hard jobs, right? Because you have all these deadlines that you need to meet. And then you have people who work for you who have all these tail needs and, or just regular needs. So you get squeezed in the middle in some sense. So therefore, if anything, I've come to recognize to the very core of your question, unless we create the empowerment, the space, that capability in the middle so that they can care for that people it's just not going to happen.
+
+[00:23:23] Adam Grant:
+That reminds me of some classic sociology evidence showing that when people are micromanaged at work, Over the next decade, they actually became more controlling and authoritarian at home with their own children. Like they were deprived of freedom in one domain, and then they, they almost, they overreacted and, and over corrected in a different domain. And I think what you're describing is something very similar that when, when we put too much pressure on managers, then they end up restricting the freedom of the people that they're.
+
+[00:23:48] Satya Nadella:
+One of the things I always think a little bit about is managers who take risk away and then create different metrics for people and unconstrained--that's like a habit we all have to develop, right? Because otherwise, if all the risks have to be taken by somebody else who is working on your team, then you're creating an environment where it just will be very, very hard for people to feel that they can have a more holistic way that they can be productive.
+
+[00:24:18] Adam Grant:
+I want to ask you about one of your favorite topics, which is gaming. You've had Xbox for a long time, but you've made major investments recently. There's obviously a while ago there was Minecraft, but more recently you bought Activision. What's driving that big focus on gaming.
+
+[00:24:31] Satya Nadella:
+It's been 20 years since we've had X-Box.We love gaming. In fact, you go back to PC gaming even before X-Box a flight simulator is as old as Microsoft. So we've been in gaming throughout. I always say that the idea of. Soft sort of day would be you get up in the morning and, um, you'd write some code and then you do some documents and collaboration and play games. So that's kind of the three identities of Microsoft that sort of our core. So one of the things to me. As the 3 billion people playing games, uh, we know that gaming can be, in fact, it's the biggest entertainment category that is digital category. There is, but it also creates I think, sense of joy and community, which is unparalleled. And quite frankly, when people talk about what this next generation of immersive experiences and metaphors is, guess what. Games we've been building matters like worlds for many, many decades now. And now we can even think about gaining as a pretty horizontal capability that is probably going to inform this very next phase of the internet that people describe as the map.
+
+[00:25:39] Adam Grant:
+I'd love to hear more from you on the metaverse. Are we going to be having this conversation with our avatars in five years? Is this just second life with better technology? Where do you see this all going?
+
+[00:25:48] Satya Nadella:
+I do think of it as just the natural evolution of the internet. It's the next phase where you have more increasing digitization of people, places and things. Having the embodied presence in a meeting like this, where you and I can both have spatial audio, real eye contact, and be able to look around and have a sense of space. These are all things today that of course have to be done with a headset. But even in 2D, when, you know, mesh two teams launches later this year, I am very excited about even how people are able to go on and take advantage of avatars, as you said, and some of the capabilities like spatial audio, even on 2D surfaces. I have always thought that the killer app here is embodied presence. Presence is already been video. Presence has been definitely massive during the pandemic and now being able to have more of a spatial embodied presence, I think is much more doable the next time we have any place to be.
+
+[00:26:49] Adam Grant:
+Satya as always. This has been a treat. Thank you so much for joining us.
+
+[00:26:53] Satya Nadella:
+Thank you so much, Adam. It's always a pleasure
+
+[Theme Music]
+
+[00:26:59] Adam Grant:
+Taken for Granted is hosted by me, Adam Grant and produced by TED with Cosmic Standard. Our team includes Colin Helms, Eliza Smith, Jacob Winik, Hannah Kingsley-Ma, Aja Simpson, Michelle Quint, Banban Cheng and Anna Phelan. This episode was produced by Samiah Adams. Our show is mixed by Rick Kwan. Our fact checker is Meerabelle Jesuthasan. Original music by Hansdale Hsu and Allison Leyton-Brown. We featured this conversation as part of the Wharton Future of Work Conference.
+
+[00:27:23] Adam Grant:
+We featured this conversation as part of the Wharton future of work conference.
+
+[00:27:29] Satya Nadella:
+We are building out physical space so that it's more modular literally
+
+[00:27:33] Adam Grant:
+Saying that my desk is, can be made out of Legos
+
+[00:27:35] Satya Nadella:
+More or less, at least you should be able to make your desk appear in different places at different times, depending on the type of work you're going to do on that given day.
+
+[00:27:47] Adam Grant:
+I spent a lot of my childhood preparing for that. So I think that will go very well.
+
+## BUILD 2024 KEYNOTE
+05212024 Build Satya Nadella
+Microsoft Build 2024
+Satya Nadella, Chairman and CEO, Microsoft
+Tuesday, May 21, 2024
+SATYA NADELLA: Good morning. It’s fantastic to be back here at Microsoft Build. Welcome
+to everyone here and joining us on the web. Developer conferences are always the most exciting
+and the most fun when there are these fundamental changes that you can sense in the air.
+I’ve marked all my adult life by coming to PDCs and Builds for the last three decades. I still
+remember distinctly the first time Win32, which was I guess ‘91, .NET, Azure, right? These are
+moments that I’ve marked my life with, and it just feels like, yet again, we are at a moment like
+that. It’s just that the scale and the scope is so much more deeper and broader this time around.
+Every layer of the tech stack is changing. Everything from the power draw and the cooling layer
+of data centers to the NPUs at the edge, it is all being shaped by these new workloads, right, this
+distributed, synchronous data power and workloads, reshaping every layer of the tech stack.
+But if you think about, even going all the way back to the beginning of modern computing, let’s
+say 70 years ago, there have been two real dreams we’ve had. The first is can computers
+understand us instead of us having to understand computers? And second, in a world where we
+have these this ever increasing of people, places and things, right, and so as you digitize more
+artifacts on peoples, places and things, and you have more information, can computers help us
+reason, plan and act more effectively on all that information?
+Those are the two dreams that we’ve had for the last 70-plus years, and here we are. I think that
+we’ve had real breakthroughs on both fronts. The core underlying force is one of the questions I
+always ask myself, which is like, "OK, this is great, and this is maybe like the golden age of
+systems, but what’s really driving it?"
+I always come back to these scaling laws, and so just like Moore’s Law helped to drive the
+information revolution, the scaling laws of DNNs are really – along with the model architecture
+and the interesting ways to use data and generate data, it’s really driving this intelligence
+revolution. You could say Moore’s Law was probably more stable in the sense that it was scaling
+at maybe 15 months, 18 months. We now have these things that are scaling every six months or
+doubling every six months.
+Effectively, what we have, though, with these scaling laws is a new natural user interface that’s
+multi-modal. That means supports tech, speech, images and videos, and it has input and output.
+We have memory that retains important context, recalls both our personal knowledge and data
+across our apps and devices. We have new reasoning and planning capabilities that help us
+understand very complex context and complete complex tasks while reducing the cognitive load
+on us.
+But what stands out for me, as I look back at this past year, is how you all, as developers, have
+taken all of these capabilities and applied them, quite frankly, to change the world around us.
+I’ll always remember this moment in January 2023 when I met a rural Indian farmer who was
+able to reason over some government farm subsidies that he had heard about on television using
+GPT-3.5 and his voice. It was remarkable, right?
+For me, it just brought home the power of all of this because the frontier model developed in the
+West Coast of the United States just a few months earlier was used by a developer in India to
+directly improve the life of a rural Indian farmer. The rate of diffusion is unlike anything I’ve
+seen in my professional career, and it’s just increasing.
+In fact, earlier this month I was in Southeast Asia. I was in Thailand, where I met a developer
+and I was having a great roundtable, and he was talking to me about how he’s using Phi-3 and
+GPT-4, and he was using Phi-3 to just optimize all of the things that he was doing with RAG. I
+mean, this is crazy. I mean, this is unbelievable. It had just launched a few weeks earlier, and I
+was there in Thailand, in Bangkok, listening to a developer talk about this technology as a real
+expert on it.
+So it’s just great to see the democratization force which we love to talk about, but to witness it
+has just been something. And this is, quite frankly, is the impact and why we are in this industry.
+I would say it’s what gives us the deep meaning in our work.
+I want to start, though, with a very big thank you to every one of you how has really gone about
+bringing about this impact to the world. Thank you all so very much.
+When I think about the progress we have made since the last time we were here at Build, we’ve
+built really three platforms. The first is Microsoft Copilot, which is your everyday companion. It
+puts knowledge and expertise at your fingertips and helps you act on it. And we built the Copilot
+stack so that you can build your AI applications and solutions and experiences. And just
+yesterday we introduced a new category of Copilot+ PCs, the fastest AI-first PCs ever built.
+All three of these things are exciting platforms, but I want to start with Copilot+ PCs. We are
+exposing AI as a first class namespace for Windows. This week we are introducing the Windows
+Copilot Runtime to make Windows the best platform for you to be able to build your AI
+applications.
+What Win32 was to graphical user interface we believe the Windows Copilot Runtime will be
+for AI. It starts with our Windows Copilot Library. A collection of these ready-to-use local APIs
+that help you integrate into your new experiences all of the AI capabilities that we shared
+yesterday.
+Now, this includes no-code integration for Studio Effects, with things like creative filters,
+teleprompter, voice focus and much more, but of course, if you want to access these models
+themselves, you can directly call them through APIs. We have 40-plus models available out of
+the box, including Phi Silica, the newest member of our small language family models, which we
+specifically, which we specifically designed to run locally on your inputs on Copilot+ PCs,
+bringing that lightning fast local inference to the device.
+The other thing is that the Copilot Library also makes it easy for you to incorporate RAG inside
+of your applications on device data. It gives you the right tools to build a vector store within your
+app. It enables you to do that semantic search that you saw with Recall, but now, in your own
+application, you can construct these prompts using local data for RAG applications.
+Today, I’m so thrilled to announce, as well, that we will be natively supporting PyTorch and new
+WebNN framework through Windows through XML. Native PyTorch support means thousands
+of OSS models will just work out of the box on Windows, making it easy for you to get started.
+In fact, with WebNN, web developers finally have a web native machine learning framework
+that gives them direct access to both GPUs and NPUs. In fact, last night I was playing with it,
+turning it on in Edge and seeing the WebNN sample code running. It’s just so cool to see it now
+using the NPUs. Both PyTorch and WebNN are available in developer preview today.
+Let’s take a look.
+(Video segment.)
+These are just some of the many announcements today. We are introducing more than 50-plus
+new products and partnerships to create new opportunities for you. We’ve always been a
+platform company, and our goal is to build the most complete end-to-end stack, from
+infrastructure, to data, to the application extensibility so that you can apply the power of this
+technology to build your own applications.
+And so today I want to highlight our top news for this event across every layer of this Copilot
+stack. So let’s dive right in with infrastructure. We have the most complete, scalable AI
+infrastructure that meets your needs in this AI era. We’re building Azure as the world’s
+computer. We have the most comprehensive global infrastructure with more than 60-plus data
+center regions, more than any other cloud provider.
+Over the past year, we’ve expanded our data center regions and AI capacity from Japan to
+Mexico, from Spain to Wisconsin. We’re making a best-in-class AI infrastructure available
+everywhere, and we’re doing this with a focus on delivering cloud services sustainability. In fact,
+we’re on track to meet our goal to have our data centers powered by 100% renewable energy by
+next year.
+We are optimizing power and efficiency across every layer of the stack, from the data center to
+the network. Our latest data center designs are purpose built for these AI workloads so that we
+can effectively and responsibly use every megawatt of power to drive down the cost of AI and
+the power draw. We are incorporating advanced data center cooling techniques to fit the thermal
+profile of the workloads and match it to the environment in the location where it operates.
+At the silicon layer, we are dynamically able to map workloads to the best accelerated AI
+hardware so that we have the best performance, and our custom IO hardware and server designs
+allow us to provide dramatically faster networking, remote storage and local storage throughput.
+This end-to-end approach is really helping us get to the unprecedented scale.
+In fact, last November, we announced the most powerful AI simple computer in the cloud for
+training, using just actually a very small fraction of our cloud infrastructure. And over the past
+six months, we’ve added 30 times that supercomputing power to Azure. It’s crazy to see the
+scale.
+And of course, we’re not just scaling training our fleets. We’re scaling our inference fleet around
+the world, quadrupling the number of countries where Azure AI services are available today, and
+it’s great to see that.
+At the heart of our AI infrastructure are the world’s most advanced AI accelerators. We offer the
+most complete selection of AI accelerators, including from Nvidia and AMD, as well as our own
+Azure Maia, all dynamically optimized for the workloads. This means whether you’re using
+Microsoft Copilot or building your own Copilot apps, we ensure that you get the best accelerator
+performance at the best cost.
+For example, you will see this in what has happened with GPT-4.x It’s 12x cheaper and 6x faster
+since its launch, and that’s the type of progress you will continue to see as we evolve the system
+architecture. It all starts with this very deep, deep partnership with Nvidia, which spans the
+entirety of the Copilot stack, across both all of their hardware innovation as well as the system
+software innovation. Together, we offer Azure Confidential Computing on GPUs to really help
+you protect sensitive data around the AI models, end to end.
+In fact, we are bringing the latest H200s to Azure later this year, and we’ll be among the first
+cloud providers to offer Nvidia’s Blackwell GPU V100s as well as GB 200 configurations. And
+we are continuing to work with them to train and optimize both large language models like GPT-
+4o, as well as small language models like the Phi-3 family.
+Now, beyond the hardware, we are bringing Nvidia’s key enterprise platform offerings to our
+cloud like the Omniverse Cloud and DGX Cloud to Azure, with deep integration with the
+broader Microsoft Cloud.
+For example, Nvidia recently announced that their DGX Cloud integrates natively with
+Microsoft Fabric. That means you can train those models using DGX Cloud with the full access
+to Fabric data, and Omniverse APIs will be available first on Azure for developers to build their
+industrial AI solutions. We are also working with Nvidia, NIM industry-specific developer
+services and making them fantastic on Azure. And so a lot of exciting work with Nvidia.
+Now, coming to AMD, I am really excited to share that we are the first cloud to deliver the
+general availability of VMs AMD ND MI300X accelerator. It’s a big milestone for both AMD
+and Microsoft. We’ve been working at it for a while, and it’s great to see that today, as we speak,
+it offers the best price performance on GPT-4 inference. And we will continue to move forward
+with Azure Maia.
+In fact, our first cluster are live, and soon, if you are using Copilot or one of the Azure OpenAI
+services, some of your prompts will be served using Maia hardware.
+Now, beyond AI, our end-to-end systems optimization also makes cloud native apps and the
+development of cloud native apps better. Six months ago is when we announced our first general
+purpose ARM-based compute processor, Microsoft Cobalt. And today, I am really excited to
+announce the public preview of Cobalt-based VMs.
+Cobalt is being used for video processing and permissions management in Microsoft 365,
+helping power billions of conversations on services like Microsoft Teams already. We are
+delivering that same ARM-based performance and efficiencies to many customers, in fact,
+including Elastic and MongoDB. Siemens, Snowflake and Teradata.
+In our most recent benchmark data and tests, our Cobalt 100 VMs delivered up to 40% better
+performance than any other generally available ARM based VM. We are very, very excited
+about Cobalt getting into the market.
+Now, let’s move up the stack to the foundation models. With Azure AI, we offer the broadest
+selection of frontier and open-source models, including LLMs and SLMs so you can choose the
+model that makes the most sense for your unique needs and your application needs.
+In fact, more than 50,000 organizations use Azure AI today, and that is great momentum. It all
+starts, though, with our most strategic and most important partnership with OpenAI. Just last
+week, OpenAI announced GPT-4.0, their latest multimodal model, which was trained on Azure.
+It’s an absolute breakthrough.
+It has text, audio, image and video as input and output. It can respond and just have a human-like
+conversation that’s fast and fluid. It can even be interrupted mid-sentence. PGPT-4o is also the
+top performing model on benchmarks across a variety of modalities, and it’s always going to get
+you to the best answer.
+It has state-of-the-art performance and understanding the information you actually provide in
+your prompt, because that’s really what matters. What OpenAI I demoed last week, I mean, that
+was just pretty magical stuff. And yesterday we showed how Copilot will leverage PGPT-4o.
+In the video I’m going to play, notice that you can share your screen or session as a prompt in
+Copilot and have Copilot help you with whatever it is that you are doing.
+Let’s role the video.
+SATYA NADELLA: It’s really cool to see that. The magic here is that Copilot is your personal
+assistant that’s helping you with any task, helping you stay, quite frankly, in the flow in the
+moment, whether it’s a game, a document or a line of code. As OpenAI innovates, our promise is
+that we will bring all that innovation to Azure too.
+In fact, the same day that OpenAI announced PGPT-4o, we made the model available for testing
+on Azure OpenAI service. And today, I’m excited to say that it’s generally available on Azure
+AI.
+What this means, though, is that we can now have these groundbreaking apps that all of you can
+build using this capability. One of the coolest things is that now, any app or any website, can
+essentially be turned into a full, multi-modal, full duplex conversational canvas.
+SATYA NADELLA: Seth was in a hurry, but there you go, PGPT-4o kept up with it. It’s
+incredible, and so I really want to thank the OpenAI team for their partnership and really the
+responsible approach to innovation, helping our industry move forward.
+In fact, Sam will be here, joining Kevin in a little bit to talk a lot more about what’s coming,
+because that’s the exciting stuff, how do you all sample what comes next? We are also bringing
+lots and lots of other models in as well, from Cohere, Databricks, Deci, Meta, Mistral and
+Snowflake, all to Azure AI.
+We want to support the broadest set of models from every country, every language. I’m excited
+to announce, in fact, we’re bringing models from Cohere, G42, NTT Data, Nixla, as well as
+many more, as models as services, because that’s the way you can easily get to manage AI
+models. And we all love open source too.
+In fact, two years ago at Build, we were the first to partner with Hugging Face, making it simple
+for you to access the leading open-source library with state-of-the art language models via Azure
+AI. And today, I’m really excited to announce that we’re expanding our partnership, bringing
+more models from Hugging Face with text generation inference and with text embedding
+inference directly into Azure AI Studio.
+And we are not stopping there. We are adding not just large language models, but we are also
+leading the small language model revolution. Our Phi-3 family of SLMs are the most capable
+and most cost effective. They outperform models of the same size or the next size up, even
+across a variety of language, reasoning, coding, as well as math benchmarks.
+If you think about it, by performance to parameter count ratio, it’s truly best in class. And today
+we are adding new models to the Phi-3 family to add even more flexibility across that quality
+cost curve. We’re introducing Phi-3 Vision, a 4.2 billion parameter multi-modal model with
+language and vision capabilities. It can be used to reason over real-world images or generate
+insights and answer questions about images, as you can see right here.
+And we’re also making a 7 billion parameter Phi-3 small and a 14 billion parameter five three
+medium model available. With Phi, you can build apps that span the web, Android, iOS,
+Windows and the edge. They can take advantage of local hardware when available and fall back
+on the cloud when not, really simplifying all of what our VS developers have to do to support
+multiple platforms using one AI model.
+Now, it’s just awesome to see how many developers are already using Phi-3 to do incredible
+things. From Amity Solutions, the Thai company that I mentioned earlier, the ICC, which has
+built a Copilot for Indian farmers to ask questions about their crops, Epic in healthcare, which is
+now using Phi to summarize complex patient histories more quickly and efficiently. And another
+very, very cool use cases in education.
+Today, I’m very thrilled to announce a new partnership with Khan Academy. We’ll be working
+together to use Phi-3 to make math tutoring more accessible. And I’m also excited to share that
+they’ll be making Khanmigo, their AI assistant, free to all U.S. teachers. Let’s roll the video here
+already.
+SATYA NADELLA: I’m super excited to see the impact this all will have and what Khan
+Academy will do. And Sal is going to, in fact, join Kevin soon to share more. And I’m really
+thankful for teachers like Melissa and everything that they do. Thank you very much.
+Of course, it’s about more than just models. It’s about the tools you need to build these
+experiences. With Azure AI Studio, we provide an end-to-end tooling solution to develop and
+safeguard the Copilot apps you build. We also provide tooling and guidance to evaluate your AI
+models and applications for performance and quality, which is one of the most important tasks,
+as you can imagine, with all these models. And I’m excited to announce that Azure AI Studio
+now is generally available.
+(Applause.)
+It’s an end-to-end development environment to build, train and finetune AI models and do so
+responsibly. It includes built-in support of what is perhaps the most important feature, which is
+in this age of AI, which is AI safety. Azure AI Studio includes the state of the art safety tooling
+to everything from detecting hallucinations in model outputs, risk and safety monitoring. It helps
+understand which inputs and outputs are triggering content filters, prompts shields, by the way,
+to detect and block these prompt injection attacks.
+And so, today we are adding new capabilities, including custom categories, so that you can
+create these unique filters for prompts and completions with rapid deployment options, which I
+think is super important as you deploy these models into the real world, if an emerging threat
+appears.
+Beyond Azure AI Studio, we recognize that there are advanced applications, where you need
+much more customization of these models for very specific use cases. And today, I’m really
+excited to announce that Azure AI custom models will come, giving you the ability to train a
+custom model that’s unique to your domain, to your data, that’s perhaps proprietary.
+The same builders and data scientists, who have been working with OpenAI brought all the Phi
+advances to you, will work with all of you to be able to build out these custom models. The
+output will be domain specific. It’ll be multitask and multi-modal, best in class as defined by
+benchmarks, including perhaps even specific language proficiency that may be required.
+Now, let’s just go up the stack to data. Ultimately, in order to train, finetune, ground your
+models, you need your data to be in its best shape. And to do so, we are building out the full data
+estate, from operational stores to analytics in Azure. We’ve also added AI capabilities to all of
+our operational stores, whether it’s Cosmos DB or SQL or PostgreSQL.
+At the core, though, of the Intelligent Data platform is Microsoft Fabric. We now have over
+11,000 customers, including leaders in every industry, who are using Fabric. It’s fantastic to see
+the progress.
+(Applause.)
+With Fabric, you get everything you need in a single, integrated SaaS platform. It’s deeply
+integrated at its most fundamental level with compute and storage being unified. Your
+experience is unified, governance is unified, and more importantly, the business model is unified.
+And what’s also great about Fabric is that it works with data anywhere, not just on Azure, but it
+can be on AWS or on GCP or even on your on-premise datacenter. And today, we are taking the
+next step. We’re introducing real-time intelligence in Fabric.
+(Applause.)
+Customers today have more and more of this real-time data coming from your IoT systems, your
+telemetry systems. In fact, cloud applications themselves are generating lots of data, but with
+Fabric, anyone can unlock actionable insights across all of your data estate.
+SATYA NADELLA: And we’re making it even easier to design, build and interoperate with
+Fabric with your own applications. In fact, we’re building out a new app platform with Fabric
+Workload Development kit so that people like Esri, for example, who have integrated their
+spatial analytics with Fabric, so that customers can generate insights from their own location data
+using Azure’s rich tools and libraries, right on Fabric. This is just exciting to see. It’s the first
+time you know where the analytics stack is really a first class app platform as well.
+(Applause.)
+And beyond Fabric, we’re integrating the power of AI across the entirety of the data stack.
+There’s no question that RAG is core to any AI-powered application, especially in the enterprise
+today. And Azure AI Search makes it possible to run RAG at any scale, delivering very highly
+accurate responses using the state of the art retrieval systems. In fact, ChatGPT supports, for
+GPTs, data assistants API, are all powered by Azure AI Search today.
+And with built-in OneLake integration, Azure AI Search will automatically index your
+unstructured data, too. And it’s also integrated into Azure AI Studio to support bringing your
+own embedding model, for example. And so, it’s pretty incredible to see Azure Search grow over
+the last year into that very core developer service.
+Now, let’s go up to developer tools. Nearly 50 years after our founding as a developer tools
+company, here we are, once again redefining software development. GitHub Copilot was the
+first, I would say, hit product of this generative AI age. And it’s the most widely adopted AI
+developer tools, 1.8 million subs across 50,000 organizations are using it.
+(Applause.)
+And with GitHub Copilot, we are empowering every developer on the planet to be able to access
+programing languages and programing knowledge in their own native language. Think about
+that. Any person can start programing, whether it’s in Hindi or Brazilian Portuguese, and bring
+back the joy of coding to their native language.
+And with Copilot Workspace, staying in your flow has never been easier. We are an order of
+magnitude closer to a world where any person can go from idea to code in an instant. You start
+with an issue. It creates a spec based on its deep understanding of your code base. It then creates
+a plan, which you can execute to generate the code across the full repo, that is, multiple files.
+At every point in this process, from the issue to spec to plan to code, you are in control. You can
+edit it. And that’s really what is fundamentally a new way of building software. And we are
+looking forward to making it much more broadly available in the coming months.
+And today, we are taking one more big leap forward. We are bridging the broader developer
+tools and services ecosystem with Copilot for the first time. We’re really thrilled to be
+announcing GitHub Copilot Extensions.
+(Applause.)
+Now, you can customize GitHub Copilot with capabilities from third-party services, whether it’s
+Docker, Sentry and many, many more. And, of course, we have a new extension for Azure, too,
+GitHub Copilot for Azure. You can instantly deploy to Azure to get information about your
+Azure resources, just using natural language. And what Copilot did for coding we are now doing
+for infra and ops.
+To show you all this in action, here is Neha from our GitHub team. Neha, take it away.
+(Applause.)
+NEHA BATRA: Thanks, Satya.
+GitHub Copilot gives you suggestions in your favorite editor, like here, where I’m writing unit
+tests. Copilot is great at meeting you where you’re at, regardless of the language you’re most
+comfortable with.
+Let’s ask for something simple like how to write a prime number test in Java, but let’s converse
+in Spanish using my voice.
+(Global language.)
+Look at that. Gracias, Copilot.
+Copilot is great at turning natural language into code and back again, but what about beyond the
+code? With the new GitHub Copilot Extensions, you can now bring the context from your
+connected systems to you.
+Now, I can ask Azure where my app is deployed. I could ask what my available Azure resources
+are, or I could diagnose issues with my environment.
+And this isn’t just for Azure. As Satya announced, any developer can now create extensions for
+GitHub Copilot, and that includes any tool in your stack, including your in-house tools, keeping
+you in the flow across your entire day.
+Actually, 75% of a developer’s day is spent outside of coding, gathering requirements, writing
+specifications and creating plans. Let’s show how GitHub Copilot can help with that, live on
+stage for the first time.
+Typically, my day starts by looking at GitHub issues. Looks like we want to support a rich text
+input for our product description. Let’s open Workspace and get some help with that.
+Copilot interprets the intent of the issue to see what’s required, and it then looks across the entire
+codebase, and it proposes what changes should be made. This specification is fully editable and
+the whole process is iterative.
+But actually, this looks pretty good. Copilot can now help us build a plan on how to implement
+this change.
+All right, that’s a great start, but we must not forget about our documentation. Let’s edit the plan
+and have Copilot update our readme.
+And then we can even get Copilot’s help and starting to implement the code for us.
+Now, this was just a simple example, but in a large enterprise code base, there are tens of
+thousands of files and dozens of stakeholders involved. And that means meetings, so many
+meetings. Workspace helps you focus on what you need to change. And, by the way, as a
+developer, I’m always in control. I can see exactly what changes Copilot is proposing, and I can
+even get a live preview.
+All right, let’s test out the input.
+All right, this looks great. I can go back, and I can edit my code in VS Code, or I can submit
+these changes as a pull request to share with my team.
+GitHub Copilot, Copilot Extensions and Copilot Workspace help you stay focused on solving
+problems and keeping you in the flow.
+Back to you, Satya.
+(Applause.)
+SATYA NADELLA: Thank you so much, Neha. I mean, I’ll tell you, GitHub Copilot and
+everything that that ecosystem is doing is just bringing back a lot of fun and a lot of joy back to
+coding. And really, the thing about staying in that flow is, I think, what we all have dreamt for
+and dreamt about, and it’s coming back.
+That brings us to the very top of the stack, Microsoft Copilot. We built Copilot so that you have
+the ability to tap into the world’s knowledge, as well as the knowledge inside of your
+organization and act on it.
+Now, Copilot has had a remarkable impact. It’s democratizing expertise across organizations.
+It’s having a real cascading effect. In fact, it reminds me of the very beginning of the PC era,
+where work, the work artifact and the workflow were all changing. And it’s just really having
+broad enterprise business process impact. I always say that it’s lowering both the floor and
+raising the ceiling at the same time for anything any one of us can do.
+Since no two business processes are the same, with Copilot Studio, you now can extend Copilot
+to be able to customize it for your business processes and workflows. Today, we are introducing
+Copilot Connectors in Copilot Studio, so you can ground Copilot with data from across the
+Graph, from Power Platform, Fabric, Dataverse, as well as you now have all the third-party
+connectors for SaaS applications, from Adobe, Atlassian, ServiceNow, Snowflake and many,
+many more.
+This makes the process of grounding Copilot in first and third-party line of business data just a
+wizard-like experience, enabling you to quickly incorporate your own organizational knowledge
+and data.
+We’re also extending Copilot beyond a personal assistant to become a team assistant. I’m thrilled
+today to announce Team Copilot.
+(Applause.)
+You’ll be able to invoke a Team Copilot wherever you collaborate in Teams. It can be in Teams,
+it can be in Loop, it can be in Planner and many, many other places. I mean, think about it. It can
+be your meeting facilitator when you’re in Teams, creating agendas, tracking time, taking notes
+for you, or a collaborator, writing chats, surfacing the most important information, tracking
+action items, addressing unresolved issues. And it can even be your project manager, ensuring
+that every project that you’re working on as a team is running smoothly.
+These capabilities will all come to you all and be available in preview later this year. And we’re
+not stopping there.
+With Copilot Studio, anyone can build Copilots that have agent capabilities, and work on your
+behalf, and independently and proactively orchestrate tasks for you. Now, simply provide your
+Copilot a job description, or choose from one of our pre-made templates and equip it with the
+necessary knowledge and actions, and Copilot will work in the background and act
+asynchronously for you. That’s, I think, one of the key things that’s going to really change in the
+next year, where you’re going to have Copilot plus agents with this async behavior.
+You can delegate authority to Copilots to automate long-running business processes. Copilot can
+even ask for help when it encounters situations that it does not know much about and it can’t
+handle.
+SATYA NADELLA: All around this stack is perhaps one of the most important things that we,
+at Microsoft, are doing, which is wrapping it with robust security. Security underlies our
+approach with Copilot, Copilot+ PCs, Copilot Stack. We’re committed to our Secure Future
+Initiative. You can see, you’ll see us make rapid progress across each of the six pillars of SFI,
+and the core design principles, which is secure by design, secure by default and secure
+operations. You’ll hear, throughout this conference, in fact, a lot more in Scott’s keynote
+tomorrow, how it underlies everything that we build and everything that we do.
+Coming to the close, there are many announcements that you will hear about at Build, but I want
+to go back to, I think, the core of what I think why we chose to be in this industry and why we
+come to work every day as developers, which is the mission, ultimately, of empowering every
+person and every organization. At the end of the day, it’s not about innovation that is only useful
+for a few. It’s about really being able to empower that everyone. And it comes down to you all as
+developers and builders of this new world.
+For us, it’s never, never about celebrating tech for tech’s sake. It’s about celebrating what we can
+do with technology to create magical experiences that make a real difference in our countries, in
+our companies, in our communities. Already, this new generation of AI is having an incredible
+impact, thanks to all of you, the passion you bring and the hard work you put in. And I want to
+leave you with this one unbelievable example of how you’re all building a more accessible
+world, which means a lot to me, using our platform and tools.
+Thank you all so very much. Enjoy the rest of Build.
+11192024 Ignite KEY01 Satya Nadella
+Ignite Keynote
+Satya Nadella – CEO, Microsoft
+Tuesday, November 19, 2024
+(Applause.)
+SATYA NADELLA: Hello, and welcome to Ignite! It’s really fantastic to be back here
+in Chicago with all of you and everyone joining from around the world. It’s always fun to
+be in conferences like this, at times like this, when major platform shifts are in the air.
+They’re exciting. The buzz, in some sense, I live for these.
+In fact, I was — this morning, I was reflecting, what is it? Like 32 years ago, right here in
+this very conference center, at the spring COMDEX is when we launched Windows 3.1,
+and that was like a big deal. It was just actually a few months before I joined Microsoft,
+and it made Windows what it finally became. It was just the most major release of it.
+And in fact, in 2015, Ignite itself started in Chicago, and that was right in the middle
+innings of the cloud. And so here, to be back again during the middle innings of AI is just
+fantastic. And so, I’m really excited about it. And you know, given I see this room, it’s
+breadth first. So I’m going to give a keynote that’s breadth first. So I’m going to try and
+cover everything that we have for you throughout the show.
+With every platform shift, it’s always perhaps good to build a deep context and
+understanding of the underlying forces. And today we talk about them as scaling laws.
+Just like Moore’s Law, we saw the doubling in performance every 18 months. With AI,
+we’ve now started to see that doubling every six months or so.
+Now, in fact, there’s a lot of debate. In fact, just in the last multiple weeks, there’s a lot of
+debate, or have we hit the wall with scaling laws? Is it going to continue? I mean, the
+thing to remember, at the end of the day, these are not physical laws. These are just
+empirical observations that hold true, just like Moore’s Law did for a long period of time.
+And so, therefore, it’s actually good to have some skepticism, some debate, because that I
+think will motivate, quite frankly, more innovation on whether it’s model architectures or
+whether it’s data regimes or even systems architecture. So it’s a good thing to have.
+In that context, though, if anything, we are seeing the emergence of a new scaling law
+which test time or inference time compute. In fact, OpenAI’s o1 is a good example of it.
+And features like the Copilot Think Harder is built on o1, is all about using test time to
+solve even harder problems.
+So ultimately, though, all these breakthroughs manifest in three capabilities that are
+exponentially getting better. The first is this new, universal interface that’s multimodal. It
+supports speech, images, videos, both as input and output. Second, we have these new
+reasoning and planning capabilities, which essentially we have new neural algebra to help
+solve complex problems. We can detect patterns involving people, places and things. You
+can even find relationships between people, places and things using this new algebra.
+And third, we now have this capability to support long-term memory, rich contexts, and
+in fact teach these models to use tools. So if you put all those things together, you can
+build a very rich agentic world defined by this tapestry of AI agents, which can act on our
+behalf across our work and life, across teams, business processes as well as organization.
+Now, you know I love this stuff. We are going to celebrate a lot of technology over the
+next multiple days, but it’s worth reflecting. In fact, given we are in Chicago, there was a
+professor of philosophy right here in University of Chicago some 50 years ago, John
+Haugeland, who said the following: "The trouble with artificial intelligence is that
+computers don’t give a damn, but we do." And that’s what really grounds us. Amidst all
+this rapid change, we remain grounded in our mission to empower every person and
+every organization on the planet to achieve more using this technology to make a
+difference for themselves, for their teams and for the world.
+It’s not about tech for tech’s sake, but it’s about translating it into real outcomes. And
+today, I want to focus on AI and this transformational power as it drives growth in
+business. It improves efficiency; it improves operating leverage. And to do that, we are
+building out three platforms. Copilot, Copilot Devices, and Copilot and AI Stack. That’s
+it. Those are the three platforms. But before I dive into all of the news across the
+platforms, I want to talk about that something that we are prioritizing above all else. That
+is security.
+At this conference, you’ll hear us talk a lot about our Secure Future Initiative, the
+progress we are making, the principles of secure by design, secure by default, secure by
+operations, but most importantly, our commitment to continuous improvement. Because
+this is not just a destination or stand down, one milestone thing. We’ll never be done. In
+fact, we’re only as good as our ability to defend against the next novel attack. And we are
+seeing real momentum, even with our customers and partners around implementation of
+zero trust using our tools and practices. In fact, a great example of this is what the U.S.
+Navy has been able to do. They’ve been able to respond to all the executive orders and
+mandates and meet, in fact, their zero-trust goals years ahead of schedule. And it’s
+fantastic to see that.
+We continue to invest in security. You can see the updates. We’re making tons and tons
+of announcements that you’ll hear about across the security stack. The one thing, though,
+I want to point out is Purview. It’s probably the product for this conference because in the
+age of AI, data governance takes on an even more critical, central, important role. And in
+Purview, we’re introducing updates to prevent everything, from oversharing risky use of
+AI such as malicious intent detection, prompt injections, misuse of protected materials.
+So there’s a lot in Purview.
+At the end of the day, though, we recognize that when it comes to security, it’s
+fundamentally a team sport. And that’s why we want to partner. And we are partnering
+broadly with the security community. And today, I’m really excited to announce our Zero
+Day Quest. This is the first big announcement that I’m excited about because it’s a new
+hacking event. There will be $4 million in rewards focused on securing cloud and AI. It’s
+the highest rewards of any public hacking event in the industry, and the quest starts today
+and will culminate in an in-person hacking event next year. So we’re very, very excited
+about it.
+So with that, let’s just dive into each of the platforms, and starting with Copilot. Copilot
+is the UI for AI. It’s rapidly becoming an organizing layer for work and how work gets
+done. Every employee will have a Copilot that knows them, their work, helping them
+unlock productivity, enhancing creativity and saving time. And Copilot Studio will allow
+you to create agents that automate business processes. And every IT department will have
+a control system to manage, secure and measure impact. That’s it. Those are the three
+basic concepts of the Copilot ecosystem.
+Over the past year, we’ve seen incredible momentum of what lean did for manufacturing,
+AI will do for knowledge work. It’s all about increasing value and reducing waste. Just
+take risk analysis at Bank of Queensland Group. In the past, when an incident occurred,
+they would have to go through thousands of documents and write reports, and now they
+use Copilot to be able to synthesize everything that happened and create that first draft.
+That means analysis that took weeks, it’s just taking a day.
+Vodafone is another great example. Their legal team used to manually analyze and draft
+and renegotiate thousands of contracts that govern their massive base station network.
+And now, they use Copilot to determine which contracts need to be renewed, which need
+to be scrapped and to keep track of all the expiry dates. Vodafone is also personalizing all
+of their customer service by leveraging Copilot, as well as Azure AI to manage customer
+inquiries. Their virtual assistant engages in more than 45 million monthly customer
+conversations and is reducing the average hold time by more than one minute.
+And of course, we’re just getting started. We’re continuously innovating, shipping
+hundreds of updates since we made Copilot generally available a year ago. And it starts
+with actually work on the fundamentals. In fact, you could think about the Copilot
+responses today. They are more than two times faster than on average, and the response
+satisfaction is improved nearly threefold. And going forward, we think about Copilot
+adoption in three fundamental ways. The more employees use Copilot and Copilot
+agents, the faster they’ll be able to realize value. And second aspect is: how do you
+ground Copilot or extend Copilot in your world, in your ecosystem? So Copilot is a
+platform you can extend with agents to scale what you can do, right? So if you have one
+employee, one Copilot, and one Copilot can have thousands, thousands of agents. And
+finally, it’s about measuring ROI.
+And let’s start with Copilot Pages. Now, Pages is this first artifact of the AI age. And it’s
+pretty magical, right? You see, in this video, we’re bringing rich artifacts to Pages. You
+can add interactive charts, tables, code blocks, math equations, complex diagrams. You
+can use Copilot directly on the page to iterate on the content, and also control what
+happens on the page directly from a chat. It’s truly this multiplayer canvas that enables
+you to ideate with AI and collaborate with other people.
+In fact, I use Pages all the time. In fact, if I’m prepping for a meeting, I just give it a
+prompt. The Copilot combs through everything about the customer, let’s say, from the
+web, LinkedIn, all the business applications like our CRM. In fact, all the work artifacts
+are documents, emails, Teams messages, presentations. And then I can put all of that just
+as a first draft into my Pages and share it, let’s say, with my account team, everyone
+working with me in my office. It becomes much more of a real-time way for every one of
+us who’s working on that topic to be on the same page. And then it becomes, in fact, the
+first draft for what comes next, which is my meeting notes, right? Then again, it’s real-
+time shared with everybody involved.
+Copilot is also not just in Pages, but it’s deeply integrated, right? It’s not just about charts
+and pages, but it’s deeply integrated into the entirety of Microsoft 365 system. Let’s say
+it’s starting with Teams. Copilot can reason over all the past meetings and chats and
+transcripts and get you quickly up to speed. With Teams, in fact, screen understanding,
+which we are announcing today, it’s pretty exciting. Copilot can even answer questions
+about presentations and documents shared during the meeting as well, right? You are
+doing a presentation. Here is a Copilot that understands exactly what you’re presenting
+and answer questions about that presentation.
+In Word, Copilot creates a draft based on other Word documents, PowerPoint, PDFs,
+emails, meetings. You never have to start from a blank page. In PowerPoint, you can
+enter a prompt of what you want to do or what your presentation is about. And the
+narrative builder generates essentially a spec for your presentation, right? An outline with
+topics, and you can edit it, refine it, its suggestions, and it will create your first complete
+presentation.
+And in Outlook, this feature is something that I’ve sort of gotten so used to. It’s the
+quickest daily habit I’ve built, which is prioritize my inbox, is a total game changer
+because it helps you quickly get to the messages that matter. Analyzing your inbox based
+on both the content of the mail, but also the role of the sender and the context. And that’s,
+I think, it’s just like someone went and labeled every piece of email with a blue arrow
+and said: why is this important? Right? I mean, think about it.
+And I think what we’re doing in Excel, though, is perhaps one of my favorite things. Just
+like what GitHub Copilot did for software developers, Copilot in Excel will do for data
+analysts. I can start with a very high-level prompt, that in the past, for example, I would
+have given a data analyst — let’s say I’m in a manufacturing plant, and I want to figure
+out how to improve production rate, right? So I give a high-level prompt and say, hey,
+come back with an analysis of what can we do here.
+And Copilot uses this advanced reasoning capabilities to build out a full plan for strategic
+analysis. I can easily change that plan, adjust it as I want to, and then it just goes and
+executes the plan. And throughout I can see it actually doing the work. It first does
+visualization. It generates heat maps, scatter plots, histograms. It figures out, in fact, the
+key drivers of production, does a comparison of all those key drivers, figures, and it
+calculates and then summarizes the insights and the actions in minutes. Like, how
+amazing is that, right? It takes data analysis and makes it available to everyone who has
+an Excel spreadsheet.
+If you sort of look back, and you say Excel was one of those products that at population
+scale improved number sense. I think Copilot in Excel with Python will improve analysis
+sense across the world. So I’m really, really excited about this.
+Now, if you have all of this richness of Copilot that you’re using across the length and
+breadth of Microsoft 365, let’s talk a little bit about how you can extend Copilot. Today,
+I’m really excited to announce Copilot Actions. With these Actions, you can use Copilot
+to reduce the amount of time you spend on repetitive, everyday tasks that you do. In fact,
+the best way to conceptualize Actions is for those of you who use Outlook rules, this is
+Outlook rules for the age of AI, and it works across the entire M365 system, not just in
+Outlook. So it automates everything from asking for, let’s say, a status update from your
+team, compiling weekly reports, to scheduling emails, requesting feedback on a
+document. Actions are a very simple, but yet powerful way for you to scale what you do,
+right?
+So whatever was the thing that you had to do multi-step, you just create one of these
+actions, and it just does it for you. You can discover templates for actions which you can
+reuse in your everyday work. It’s just a simple interface, and we’re not stopping there.
+And today, we’re introducing new agents you can use within the context of your team.
+Again, the best way to think about these are as just your teammates. They’re scoped to
+specific roles with very specific permissions. Just like we have permissions and roles. For
+example, a facilitator agent is someone you can add to your Teams meeting, and the
+facilitator will help keep the meeting focused, moderate the meeting, chat, as well as the
+follow-up and action item.
+Our project manager agent in Planner will help automate, in fact, all the key steps in a
+project management workflow. It’ll create a new plan from scratch. It’ll help oversee
+what’s happening across the project, task assignments, content creation. And next is even
+self-service agents, right? So for these agents, provide really useful information, answer
+questions and policies. But not just that. When it comes to HR and IT, these agents will
+help you complete the task. Think of these as just augmenting your HR and IT
+departments.
+And we’re also announcing SharePoint agents. Every SharePoint site will now have a
+built-in agent. These agents provide instant access to real-time information and insights
+from your knowledge base in the flow of your work.
+We’re also giving you the ability to easily create your own agents using Copilot Studio.
+Sometimes we sort of mystify these agents as things that somehow require a lot of effort
+to build, but it’s really pretty straight forward. In fact, our vision is that it should be as
+simple as creating a Word doc or a PowerPoint slide or an Excel spreadsheet, that’s it.
+When you say “agent,” think creating a doc.
+This example is a good one, right? I can create field service sources, in this case, a
+SharePoint site in my Dynamics CRM. I can easily configure it to meet my specific
+needs, and you have an agent in seconds that’s just now integrated into Copilot.
+You can also make these agents autonomous using Copilot Studio, and they can always
+raise an exception in Copilot for input. Remember, even an autonomous agent from time
+to time will need attention, and it will need UI, and that UI for interacting with us is
+Copilot.
+Now, just last month, we introduced 10-plus autonomous agents in Dynamics 365, that
+do everything from optimizing supply chain, to helping customer service teams resolve
+issues. For example, take a look at a sales qualification agent, autonomously researches
+all the leads that are there in your system, and flags the best prospects for you, and then
+grabs a personalized email that you can, of course, edit and send. And we are already
+seeing customers using capabilities like this.
+In fact, McKinsey has built an autonomous agent that reduces client onboarding time by
+as much as 90%. DAO has built agents to optimize their shipping process or freight
+shipping process and projecting millions of dollars of savings even in just the first year.
+And of course, when we talk about extensibility that includes changing how you interact
+with your bespoke business applications too, that’s fundamental. The idea that I have to
+go to one business application at a time just goes away in this world of agents, and so we
+are very excited to share. Many of our partners have built their own agents and
+connectors in Microsoft 365 Copilot. That includes Adobe, and obviously LinkedIn,
+SAP, ServiceNow, Workday. Even companies like Cohere, they are building AI-first
+agents they are also integrating right into Copilot.
+SATYA NADELLA: Now, let’s take a look at one more very important consideration,
+which is measurement. After users start using Copilot and all these agents, one of the
+fundamental things that all business leaders want to do is to figure out, how do we
+measure ROI?
+And so today, we are very excited to announce Copilot Analytics. Here, if you take, let’s
+say, a sales territory manager, they can now correlate the specific Copilot usage to a
+business metric, like their win rate over time. And it’s not just Copilot, it’s Copilot and
+all the agents that you have built. You can look at their usage and start tuning even the
+usage to the business KPIs.
+Our goal is to show how Copilot usage is ultimately directly translating into business
+outcomes across sales, marketing, finance and more, and there are many, many more
+examples. This is fundamentally the process, because it’s really a question of change
+management. Think of Copilot Analytics as a tool for all of us to change how work, work
+flow and work artifacts are all getting done. That, I think, is ultimately how we get ROI.
+So, that’s a look at Microsoft 365 Copilot, Copilot Studio and Agents and Autonomous
+Agents, that end-to-end system for AI-driven business transformation.
+Now, let’s move to the next platform, which is devices. In the age of AI, even the devices
+are fundamentally getting transformed, with both AI and cloud. What is happening here
+is that we are fundamentally taking what’s happening in the cloud with AI to the edge,
+and think of all of this as one, continuous, distributed computing fabric.
+Over the past year, we have introduced an entirely new class of Windows PCs designed
+to unleash the power of that distributed computing fabric across the cloud and the edge.
+We call these Copilot+ PCs.
+We are working across the entire ecosystem. It’s fantastic. Just like in the cloud, there’s
+all the silicon innovation. Silicon innovation is back in a big way in the client, whether
+it’s Qualcomm, AMD, Intel, all building fantastic systems for PCs going forward. And of
+course, we’re working with all of the OEMs, and now you can see the real manifestation
+of all of that in these 40-plus FLOPS, all on the client with the NPUs.
+Now, when it comes to the fundamentals of these PCs, also, whether it’s battery life or
+performance, they’re best-in-class. That was the other thing. This is just not adding an
+NPU, but it’s about making Windows and Windows PCs just fantastic on fundamentals.
+And, of course, ultimately, it’s about developers, right? What happened 32 years ago with
+3.1 was about applications, and here we are with Copilot+ PCs.
+We are back at it with Adobe, and WhatsApp, all who are seeing the capabilities of these
+new PCs. They’re bringing their best applications, leveraging these NPUs to really
+deliver breakthrough AI experiences.
+We’re also delivering entirely new end points. Three years ago, we introduced the Cloud
+PC category with Windows 365, which securely streams your personal Windows desktop
+from the cloud to any device, whether it’s iOS, Android or even a mixed reality, let’s say
+a headset from like something like Meta Quest. We’ve seen unbelievable momentum and
+adoption for these Cloud PCs to remote workers, temporary workers, IT developers, all of
+the frontline scenarios in particular, even around disaster recovery.
+In fact, it’s my go-to developer desktop. It gives full access to GitHub, Code Spaces, VS
+Code Azure SDKs, is all the CLIs set up in one place, and I can access it everywhere.
+Our Windows App, now, gives us one-click access to all of these Microsoft
+virtualizations on any device.
+Today, we are announcing, in fact, Windows App is coming to Android. We’re excited
+about that. We are announcing mobile application management. I know this is something
+that IT has wanted for a long time, and it’s both to iOS and Android. This means any
+employee can work on Windows 365, even on their personal devices like this iPad,
+because your corporate apps and files stay secure, all managed on the Cloud PC.
+Windows 365, itself, is growing rapidly. It’s grown by triple digits year-over-year, and
+it’s now used by some of the world’s largest companies, including Wells Fargo, Johnson
+& Johnson, Siemens.
+And today, though, I’m really excited about the next big step here. I’m really thrilled to
+announce Windows 365 Link. You can see it right here. It’s a simple, secure, purpose-
+built device for Windows 365. It’s admin-less, password-less, and security configurations
+are enabled by default and cannot be turned off.
+Windows 365 Link expands the PC category, or the Cloud PC category, by connecting
+you directly to your productivity in the cloud with no data or information left on any
+device.
+Let’s take a look. Let’s play the video.
+(Video segment.)
+Now, I’m really excited about this device, and I’m also pleased to say that it’s going to be
+available in April of next year, so really looking forward to it. The form factors on
+Windows 365 Link give you another choice for Windows endpoints. But look, we
+fundamentally recognize how mission critical Windows is, and we are committed to both
+its security and resilience as a first-class priority.
+The latest release of Windows 11 has over a dozen new security features, and most
+importantly, they’re turned on by default, including device encryption enabled across all
+devices. In addition, we are excited to announce this new Windows Resiliency Initiative.
+Super important. We are doubling down on our commitment to make Windows secure
+and reliable for customers for all their mission-critical workloads. As part of this work,
+we are making changes to low-level operating system access. We’re introducing new
+features in partnership with the entire ecosystem, establishing new guidelines for safe
+deployment practices.
+One example of this, which is, I think, something that is really exciting is Windows
+Hotpatch, which works across your entire Windows estate to apply critical security
+updates without requiring a restart. We also continue to push the envelope on Windows
+security and resilience across both the cloud and the client. And thanks to point-in-time
+restore, customers who use Windows 365 can be up and running in minutes and roll back
+a cloud PC to its exact earlier state, so it’s pretty awesome to see all of this support for all
+the mission-critical workloads that run on Windows.
+That’s what we’re doing with Copilot devices. And now I want to get to the final third
+platform, which is Copilot and AI stack. Now, the way we are approaching this is pretty
+simple. What we’re doing is we’re taking all of these apps we’re building with Copilot
+and agents in Copilot Studio and exposing every layer of that tech stack so that you can
+use that to build your own Copilots and agents. That’s it. That’s as simple as it is. Every
+app is becoming an AI app, and over the past year we’ve seen unbelievable momentum in
+what people have been able to build.
+Take a great example like NASA. Data scientists who built the Earth Copilot have all
+these enormous amounts of geospatial data, contains tremendous insights. Everything
+from climate and air quality that can be super helpful for urban planning or disaster
+response, but its scale and complexity are quite difficult to analyze. And so, the Earth
+Copilot makes it possible for anyone to navigate all this data using just natural language
+for the first time. For example, you can see how air quality right here in Chicago has
+changed over the years. That’s an analysis you can now just do in natural language.
+On the other side of the world, Toyota has built Obeya, meaning big room in Japanese.
+Their ambition is to create this big room of AI agents that are accessible 24/7 for all their
+engineers. It’s all grounded in their engineering designs, regulatory information, even
+handwritten docs. You can OCR them, put them into this Copilot. Engineers can ask it
+anything from how to make a car run faster or something super specific about some
+emissions output. And so, these are all the examples.
+In fact, right after my keynote, you’re going to hear from Lance from Blackrock in
+conversation with Judson on what they’re doing with Aladdin and Azure. It’s really an
+exciting work that they’re doing, so it’ll be great to listen to Lance. These are some
+examples on how the stack is being used today, and we’re just getting started. Adding, in
+fact, capabilities across every layer of the tech stack here, starting right at the
+infrastructure layer. We continue to build out Azure as the world’s computer. Over the
+past year, we have added and made so many data centers in 15 countries, data center
+investments in 15 countries across six continents. We now have 60+ data center regions,
+more than any other provider.
+We’re innovating to build these data centers sustainably. I’m really proud of this. In fact,
+we just announced two data centers in Northern Virginia built completely with low-
+carbon, cross-laminated timber to reduce embodied carbon footprint. This new
+construction model will really reduce the carbon footprint of our data centers by 35%
+compared to any conventional steel construction, so it’s exciting to see this. — (Cheers,
+applause)— And when people say data center is the computer, increasingly we really
+think of the system starting right from the construction all the way.
+At the network level, we’re delivering innovation in hollow-core fiber. This technology
+delivers absolute breakthroughs, whether it’s speed or bandwidth or power efficiency, in
+fact, compared to traditional fiber. Obviously, photons travel faster in air compared to
+glass, and earlier this year, we demonstrated fiber loss at the lowest level ever achieved in
+optical fiber. This low fiber loss is absolutely critical for data center to data center
+connectivity, and we now have production routes of hollow fiber running. In fact, we’re
+going to add 15,000 additional kilometers planned over the next 24 months.
+We’re not stopping there. We’re extending our cloud to the edge, and today we’re going
+further and announcing Azure Local. — (Cheers, applause)— This is, again, something
+that many of you have asked us to do, which is bring Azure Arc all the way to all of the
+edge with Azure Local extends Azure services across hybrid, multi-cloud and edge
+locations with one central control plane. It brings Azure services to customers’
+distributed locations, whether they’re in retail, hospitality or manufacturing, so that they
+can run their mission-critical workloads, some of these new AI workloads across cloud
+and edge.
+A great example of this is how Armada has taken Azure Local and in fact, with Starlink
+connectivity, is helping Marriott with full resilience even in the midst of real extreme
+weather events. Now, when it comes to silicon, our Cobalt 100 VMs became generally
+available last month, and customers and partners, whether it’s Databricks or Siemens,
+Snowflake, are seeing up to 50% improvements in price performance with these virtual
+machines. In fact, our own media processing capabilities in Teams are now all 100% on
+Cobalt 100 as well, and we’re not stopping there with silicon innovation.
+Our approach to silicon includes deep commitment to security, and I’m excited to
+announce our first in-house security chip, Azure integrated HSM. This is it. — (Cheers,
+applause) — This is a dedicated hardware security module that hardens key management,
+managing encryption and key signing, that can remain within the bounds of the device
+without compromising performance or security. And starting next year, it’ll be part of
+every new server deployed on Azure, enhancing security for both confidential computing
+as well as general-purpose virtual machines and containers. We are very, very excited
+about this new silicon innovation.
+Beyond hardening security, ultimately, when we think about systems innovation at the
+silicon layer, it is about removing bottlenecks that stand in the way, whether it’s
+performance, latency or resource constraints. That’s the opportunity we have as a
+hyperscaler. When you look at the workload, you look at the system, you say, what can
+we offload to silicon just to kind of get rid of some of these constraints. And so, that’s
+why today we’re very excited about expanding Azure boost with our first in-house DPU.
+DPUs are processors specifically architected to accelerate data-centric workloads,
+absorbing multiple components of a traditional server into a single piece of silicon.
+It runs, in fact, cloud storage workloads at three times less power and four times the
+performance. I mean, what this will do for storage is what SmartNIC did for hosts in the
+network, these are going to do for storage. And of course, when it comes to AI, we are
+continuing to build out these new data center intelligence factories. We’re extending all
+of Azure as the world’s computer to basically be these intelligence factories. Tokens for
+Watt plus dollar is the best way to think about the new currency of performance. It’s all
+about maximizing that value and doing it in the most efficient way.
+The pace of innovation across the industry is simply phenomenal, and we are working
+with our partners to bring you more choice across cost and performance. That includes
+our deep partnership with Nvidia, which of course spans bringing their own workloads,
+whether it’s Omniverse or DGX cloud onto Azure, but of course, working with them at
+the core system level on AI infrastructure.
+In fact, last month we brought new clusters with H200 that became available. We’re very
+excited about it. And our systems stack optimization, we have done between H100 to
+H200 continues to push on the total performance that we can deliver to anyone doing
+inference or training. And today we are announcing the preview of Nvidia Blackwell AI
+infrastructure on Azure.
+(Applause)
+Now, Blackwell is pretty amazing. It’s got this 72 GPUs on a single NV Link domain,
+and then you combine it with InfiniBand on the back end. These racks are optimized for
+the most cutting-edge training workloads and inference workloads, so we are very excited
+about having Blackwell. And we’re also continuing to work very closely with AMD.
+We’re the first cloud that offered VMs powered by AMD’s MI300X GPU, and we’re
+using that infrastructure to power Azure OpenAI, so that’s in our fleet today. And today
+we’re introducing, in fact, Azure HB v5, which we co-engineered with AMD. It’s up to
+eight times faster than any other cloud virtual machine, setting a new standard for high-
+performance computing, and it will be generally available next year.
+(Applause)
+And now, of course, when it comes to our own AI accelerator, MAIA 100, I’m really
+excited to say that it’s right now live in the US East region supporting Azure OpenAI
+inferencing one. In fact, one of the most impactful applications we built is our customer
+service today, and it’s all running today on MAIA 100 during all of the customer support
+workloads. It’s exciting to see MAIA make it into the fleet, and we’ll continue to
+improve it and scale it. We are contributing, in fact, our own systems innovation to the
+industry.
+Last year at Ignite, we showed our first-generation MAIA RAG, which was that liquid
+cooling sidekick. These can support cooling of GPUs and AI accelerators, not just our
+own MAIA systems, but we’re going to bring that innovation to Nvidia GB200. And
+you’ll see this in the show floor because this is the type of systems innovation to get that
+performance. Ultimately, this is all about really being able to bring compute storage
+network edge silicon to deliver that TCO performance for all of your workloads.
+Now, with that infrastructure layer, let’s move to the next one, which is data. There’s no
+AI without data. In order for you to build your AI applications, you need to be able to
+rendezvous your data with your AI compute effectively, and we are building out this full
+data estate to just do that. At the core of our platform is Microsoft Fabric, which we
+introduced last year at Ignite. It brings together all of your data, as well as all of your
+analytical workloads, into one unified experience with OneLake.
+In fact, in Fabric, you can easily unify your data no matter where it lives in Azure or
+whether it’s on premise, whether it’s on Amazon or GCP, you can create this data layer
+for AI workloads in one place. The momentum actually has been incredible. We have
+over 16,000 Fabric customers, including 70% of the Fortune 500. Today, we’re taking the
+next step with it. Until now, if you think about a typical data architecture, you required
+separate services for your operational stores and your analytical stores, and a lot of data
+had to be shuffled between these two.
+We are very excited to announce that we are bringing our flagship operational database,
+SQL Server, natively to Fabric with Microsoft Fabric Databases. Just like Fabric
+simplified every aspect of an organization’s analytical needs, we want to do the same for
+operational databases. Now, with Microsoft Fabric, customers have an enterprise data
+platform that serves all of their use cases. Whether it’s batch data, real time or even
+massive transactional performance, all in one unified product. And all of that data is in
+open-source formats in Fabric’s OneLake. This new database experience enables you to
+autonomously provision a database that’s secured by default in seconds for OLTP
+applications, while simultaneously creating that connection to analytical workloads right
+there inside of Fabric. You have both your operational and analytic workloads, essentially
+like a SaaS service.
+It integrates with developer tools like VS Code and GitHub, so you can now utilize your
+unified data estate and build applications. This creates a unified data platform with the
+ability to apply AI across all of your data, operational and analytical data. And for those
+that need additional customizations and control, our Azure databases offer just that and
+are optimized for AI.
+In fact, one of the things that we’re very, very focused on is vector search at scale
+because that’s one of the most important operations when it comes to AI and data. The
+DiskANN was developed by Microsoft Research to power that low-latency, high-scale,
+cost effective vector search. We ourselves have been using it for a while now for our
+400+ billion vector indexes in Bing, and with 10,000 or so real time updates and query
+latencies of less than even ten milliseconds.
+And today at Ignite, we are bringing this very powerful DiskANN technology to our
+Azure databases, including both PostgreSQL as well as Cosmos DB. Excited about this
+really cutting-edge stuff coming to databases.
+Now, let’s talk about so you have your infrastructure, you have your data, and now it’s
+time to build some apps. When it comes to applications, every application is an AI
+application. And every new generation of apps has brought a changing set of needs.
+Right? When it is the web or mobile or cloud you need to build a new app platform. The
+same thing is happening with AI. AI is transforming how we design and customize and
+manage apps today, and that’s why we are building out a first-class app server for the AI
+age, announcing Azure AI Foundry.
+With Foundry, we are unifying all of our models, tooling, safety and monitoring solutions
+into a single experience integrated with the most popular developer tools available as a
+standalone SDK and a portal. It all starts, in fact, with our approach to models. We know
+models and model choice obviously sit at the core of every use case. You want to be able
+to optimize for COGs, latency and performance, and we want to help you choose the
+right model for the right job. In fact, we now have 1,800 models in our catalog.
+OpenAI continues to make unbelievable innovation. They’re setting the pace around
+model innovation in everything they’re doing right. Even the latest open models are all
+available on Azure. In the last six months, Azure OpenAI consumption has more than
+doubled. But we also support all these other models, like open-source models from Meta
+and Mistral, as well as providers like Cohere, so that you all can choose the right model.
+In fact, no application uses one model. If you look at even Microsoft apps, they’re all
+thousands of models that are being optimized, fine-tuned, distilled, that all come together.
+And so new categories of models are also emerging. In fact, we’ve added over 20
+industry models designed for very specialized use cases from partners like Bayer, Page,
+Rockwell, Siemens, Site Machines and others. With all of this model diversity, it’s never
+been more important to have the right tools, though, to choose the models for the job at
+hand.
+With Foundry, we are adding model experimentation capabilities. Meaning for the first
+time, you’ll be able to experiment with several of these models, compare the outcomes,
+and choose the best model that works for you. In addition to our own offerings, we’re
+also announcing new collaboration to help developers accelerate this model
+customization. From data prep and generation to training eval experimentation with fine-
+tuned models, these are all the considerations of an app server.
+Our work with Gretel Labs and Scale AI helps developers remove data bottlenecks, make
+data AI ready for training. We are working with Statsig to help customers configure run
+these fast A/B tests using different models. New integrations with weights and biases
+brings a comprehensive suite of tools for tracking, evaluating, optimizing models using
+Azure OpenAI service.
+This is all available on Foundry. We are excited also to introduce a new service to help
+you simplify the creation of all of these AI-powered agents. Our new agent service helps
+developers build, deploy and scale AI apps that automate business processes. I showed
+you before how you can use Copilot Studio to build agents just with a few clicks, but as
+developers you want a code first approach to building an agent, and that’s what the agent
+service really enables. You can build agents that are grounded in data wherever it lives.
+Public data from the web, enterprise data in Microsoft 365, SharePoint. Or you can
+leverage, even Fabric’s OneLake to unify your data across all of your clouds.
+These agents then can take action, right? So, you want to be able to give action space to
+these agents. And you can take those 1,200-plus connectors we have in Logic Apps that
+we have been using in our app services, and you can connect it to the agent runtime. We
+also know that the multi-agent stuff is becoming pretty exciting. It’s evolving very, very
+quickly. And we are making sure that even at this very early stage, our agent service
+supports all the multi-agent frameworks, right? Which is Magentic-One, Autogen,
+Semantic, Kernel. You can use all of these within Foundry and agent services to build out
+your applications.
+AI apps have specific operational considerations as well. Right? Because when you build
+an application at your organizational level, you want to be able to manage AI costs,
+performance, safety and security. And that’s why we are very excited to share that we are
+bringing really new management capabilities to Foundry. For example, we are
+introducing AI reports that will help developers document and share their applications,
+use cases, and most importantly, eval results. Because I think one of the ways we’re
+going to be able to think about, and talk about, and reason about what your application
+does, is through the eval of the models on which it’s built.
+Safety is the most important feature of any AI app, and we’ll continue to ensure we have
+the best tools to build these secure AI apps, including things like prompt, shield, and so
+that you can detect and block manipulation of outputs for your business content. And
+today also we are announcing risk and safety evaluations for image content. That’s
+become a very important consideration right in Foundry. Now to show all of this AI
+Foundry and how you want to build applications, I wanted to invite up on stage Seth, to
+show you all of this in action. 
+Now, let’s go to dev tools. We have the best developer tools for this AI era. GitHub
+Copilot is by far the most widely adopted, used AI developer tool, and we are focused on
+making it even more of a game changer.
+Until recently, if you think about my own usage of Copilot, you can use the editor with
+completion, and you use chat no more. Now, with Copilot Edits, you get both of them to
+come together. We are bringing chat and inline editing together, so that you can easily
+make inline changes across a set of files. You can have a working set of files and then
+just use natural language to be able to change across all files. Copilot has gone full
+multifile.
+And with Workspaces, Copilot is the most advanced in the first agentic AI-native IDE.
+Copilot Workspaces leverages agents from start to finish. You can go from sort of
+basically, an issue to a spec to plan to code, all in natural language. And just last month at
+GitHub Universe, we added agents on both ends of the workflow, one for ideation and
+one for automatically building and repairing code.
+And we’re not just stopping with just writing code. We are building software agents
+across the entire lifecycle, from testing to deployment. And we can tackle these complex
+code maintenance tasks, like upgrading an app framework. Right here, you have this
+example of a Java framework where you’re applying updates, iterating until, in fact, that
+all of your code builds and all the tests pass. And so, that’s just an agent that’s doing that
+for you.
+Agents can also improve, in fact, performance. This is pretty cool, which is performance
+engineering agent effectively, by creating performance benchmarks, running them,
+iterating on the code, until, in fact, you find a solution, and you pass the performance
+evals.
+And finally, agents can also help you go seamlessly from idea to implementation all the
+way to production by creating all the resources on Azure and deploying it. Think of all of
+the DevOps functions and having an agent for it.
+And all of this innovation is what we’re working on. It will just ship in the months to
+come. We’re very excited about it.
+Now so far, we’ve talked a lot about how AI can drive productivity by understanding,
+fundamentally the language of business, but AI can also drive fundamental business
+transformation by understanding the language of nature and science.
+Science itself is becoming computed science, and that’s one of the reasons why we are
+focusing on delivering the systems and AI innovation to power breakthroughs in material
+science, chemistry, physics and more. And our new frontier in AI-powered science is
+moving from static prediction to dynamic prediction, meaning not just predicting the
+shape of the molecule, but understanding the dynamics their motion and how they
+interact, which is a critical step in developing new materials and new medicine.
+Earlier this month, in fact, Microsoft Research published in Nature this AI-driven
+simulation system that can accurately model protein behavior down to individual atom
+orders magnitude faster than ever before. This is, I think, a real breakthrough that will
+then help biomedical research and really, advances in areas such as drug discovery and
+protein design and enzyme engineering, all of these functions, because you need those
+dynamic systems to drive them.
+And this is not theoretical. We’re bringing together these advanced AI models and agents
+to help scientists reason over and orchestrate across the entire scientific method
+effectively. And we are already delivering on this vision of a platform for scientists with
+customers around the world.
+Novartis, for example, is using generative AI to design hundreds of new molecules for
+drug discovery projects, helping accelerate the process. Nissan has partnered with us to
+create a model to predict EV battery performance over time, improving it by something
+like 80%. Unilever is running lots of simulations to really accelerate their R&D, using
+AI. In fact, the Institute for Protein Design at the University of Washington, scientists are
+using our cloud to engineer new proteins from scratch that promise to be absolute game-
+changers in medicine and sustainability and other fields.
+Let’s just take a quick look.
+(Video segment.) (Applause.)
+SATYA NADELLA: It’s amazing to see it. Congratulations again to David, who was
+just awarded the Nobel Prize in Chemistry for his work. And it’s great to see
+RoseTTAFold is open source, and it’s available, in fact, right in that Azure AI Foundry
+catalog.
+(Applause.)
+Yeah. It’s the most accessible tool for scientists in the field. And so, it’s great to see all of
+the progress.
+Talking about AI for science, though, this new era of discovery can go into hyperdrive
+with quantum computing. To simulate the world, you have to fundamentally break free
+from the limitations of the von Neumann architecture and classical computing. And for
+that to happen, we need reliable qubits, not just noisy qubits that are currently available.
+And our Azure Quantum provides that unique virtualization technology that can extend
+any type of qubit, detect errors in physical qubit, correct them and reliably help compute
+all over them.
+In fact, earlier this year, our partner, Quantinuum, and us, we achieved a first-time ever
+record of reliable logical qubits; a huge, huge milestone for the industry. And then just a
+couple of months ago, we went further. We announced 12 reliable logical qubits. That
+was the record. And today, I’m really thrilled to announce yet another milestone, this
+time with Atom Computing. We just doubled the previous record, creating a machine of
+24 logical qubits.
+(Applause.)
+I mean, to just kind of put this in perspective, these logical qubits are all entangled,
+making it the foundation for the world’s most powerful quantum machines. And to give
+you a sense for why this matters, if you add 100 of these reliable qubits, you will have
+scientific quantum advantage, could be achieved. And so, and that will unlock, as you can
+imagine, the computing power to go solve some of the most pressing challenges we have.
+Discovering these solutions, or discovering these types of workloads, or running these
+type of workloads on classical computers is obviously impossible. And so, therefore, we
+are excited about these next generation of quantum computers that go beyond today’s
+noisy qubits.
+We are building, in fact, to that end, a first-of-a-kind, commercial offering with our
+partner, Atom Computing, which will combine our science solution in Azure and our
+quantum computing platform, that virtualization layer I talked about, with Atom’s
+quantum hardware into a full discovery suite for companies, as well as labs. This is going
+to be available to really accelerate scientific discovery.
+I want to close out by talking about sort of our core mission. This was a preview of what
+you’ll see throughout this week, across all of the three platforms, but at the same time,
+our mission is to empower every person and every organization on the planet to achieve
+more, one community and one country at a time.
+As we enter this middle innings of AI, it’s up to us to empower human achievement.
+That’s why, over the past year, we have helped train over 23 million people in AI and
+digital skills. And we are very committed to working to help millions more learn how to
+use AI, because learning these skills will change people’s lives. And in fact, it already
+has. Let’s roll the video.
+Thank you all very, very much. And have a fantastic Ignite.
