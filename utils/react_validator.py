@@ -4,7 +4,7 @@ def validate_trace_output(output: str) -> dict:
     issues = []
     passed = True
 
-    # ✅ Check for mandatory REACT components
+
     if "Final Answer:" not in output:
         passed = False
         issues.append("❌ Missing 'Final Answer:' block.")
@@ -21,7 +21,7 @@ def validate_trace_output(output: str) -> dict:
         passed = False
         issues.append("❌ Missing 'Observation:' block.")
 
-    # ✅ Check for lifted/generated quote distinction
+    
     lifted = "🔹" in output
     generated = "🧠" in output
     if not lifted:
@@ -29,7 +29,7 @@ def validate_trace_output(output: str) -> dict:
     if not generated:
         issues.append("⚠️ No 🧠 generated insight — lacks original reasoning.")
 
-    # ✅ Check for valid REACT step sequencing
+    
     react_blocks = re.findall(r"(Thought:.*?)(?=Thought:|Final Answer:|$)", output, re.DOTALL)
     for block in react_blocks:
         if "Action:" not in block or "Observation:" not in block:
