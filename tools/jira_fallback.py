@@ -5,7 +5,7 @@ def create_jira_ticket_fallback(base_url, auth, summary, description):
     url = f"{base_url}/rest/api/3/issue"
     payload = {
         "fields": {
-            "project": {"key": "ALT"},  # Use your real JIRA project key
+            "project": {"key": "AAD"},  
             "summary": summary,
             "description": description,
             "issuetype": {"name": "Task"}
