@@ -8,7 +8,8 @@ def create_gitlab_repo(token, name):
     return response.json()
 
 def create_poc_repo_gitlab_fallback(prompt: str) -> str:
-    token = "GITLAB_TOKEN"
+    
+    token = "gitlab-token"
     
     repo_name = "poc-core-migration"
     response = create_gitlab_repo(token, repo_name)
