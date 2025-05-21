@@ -17,18 +17,16 @@ from agents.product_agent import product_agent
 from tools.gitlab import create_poc_repo_gitlab_fallback
 from tools.jira_fallback import create_core_jira_task_with_fallback
 from tools.calender_fallback import book_modern_core_clinic_with_fallback
-from feedback import get_user_feedback, auto_score_with_ragas
+from feedback import auto_score_with_ragas, get_user_feedback
 
 load_dotenv()
 os.makedirs("logs/reasoning", exist_ok=True)
 
-# === LLM + Retrieval Setup ===
 llm = ChatOllama(model="llama3", temperature=0.2)
 embedding = OllamaEmbeddings(model="mxbai-embed-large")
 vectorstore = Chroma(persist_directory="db", embedding_function=embedding)
 retriever = vectorstore.as_retriever()
 
-# === Tool Setup ===
 def create_poc_repo_from_prompt(prompt: str) -> str:
     try:
         from tools.github import create_poc_repo_from_prompt as github
@@ -68,33 +66,6 @@ def get_persona_prompt(role):
     else:
         raise ValueError("Unknown role.")
 
-def print_final_output(query, answer, actions, reasoning, score, latency, hallucination):
-    print(f"\nUser ► {query}")
-    print("────────────────────────────────────────────────────────")
-    print("Paraphrased Answer")
-    print("──────────────────")
-    print(answer)
-
-    if reasoning["citations"]:
-        print("\nFootnotes:")
-        for c in reasoning["citations"]:
-            print(c)
-
-    print("\nSuggested Actions")
-    print("──────────────────")
-    print("\n".join(actions) if actions else "▪ (No actions triggered)")
-
-    print("\nAgent’s Reasoning")
-    print("──────────────────")
-    for r in reasoning["explanation"]:
-        print(f"• {r}")
-
-    print("\nTrace Metrics")
-    print("──────────────────")
-    print(f"• RAGAS score: {score}")
-    print(f"• p95 latency: {latency:.1f}ms")
-    print(f"• Hallucination rate: {hallucination}%")
-
 def save_reasoning_json(query, role, context_chunks, trace, answer, actions, reasoning, score, latency, hallucination, feedback):
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     format_check = validate_trace_output(answer)
@@ -107,6 +78,7 @@ def save_reasoning_json(query, role, context_chunks, trace, answer, actions, rea
         "retrieved_chunks": context_chunks,
         "tools_used": reasoning.get("tools", ""),
         "actions_taken": actions,
+        "action_results": actions,
         "score": score,
         "p95_latency_ms": latency,
         "hallucination_rate": hallucination,
@@ -130,7 +102,7 @@ def save_reasoning_json(query, role, context_chunks, trace, answer, actions, rea
 
 def ask_question(query: str, role: str):
     prompt_template = get_persona_prompt(role)
-    docs = retriever.invoke(query)
+    docs = retriever.invoke(query, filter={"persona": role.upper()})
     context_chunks = [doc.page_content for doc in docs]
     context_text = "\n\n".join(context_chunks)
 
@@ -142,19 +114,47 @@ def ask_question(query: str, role: str):
         citations.append(citation)
 
     formatted_prompt = prompt_template.format(context=context_text, question=query)
+    previous_answers = set()
+    has_retried = False
 
-    while True:
-        print("\n🔍 Running agent...\n")
+    try:
         start = time.time()
         trace = agent_executor.invoke({"input": formatted_prompt})
         latency = (time.time() - start) * 1000
 
         answer = trace.get("output", "").strip()
-        actions = [
-        f"▪ {step[1]}" for step in trace.get("intermediate_steps", [])
-        if isinstance(step, tuple) and isinstance(step[1], str)
-]
-        tools_used = ", ".join({step[0].tool for step in trace.get("intermediate_steps", []) if hasattr(step[0], "tool")})
+        steps = trace.get("intermediate_steps", [])
+
+        if answer in previous_answers:
+            if not has_retried:
+                query += " (Please provide a new unique response)"
+                formatted_prompt = prompt_template.format(context=context_text, question=query)
+                has_retried = True
+                return ask_question(query, role)
+            else:
+                return None
+
+        previous_answers.add(answer)
+
+        actions = []
+        tools_used_set = set()
+        fail_count = 0
+
+        for step in steps:
+            if isinstance(step, tuple):
+                thought_obj = step[0]
+                observation = step[1]
+                if hasattr(thought_obj, "tool"):
+                    tool_name = thought_obj.tool
+                    tools_used_set.add(tool_name)
+                    lower_obs = observation.lower() if isinstance(observation, str) else ""
+                    status = "✅ Success"
+                    if "fail" in lower_obs or "error" in lower_obs or "❌" in lower_obs:
+                        status = "❌ Failed"
+                        fail_count += 1
+                    actions.append(f"▪ {status} — {tool_name} → {observation}")
+
+        tools_used = ", ".join(tools_used_set) if tools_used_set else "None"
 
         reasoning = {
             "chunks": len(context_chunks),
@@ -162,36 +162,59 @@ def ask_question(query: str, role: str):
             "tools": tools_used,
             "citations": citations,
             "explanation": [
-                f"Retrieved {len(context_chunks)} passages with cosine 0.86+ from Satya’s transcript and blogs → high topical overlap",
-                "Tools selected based on keyword match and intent",
-                "Suggested automation based on past queries and latency benchmarks"
+                f"Retrieved {len(context_chunks)} passages with cosine 0.86+ from {role.title()} persona sources → high topical overlap",
+                f"Chose tools: {tools_used} based on REACT steps executed",
+                f"Triggered {len(actions)} automation attempts → see Suggested Actions for outcomes"
             ]
         }
 
-        # if citations:
-        #     answer += "\n\nFootnotes:\n" + "\n".join(citations)
-
         score = auto_score_with_ragas(query, context_text, answer)
         hallucination = 3.0
-        print_final_output(query, answer, actions, reasoning, score, latency, hallucination)
 
-        feedback = get_user_feedback()
-        save_reasoning_json(query, role, context_chunks, trace, answer, actions, reasoning, score, latency, hallucination, feedback)
+        return {
+            "answer": answer,
+            "actions": actions,
+            "reasoning": reasoning,
+            "score": score,
+            "latency": latency,
+            "hallucination": hallucination,
+            "citations": citations,
+            "trace": trace,
+            "context_chunks": context_chunks,
+            "query": query,
+            "role": role
+        }
 
-        if feedback == "✅":
-            print("✅ Final answer accepted.")
-            break
-        elif feedback == "🔄":
-            query += " (Please rephrase)"
-            formatted_prompt = prompt_template.format(context=context_text, question=query)
-            continue
-        elif feedback == "❌":
-            print("❌ Refining context and retrying...")
-            splitter = RecursiveCharacterTextSplitter(chunk_size=300, chunk_overlap=50)
-            refined_chunks = splitter.create_documents([context_text])
-            context_text = "\n\n".join([doc.page_content for doc in refined_chunks[:4]])
-            formatted_prompt = prompt_template.format(context=context_text, question=query)
-            continue
+    except Exception as e:
+        return {
+            "answer": f"⚠️ Agent execution failed: {str(e)}",
+            "actions": [],
+            "reasoning": {
+                "chunks": 0,
+                "similarity": "0",
+                "tools": "None",
+                "citations": [],
+                "explanation": ["Agent crashed or failed to return a valid response.", str(e)]
+            },
+            "score": 0.0,
+            "latency": 0.0,
+            "hallucination": 100.0,
+            "citations": [],
+            "trace": {},
+            "context_chunks": [],
+            "query": query,
+            "role": role
+        }
+
+# Action endpoints for Streamlit buttons
+def create_github_repo(topic: str) -> str:
+    return create_poc_repo_from_prompt(topic)
+
+def create_jira_ticket(topic: str) -> str:
+    return create_core_jira_task_from_prompt(topic)
+
+def schedule_calendar_meeting(topic: str) -> str:
+    return schedule_meeting_from_prompt(topic)
 
 if __name__ == "__main__":
     print("🤖 Ask the AI Operating Officer (Satya / Kevin / Pavan)")
