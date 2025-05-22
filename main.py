@@ -6,7 +6,7 @@ import numpy as np
 from dotenv import load_dotenv
 from datetime import datetime
 from sklearn.metrics.pairwise import cosine_similarity
-
+import requests
 from langchain.agents import initialize_agent, Tool
 from langchain.agents.agent_types import AgentType
 from langchain_community.vectorstores import Chroma
@@ -22,7 +22,7 @@ from tools.gitlab import create_poc_repo_gitlab_fallback
 from tools.jira_fallback import create_core_jira_task_with_fallback
 from tools.calender_fallback import book_modern_core_clinic_with_fallback
 from feedback import auto_score_with_ragas
-
+from urllib.parse import quote_plus
 load_dotenv()
 os.makedirs("logs/reasoning", exist_ok=True)
 
@@ -174,6 +174,53 @@ def save_reasoning_json(query, role, context_chunks, trace, answer, actions, rea
         json.dump(log, f, indent=2)
 
 
+
+
+def rephrase_for_github_search(query: str) -> str:
+    prompt = (
+        f"Rewrite the following question into a short GitHub search query. "
+        f"Only return the raw search phrase — no explanation, no markdown, no code block.\n\n"
+        f"Example:\n"
+        f"Input: How can I build a chatbot using LangChain?\n"
+        f"Output: langchain chatbot example\n\n"
+        f"Now rewrite:\n"
+        f"Input: {query}\n"
+        f"Output:"
+    )
+    response = llm.invoke(prompt).content.strip()
+    response = response.replace("`", "").strip()
+    return response.splitlines()[0]
+
+def search_github_repositories(query: str) -> list:
+    import requests
+    from urllib.parse import quote_plus
+
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "User-Agent": "AI-Operating-Officer"
+    }
+    encoded_query = quote_plus(query)
+    params = {
+        "q": encoded_query,
+        "sort": "stars",
+        "order": "desc",
+        "per_page": 5
+    }
+
+    try:
+        response = requests.get("https://api.github.com/search/repositories", headers=headers, params=params)
+        response.raise_for_status()
+        items = response.json().get("items", [])
+
+        if not items:
+            return ["❗ No matching GitHub repositories found."]
+
+        return [f"[{repo['full_name']}]({repo['html_url']})" for repo in items]
+    except Exception as e:
+        return [f"❌ GitHub search failed: {str(e)}"]
+
+
+
 def ask_question(query: str, role: str):
     docs = retriever.invoke(query, filter={"persona": role.upper()})
     context_chunks = [doc.page_content for doc in docs]
@@ -230,6 +277,10 @@ def ask_question(query: str, role: str):
 # Action endpoints for Streamlit buttons
 def create_github_repo(topic: str) -> str:
     return create_poc_repo_from_prompt(topic)
+
+def search_github(query: str) -> list:
+    refined_query = rephrase_for_github_search(query)
+    return search_github_repositories(refined_query)
 
 def create_jira_ticket(topic: str) -> str:
     return create_core_jira_task_from_prompt(topic)
