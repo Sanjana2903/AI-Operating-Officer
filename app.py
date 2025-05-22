@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-from main import ask_question, create_github_repo, create_jira_ticket, schedule_calendar_meeting, save_reasoning_json
+from main import ask_question, create_github_repo, create_jira_ticket, schedule_calendar_meeting, save_reasoning_json, search_github
 
 st.set_page_config(page_title="AI Operating Officer", layout="wide")
 st.title("🤖 AI Operating Officer")
@@ -67,7 +67,7 @@ if st.session_state.last_result:
     st.markdown(f"- **Hallucination Rate:** {result['hallucination']}%")
 
     st.subheader("⚙️ Trigger Automation")
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4 = st.columns(4)
     # with col1:
     #     if st.button("📁 Create GitHub Repo"):
     #         repo_link = create_github_repo(st.session_state.last_query)
@@ -87,6 +87,15 @@ if st.session_state.last_result:
                     github_fallback = os.getenv("GITHUB_MANUAL_URL", "https://github.com/new")
                     st.error(f"❌ GitHub repo creation failed: {str(e)}")
                     st.markdown(f"[Manually create repo →]({github_fallback})", unsafe_allow_html=True)
+    with col2:                
+        if st.button("🔍 Search GitHub Repos"):
+            with st.spinner("Searching GitHub..."):
+                repos = search_github(st.session_state.last_query)
+                st.markdown("**Top GitHub Repositories:**")
+                for repo in repos:
+                    st.markdown(f"- {repo}")
+                result["actions"].append("▪ ✅ GitHub Search Completed")
+
 
     # with col2:
     #     if st.button("🗂️ Create JIRA Task"):
@@ -105,7 +114,7 @@ if st.session_state.last_result:
     #         meeting_info = schedule_calendar_meeting(st.session_state.last_query)
     #         st.success(f"Meeting Scheduled: {meeting_info}")
     #         result["actions"].append(f"▪ ✅ Success — Calendar → {meeting_info}")
-    with col2:
+    with col3:
         if st.button("🗂️ Create JIRA Task"):
             with st.spinner("Creating JIRA Task..."):
                 try:
@@ -126,7 +135,7 @@ if st.session_state.last_result:
                         unsafe_allow_html=True
                     )
 
-    with col3:
+    with col4:
         if st.button("📅 Schedule Meeting"):
             with st.spinner("Scheduling meeting..."):
                 try:
