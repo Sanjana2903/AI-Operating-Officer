@@ -67,7 +67,7 @@ streamlit run app.py
 | **4. Tool Invocation** | If an `Action:` is detected, the system attempts the corresponding automation (GitHub repo, JIRA ticket, calendar event). |
 | **5. Fallbacks** | If tool execution fails, fallback URLs are shown (manual GitHub/JIRA/Calendar link). |
 | **6. Validation & Scoring** | The full REACT trace is validated. RAGAS scores (F1 + hallucination) are computed. |
-| **7. Display Output** | Final answer is shown in the UI with:<br>📘 Lifted Quotes + Footnotes<br>🔧 Suggested Actions (tool links or fallbacks)<br>🧠 Agent’s Reasoning |
+| **7. Display Output** | Final answer is shown in the UI with:<br> Paraphrased answer (📘 Lifted Quotes + Footnotes)<br> Suggested Actions (tool links or fallbacks)<br> Agent’s Reasoning |
 | **8. Feedback Loop** | User gives feedback (✅ or ❌), saved to reasoning logs for future analysis. |
 
 ## Personas Used
