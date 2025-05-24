@@ -58,13 +58,25 @@ if st.session_state.last_result:
         st.markdown("▪ (No actions triggered)")
 
     st.subheader("🧠 Agent’s Reasoning")
-    for r in result["reasoning"]["explanation"]:
-        st.markdown(f"• {r}")
+    if isinstance(result["reasoning"]["explanation"], list):
+        for r in result["reasoning"]["explanation"]:
+            st.markdown(f"• {r}")
+    else:
+        st.warning(result["reasoning"]["explanation"])
+
 
     st.subheader("📊 Trace Metrics")
-    st.markdown(f"- **RAGAS Score:** {result['score']}")
-    st.markdown(f"- **Latency:** {result['latency']:.1f}ms")
-    st.markdown(f"- **Hallucination Rate:** {result['hallucination']}%")
+    col1, col2, col3, col4 = st.columns(4)
+
+    # Format hallucination % (0.18 → 18%)
+    hallucination_percent = round(result['hallucination'] * 100, 1)
+
+    # Show latency, RAGAS F1, hallucination rate, and DeepEval pass/fail
+    col1.metric("Latency", f"{result['latency']:.0f} ms")
+    col2.metric("RAGAS F1 Score", f"{result['score']:.2f}")
+    col3.metric("Hallucination", f"{hallucination_percent} %")
+    col4.metric("DeepEval", "Pass" if result.get("deepeval_passed", False) else "Fail")
+
 
     st.subheader("⚙️ Trigger Automation")
     col1, col2, col3, col4 = st.columns(4)
@@ -159,18 +171,20 @@ if st.session_state.last_result:
         with col_a:
             if st.button("✅ Accept"):
                 save_reasoning_json(
-                    result["query"],
-                    result["role"],
-                    result["context_chunks"],
-                    result["trace"],
-                    result["answer"],
-                    result["actions"],
-                    result["reasoning"],
-                    result["score"],
-                    result["latency"],
-                    result["hallucination"],
-                    "✅"
-                )
+                result["query"],
+                result["role"],
+                result["context_chunks"],
+                result["trace"],
+                result["answer"],
+                result["actions"],
+                result["reasoning"],
+                result["score"],
+                result["latency"],
+                result["hallucination"],
+                "✅",
+                result.get("deepeval_passed", False)
+            )
+
                 st.session_state.feedback_given = True
                 st.success("Feedback recorded: Accepted")
                 st.rerun()
@@ -204,7 +218,8 @@ if st.session_state.last_result:
                     new_result["score"],
                     new_result["latency"],
                     new_result["hallucination"],
-                    "❌"
+                    "❌", 
+                    new_result.get("deepeval_passed", False)
                 )
                 st.rerun()
     else:
