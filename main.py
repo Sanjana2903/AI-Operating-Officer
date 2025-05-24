@@ -23,13 +23,22 @@ from tools.jira_fallback import create_core_jira_task_with_fallback
 from tools.calender_fallback import book_modern_core_clinic_with_fallback
 from feedback import auto_score_with_ragas
 from urllib.parse import quote_plus
+from ragas import evaluate
+from ragas.metrics import faithfulness, answer_relevancy
+from datasets import Dataset
+from deepeval import assert_test
+from deepeval.metrics import FaithfulnessMetric, AnswerRelevancyMetric, ContextualPrecisionMetric
+from deepeval.test_case import LLMTestCase
+
 load_dotenv()
+
 os.makedirs("logs/reasoning", exist_ok=True)
 
 llm = ChatOllama(model="llama3", temperature=0.2)
 embedding = OllamaEmbeddings(model="mxbai-embed-large")
 vectorstore = Chroma(persist_directory="db", embedding_function=embedding)
-retriever = vectorstore.as_retriever()
+retriever = vectorstore.as_retriever(search_type="mmr", search_kwargs={"k": 4})
+
 
 def split_into_sentences(text):
     return re.split(r'(?<=[.!?]) +', text.strip())
@@ -57,17 +66,16 @@ def generate_paraphrased_answer(docs, query, role):
     quote_text = "\n".join(numbered_quotes)
     prompt = (
         f"You are a technical writer summarizing direct quotes from {role.title()}-level sources.\n\n"
-        f"Write a single paragraph that summarizes the key recommendation about \"{query}\".\n"
-        f"• Use lifted quotes for insights and cite them inline using [1], [2] style footnotes.\n"
-        f"• You may add one or two generated (original) insights, but they should not be footnoted.\n"
-        f"• If an idea is supported by more than one quote, combine footnotes like [1][3].\n"
-        f"• Do NOT invent quotes or citations.\n\n"
+        f"Write a single paragraph summarizing the key recommendation about '{query}'.\n"
+        f"• Use only the lifted quotes from below.\n"
+        f"• Cite them inline using [1], [2] footnotes.\n"
+        f"• Do NOT invent or add any new facts or opinions.\n"
+        f"• If multiple quotes support a point, cite [1][3].\n\n"
         f"Quotes:\n{quote_text}"
     )
 
     answer = llm.invoke(prompt).content.strip()
 
-    # Find used footnote numbers like [1], [2]
     used_ids = sorted(set(map(int, re.findall(r"\[(\d+)\]", answer))))
     citations = [
         f"[{i}. {source_map[i]['name']}]({source_map[i]['url']})"
@@ -79,6 +87,7 @@ def generate_paraphrased_answer(docs, query, role):
         "paraphrased_blocks": [{"type": "generated", "text": answer}],
         "citations": citations
     }
+
 
 
 def generate_suggested_actions(query, summary):
@@ -139,7 +148,7 @@ def get_persona_prompt(role):
     else:
         raise ValueError("Unknown role.")
     
-def save_reasoning_json(query, role, context_chunks, trace, answer, actions, reasoning, score, latency, hallucination, feedback):
+def save_reasoning_json(query, role, context_chunks, trace, answer, actions, reasoning, score, latency, hallucination, feedback, deepeval_passed):
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     format_check = validate_trace_output(answer)
 
@@ -155,6 +164,7 @@ def save_reasoning_json(query, role, context_chunks, trace, answer, actions, rea
         "score": score,
         "p95_latency_ms": latency,
         "hallucination_rate": hallucination,
+        "deepeval_passed": deepeval_passed,
         "user_feedback": feedback,
         "reasoning_notes": reasoning,
         "format_issues": format_check["issues"],
@@ -168,10 +178,13 @@ def save_reasoning_json(query, role, context_chunks, trace, answer, actions, rea
                 "observation": step[1] if isinstance(step, tuple) else None
             }
             for step in trace.get("intermediate_steps", [])
-        ]
+        ] if isinstance(trace, dict) and "intermediate_steps" in trace else []
+
     }
+
     with open(f"logs/reasoning/reasoning_{timestamp}.json", "w") as f:
         json.dump(log, f, indent=2)
+
 
 
 
@@ -221,59 +234,165 @@ def search_github_repositories(query: str) -> list:
 
 
 
+def calculate_ragas_metrics_actual(query: str, contexts_list: list[str], answer: str):
+    dataset = Dataset.from_dict({
+        'question': [query],
+        'answer': [answer],
+        'contexts': [contexts_list]
+    })
+
+    selected_metrics = [faithfulness, answer_relevancy]
+    results = evaluate(dataset, metrics=selected_metrics)
+
+    # Handle both list and scalar return types
+    faithfulness_score = results['faithfulness'][0] if isinstance(results['faithfulness'], list) else results['faithfulness']
+    relevancy_score = results['answer_relevancy'][0] if isinstance(results['answer_relevancy'], list) else results['answer_relevancy']
+
+    final_score = (faithfulness_score + relevancy_score) / 2
+    hallucination = 1.0 - faithfulness_score
+
+    return round(final_score, 2), round(hallucination, 2)
+
+
+# --- Main Question Handler ---
 def ask_question(query: str, role: str):
-    docs = retriever.invoke(query, filter={"persona": role.upper()})
-    context_chunks = [doc.page_content for doc in docs]
+    try:
+        start_time = time.time()
+        docs = retriever.invoke(query, filter={"persona": role.lower()})
+        if not docs:
+            docs = retriever.invoke(query)  
+        context_chunks_content = [doc.page_content for doc in docs]
 
-    query_embedding = embedding.embed_query(query)
-    doc_embeddings = [embedding.embed_query(doc.page_content) for doc in docs]
-    similarity = float(np.mean(cosine_similarity([query_embedding], doc_embeddings)[0])) if doc_embeddings else 0.0
+        if not context_chunks_content:
+            return {
+                "answer": "No relevant content was found for this query and persona.",
+                "paraphrased_blocks": [],
+                "actions": [],
+                "reasoning": {"explanation": "Retriever returned no chunks."},
+                "score": 0.0,
+                "latency": -1,
+                "hallucination": 1.0,
+                "deepeval_passed": False,
+                "citations": [],
+                "trace": {},
+                "context_chunks": [],
+                "query": query,
+                "role": role
+            }
 
-    summary_out = generate_paraphrased_answer(docs, query, role)
-    actions = generate_suggested_actions(query, summary_out["answer"])
+        top_chunk_emb = embedding.embed_documents([context_chunks_content[0]])[0]
 
-    trace = agent_executor.invoke({"input": query})
-    steps = trace.get("intermediate_steps", [])
-    tool_set = set()
-    action_lines = []
 
-    for step in steps:
-        if isinstance(step, tuple) and hasattr(step[0], "tool"):
-            tool_name = step[0].tool
-            observation = step[1]
-            tool_set.add(tool_name)
-            status = "✅ Success"
-            if "fail" in observation.lower() or "❌" in observation.lower():
-                status = "❌ Failed"
-            action_lines.append(f"▪ {status} — {tool_name} → {observation}")
+        query_emb = embedding.embed_query(query)
+        top_chunk_emb = embedding.embed_documents([context_chunks_content[0]])[0]
+        similarity = sum(a * b for a, b in zip(query_emb, top_chunk_emb)) / (
+            sum(a * a for a in query_emb) ** 0.5 * sum(b * b for b in top_chunk_emb) ** 0.5
+        )
 
-    tools_used = ", ".join(tool_set) if tool_set else "None"
-    reasoning = {
-        "chunks": len(context_chunks),
-        "similarity": f"{similarity:.2f} (cosine)",
-        "tools": tools_used,
-        "citations": summary_out["citations"],
-        "explanation": generate_agent_reasoning(len(context_chunks), similarity, role.title(), tools_used, len(action_lines))
-    }
+        summary_out = generate_paraphrased_answer(docs, query, role)
+        actions_generated = generate_suggested_actions(query, summary_out["answer"])
 
-    score = auto_score_with_ragas(query, "\n\n".join(context_chunks), summary_out["answer"])
-    hallucination = 3.0
+        agent_loader = {
+            "ceo": ceo_agent,
+            "cto": cto_agent,
+            "product": product_agent
+        }.get(role.lower(), ceo_agent)
 
-    return {
-        "answer": summary_out["answer"],
-        "paraphrased_blocks": summary_out["paraphrased_blocks"],
-        "actions": action_lines + actions,
-        "reasoning": reasoning,
-        "score": score,
-        "latency": 0.0,
-        "hallucination": hallucination,
-        "citations": summary_out["citations"],
-        "trace": trace,
-        "context_chunks": context_chunks,
-        "query": query,
-        "role": role
-    }
+        agent_executor = agent_loader()
+        trace = agent_executor.invoke({
+            "question": query,
+            "context": "\n\n".join(context_chunks_content)
+        })
+        steps = trace.get("intermediate_steps", []) if isinstance(trace, dict) else []
 
+        tool_set = set()
+        action_lines = []
+        for step in steps:
+            if isinstance(step, tuple) and hasattr(step[0], "tool"):
+                tool_name = step[0].tool
+                observation = step[1]
+                tool_set.add(tool_name)
+                status = "✅ Success"
+                if isinstance(observation, str) and ("fail" in observation.lower() or "❌" in observation.lower()):
+                    status = "❌ Failed"
+                action_lines.append(f"▪ {status} — {tool_name} → {observation}")
+
+        tools_used = ", ".join(tool_set) if tool_set else "None"
+
+        ragas_score_f1, hallucination_rate = calculate_ragas_metrics_actual(
+            query, context_chunks_content, summary_out["answer"]
+        )
+
+        test_case = LLMTestCase(
+        input=query,
+        actual_output=summary_out["answer"],
+        expected_output=summary_out["answer"],
+        retrieval_context=context_chunks_content
+    )
+
+        deepeval_passed = False
+        try:
+            assert_test(
+                test_case,
+                metrics=[
+                    FaithfulnessMetric(threshold=0.8),
+                    AnswerRelevancyMetric(threshold=0.8),
+                    ContextualPrecisionMetric(threshold=0.8),
+                ]
+            )
+            deepeval_passed = True
+        except Exception as dee:
+            print("🔍 DeepEval failed:", dee)
+
+        reasoning = {
+            "chunks": len(context_chunks_content),
+            "similarity": f"{similarity:.2f} (cosine)",
+            "tools": tools_used,
+            "citations": summary_out["citations"],
+            "ragas_f1": ragas_score_f1,
+            "hallucination_rate": hallucination_rate,
+            "deepeval_passed": deepeval_passed,
+            "explanation": generate_agent_reasoning(
+                len(context_chunks_content), similarity, role.title(), tools_used, len(action_lines)
+            )
+        }
+
+        end_time = time.time()
+        latency_ms = (end_time - start_time) * 1000
+
+        return {
+            "answer": summary_out["answer"],
+            "paraphrased_blocks": summary_out["paraphrased_blocks"],
+            "actions": action_lines + actions_generated,
+            "reasoning": reasoning,
+            "score": ragas_score_f1,
+            "latency": latency_ms,
+            "hallucination": hallucination_rate,
+            "deepeval_passed": deepeval_passed,
+            "citations": summary_out["citations"],
+            "trace": trace,
+            "context_chunks": context_chunks_content,
+            "query": query,
+            "role": role
+        }
+
+    except Exception as e:
+        print(f"❌ ask_question failed: {e}")
+        return {
+            "answer": "An error occurred during processing.",
+            "paraphrased_blocks": [],
+            "actions": [],
+            "reasoning": {"explanation": str(e)},
+            "score": 0.0,
+            "latency": -1,
+            "hallucination": 1.0,
+            "deepeval_passed": False,
+            "citations": [],
+            "trace": {},
+            "context_chunks": [],
+            "query": query,
+            "role": role
+        }
 # Action endpoints for Streamlit buttons
 def create_github_repo(topic: str) -> str:
     return create_poc_repo_from_prompt(topic)
