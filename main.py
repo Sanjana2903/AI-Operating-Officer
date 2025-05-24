@@ -244,7 +244,6 @@ def calculate_ragas_metrics_actual(query: str, contexts_list: list[str], answer:
     selected_metrics = [faithfulness, answer_relevancy]
     results = evaluate(dataset, metrics=selected_metrics)
 
-    # Handle both list and scalar return types
     faithfulness_score = results['faithfulness'][0] if isinstance(results['faithfulness'], list) else results['faithfulness']
     relevancy_score = results['answer_relevancy'][0] if isinstance(results['answer_relevancy'], list) else results['answer_relevancy']
 
@@ -293,7 +292,6 @@ def ask_question(query: str, role: str):
             query, context_chunks_content, summary_out["answer"]
         )
 
-        # 🔁 Retry logic begins — fallback if RAGAS < 0.8
         if ragas_score_f1 < 0.8:
             print("🔁 RAGAS score < 0.8 — retrying with expanded retrieval (k=8)")
             fallback_retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 8})
@@ -312,7 +310,6 @@ def ask_question(query: str, role: str):
                     context_chunks_content = fallback_chunks
                     ragas_score_f1 = fallback_score
                     hallucination_rate = fallback_hallucination
-        # 🔁 Retry logic ends
 
         agent_loader = {
             "ceo": ceo_agent,
