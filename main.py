@@ -37,7 +37,7 @@ os.makedirs("logs/reasoning", exist_ok=True)
 llm = ChatOllama(model="llama3", temperature=0.2)
 embedding = OllamaEmbeddings(model="mxbai-embed-large")
 vectorstore = Chroma(persist_directory="db", embedding_function=embedding)
-retriever = vectorstore.as_retriever(search_type="mmr", search_kwargs={"k": 4})
+retriever = vectorstore.as_retriever(search_type="mmr", search_kwargs={"k": 8})
 
 
 def split_into_sentences(text):
@@ -260,7 +260,7 @@ def ask_question(query: str, role: str):
         start_time = time.time()
         docs = retriever.invoke(query, filter={"persona": role.lower()})
         if not docs:
-            docs = retriever.invoke(query)  
+            docs = retriever.invoke(query)
         context_chunks_content = [doc.page_content for doc in docs]
 
         if not context_chunks_content:
@@ -280,9 +280,6 @@ def ask_question(query: str, role: str):
                 "role": role
             }
 
-        top_chunk_emb = embedding.embed_documents([context_chunks_content[0]])[0]
-
-
         query_emb = embedding.embed_query(query)
         top_chunk_emb = embedding.embed_documents([context_chunks_content[0]])[0]
         similarity = sum(a * b for a, b in zip(query_emb, top_chunk_emb)) / (
@@ -291,6 +288,31 @@ def ask_question(query: str, role: str):
 
         summary_out = generate_paraphrased_answer(docs, query, role)
         actions_generated = generate_suggested_actions(query, summary_out["answer"])
+
+        ragas_score_f1, hallucination_rate = calculate_ragas_metrics_actual(
+            query, context_chunks_content, summary_out["answer"]
+        )
+
+        # 🔁 Retry logic begins — fallback if RAGAS < 0.8
+        if ragas_score_f1 < 0.8:
+            print("🔁 RAGAS score < 0.8 — retrying with expanded retrieval (k=8)")
+            fallback_retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 8})
+            fallback_docs = fallback_retriever.invoke(query)
+            fallback_chunks = [doc.page_content for doc in fallback_docs]
+
+            if fallback_chunks:
+                fallback_summary = generate_paraphrased_answer(fallback_docs, query, role)
+                fallback_score, fallback_hallucination = calculate_ragas_metrics_actual(
+                    query, fallback_chunks, fallback_summary["answer"]
+                )
+
+                if fallback_score > ragas_score_f1:
+                    print(f"✅ Score improved: {ragas_score_f1} → {fallback_score}")
+                    summary_out = fallback_summary
+                    context_chunks_content = fallback_chunks
+                    ragas_score_f1 = fallback_score
+                    hallucination_rate = fallback_hallucination
+        # 🔁 Retry logic ends
 
         agent_loader = {
             "ceo": ceo_agent,
@@ -319,16 +341,12 @@ def ask_question(query: str, role: str):
 
         tools_used = ", ".join(tool_set) if tool_set else "None"
 
-        ragas_score_f1, hallucination_rate = calculate_ragas_metrics_actual(
-            query, context_chunks_content, summary_out["answer"]
-        )
-
         test_case = LLMTestCase(
-        input=query,
-        actual_output=summary_out["answer"],
-        expected_output=summary_out["answer"],
-        retrieval_context=context_chunks_content
-    )
+            input=query,
+            actual_output=summary_out["answer"],
+            expected_output=summary_out["answer"],
+            retrieval_context=context_chunks_content
+        )
 
         deepeval_passed = False
         try:
@@ -393,6 +411,7 @@ def ask_question(query: str, role: str):
             "query": query,
             "role": role
         }
+
 # Action endpoints for Streamlit buttons
 def create_github_repo(topic: str) -> str:
     return create_poc_repo_from_prompt(topic)
