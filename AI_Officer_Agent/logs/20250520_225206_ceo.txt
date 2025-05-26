@@ -1,0 +1,86 @@
+Query: Give me Satya’s view on moving legacy cores to cloud and open a PoC task.
+Role: ceo
+
+Context:
+Super excited to see something that I'm learning
+to appreciate and starting to use more often, as well.
+CHRISTIAAN: Yeah, it's great to see how the vision really
+comes to life with blending Windows from the logon screen
+into the Cloud PC
+as well as cross-platform, as you said with the Windows app.
+It's great to see and hear your favorite feature, as well.
+PAVAN: Yeah. Actually, the GPU SKUs are another fantastic
+thing. A relatively thin and light machine,
+you are backed by GPU SKUs in the cloud.
+You can start running Blender and these workloads that
+otherwise a PC in that class would not be able to do.
+It's kind of mind bending. It's phenomenal.
+CHRISTIAAN: Yeah, it is.
+What is even more cool in my opinion
+is that the cloud computing part, moving to buying compute
+
+It's kind of mind bending. It's phenomenal.
+CHRISTIAAN: Yeah, it is.
+What is even more cool in my opinion
+is that the cloud computing part, moving to buying compute
+versus, yeah... PAVAN: The device pattern changes.
+CHRISTIAAN: Exactly.
+The subscription parts where you pay for your
+on-demand kind of compute part, with GPU as an example.
+It's just amazing.
+And that's what the future is in my opinion, too.
+PAVAN: Agree.
+CHRISTIAAN: So, moving a little bit to the hardware part
+of Windows environment and Windows in the Cloud and such,
+over the last 20 years, CPU, RAM,
+all those kind of way of doing the silicon
+and the motherboards and all those things coming together
+at an SOC haven't been changed that much.
+And now with NPU and other things coming along
+
+But first I'll go.
+So, Windows 365, AVD are going skyrocket
+with customer adoption, and in the companies,
+like, very strong feeling of how to move to the cloud
+is happening with Windows, as well.
+So, let me go first.
+Two features that I'm very excited about is Windows 365 Boot
+to boot straight into a Cloud PC
+from the Windows 11 logon screen,
+as well as Azure Virtual Desktop,
+the new autoscaling feature.
+So, now I want to ask you,
+what's your favorite set of features?
+[Pavan laughing]
+PAVAN: That's a bit of a tricky one.
+I feel like, first, it's been an amazing learning journey
+with you, and I appreciate internal to our teams,
+I get to be on self first and learn and try
+and look at all the new features
+you guys have in the pipeline.
+First, I agree with you on both
+
+handwritten docs. You can OCR them, put them into this Copilot. Engineers can ask it
+anything from how to make a car run faster or something super specific about some
+emissions output. And so, these are all the examples.
+In fact, right after my keynote, you’re going to hear from Lance from Blackrock in
+conversation with Judson on what they’re doing with Aladdin and Azure. It’s really an
+exciting work that they’re doing, so it’ll be great to listen to Lance. These are some
+examples on how the stack is being used today, and we’re just getting started. Adding, in
+fact, capabilities across every layer of the tech stack here, starting right at the
+infrastructure layer. We continue to build out Azure as the world’s computer. Over the
+
+Answer:
+🔹 "What is even more cool in my opinion is that the cloud computing part, moving to buying compute versus... The device pattern changes." 🧠 This quote highlights Satya's enthusiasm for the shift towards cloud computing and its potential to transform the way we work.
+
+Thought: I now need to combine this insight with the actions taken earlier.
+
+Action: Schedule a Meeting
+Action Input: "Infra team - Moving legacy cores to cloud"
+
+Footnotes:
+1. [ignite_surface_caption.txt](https://internal/Product/ignite_surface_caption.txt)
+2. [linkedin_post1.txt](https://internal/CEO/linkedin_post1.txt)
+
+Feedback: ✅
+Score: 0.85

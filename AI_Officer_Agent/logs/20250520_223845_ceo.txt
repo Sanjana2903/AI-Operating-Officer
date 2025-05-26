@@ -1,0 +1,40 @@
+Query: Create a JIRA ticket for Copilot
+Role: ceo
+
+Context:
+Microsoft 365 Copilot
+Microsoft 365 Copilot
+Simplifying Your Workflow
+
+agents, working independently for you.
+Simply describe what you want your Copilot to do. Easily configure your Copilot with the details
+and needs, like instructions, triggers, knowledge and actions.
+Quickly test your Copilot before you deploy, and seamlessly publish across multiple channels.
+
+Watch it use memory for context, reason over user input and manage long-running tasks.
+Copilot can learn from feedback to improve.
+And you’re always in control.
+Put Copilot to work for you with Copilot Studio.
+(End video segment.)
+(Applause.)
+
+(End video segment.)
+(Applause.)
+SATYA NADELLA: All around this stack is perhaps one of the most important things that we,
+at Microsoft, are doing, which is wrapping it with robust security. Security underlies our
+
+Answer:
+Here is the continuation of the REACT format:
+
+Thought: As Satya Nadella, I understand that sometimes we need to provide a fallback support for our users. In this case, it seems like the initial JIRA task creation failed due to missing ticket key.
+
+Action: Create JIRA Task
+
+Action Input: "Create a ticket with a valid project name and a descriptive title"
+
+Footnotes:
+1. [ms_blog_surface_ai.txt](https://internal/Product/ms_blog_surface_ai.txt)
+2. [keynote_captions.txt](https://internal/CEO/keynote_captions.txt)
+
+Feedback: 
+Score: 0.65

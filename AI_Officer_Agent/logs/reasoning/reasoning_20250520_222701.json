@@ -1,0 +1,33 @@
+{
+  "timestamp": "20250520_222701",
+  "persona": "CEO",
+  "question": "Create a JIRA ticket?",
+  "final_answer": "As Satya Nadella, CEO of Microsoft, I believe that creating a JIRA task for supporting rich text input for our product description is an essential step in empowering developers to focus on coding and innovation. By leveraging Microsoft 365 Copilot, we can streamline workflows and reduce administrative tasks, allowing us to achieve more with less effort.\n\nFootnotes:\n1. [linkedin_post1.txt](https://internal/CEO/linkedin_post1.txt)\n2. [ms_blog_surface_ai.txt](https://internal/Product/ms_blog_surface_ai.txt)\n3. [keynote_captions.txt](https://internal/CEO/keynote_captions.txt)",
+  "retrieved_chunks": [
+    "Sometimes we sort of mystify these agents as things that somehow require a lot of effort\nto build, but it\u2019s really pretty straight forward. In fact, our vision is that it should be as\nsimple as creating a Word doc or a PowerPoint slide or an Excel spreadsheet, that\u2019s it.\nWhen you say \u201cagent,\u201d think creating a doc.\nThis example is a good one, right? I can create field service sources, in this case, a\nSharePoint site in my Dynamics CRM. I can easily configure it to meet my specific\nneeds, and you have an agent in seconds that\u2019s just now integrated into Copilot.\nYou can also make these agents autonomous using Copilot Studio, and they can always\nraise an exception in Copilot for input. Remember, even an autonomous agent from time",
+    "Microsoft 365 Copilot\nMicrosoft 365 Copilot\nSimplifying Your Workflow",
+    "are, or I could diagnose issues with my environment.\nAnd this isn\u2019t just for Azure. As Satya announced, any developer can now create extensions for\nGitHub Copilot, and that includes any tool in your stack, including your in-house tools, keeping\nyou in the flow across your entire day.\nActually, 75% of a developer\u2019s day is spent outside of coding, gathering requirements, writing\nspecifications and creating plans. Let\u2019s show how GitHub Copilot can help with that, live on\nstage for the first time.\nTypically, my day starts by looking at GitHub issues. Looks like we want to support a rich text\ninput for our product description. Let\u2019s open Workspace and get some help with that.\nCopilot interprets the intent of the issue to see what\u2019s required, and it then looks across the entire",
+    "are, or I could diagnose issues with my environment.\nAnd this isn\u2019t just for Azure. As Satya announced, any developer can now create extensions for\nGitHub Copilot, and that includes any tool in your stack, including your in-house tools, keeping\nyou in the flow across your entire day.\nActually, 75% of a developer\u2019s day is spent outside of coding, gathering requirements, writing\nspecifications and creating plans. Let\u2019s show how GitHub Copilot can help with that, live on\nstage for the first time.\nTypically, my day starts by looking at GitHub issues. Looks like we want to support a rich text\ninput for our product description. Let\u2019s open Workspace and get some help with that.\nCopilot interprets the intent of the issue to see what\u2019s required, and it then looks across the entire"
+  ],
+  "tools_used": "",
+  "actions_taken": [],
+  "score": 0.65,
+  "user_feedback": "\ud83d\udd04",
+  "reasoning_notes": {
+    "chunks": 4,
+    "similarity": "0.87 (simulated)",
+    "tools": ""
+  },
+  "format_warnings": [
+    "\u274c Missing 'Final Answer:' block.",
+    "\u274c Missing 'Thought:' block.",
+    "\u274c Missing 'Action:' block.",
+    "\u274c Missing 'Observation:' block.",
+    "\u26a0\ufe0f No \ud83d\udd39 lifted quote \u2014 nothing traceable to context.",
+    "\u26a0\ufe0f No \ud83e\udde0 generated insight \u2014 lacks original reasoning."
+  ],
+  "lifted_quote_present": false,
+  "generated_quote_present": false,
+  "react_steps_count": 0,
+  "raw_trace": []
+}

@@ -1,0 +1,50 @@
+Query: Create a JIRA ticket?
+Role: CEO
+
+Context:
+Sometimes we sort of mystify these agents as things that somehow require a lot of effort
+to build, but it’s really pretty straight forward. In fact, our vision is that it should be as
+simple as creating a Word doc or a PowerPoint slide or an Excel spreadsheet, that’s it.
+When you say “agent,” think creating a doc.
+This example is a good one, right? I can create field service sources, in this case, a
+SharePoint site in my Dynamics CRM. I can easily configure it to meet my specific
+needs, and you have an agent in seconds that’s just now integrated into Copilot.
+You can also make these agents autonomous using Copilot Studio, and they can always
+raise an exception in Copilot for input. Remember, even an autonomous agent from time
+
+Microsoft 365 Copilot
+Microsoft 365 Copilot
+Simplifying Your Workflow
+
+are, or I could diagnose issues with my environment.
+And this isn’t just for Azure. As Satya announced, any developer can now create extensions for
+GitHub Copilot, and that includes any tool in your stack, including your in-house tools, keeping
+you in the flow across your entire day.
+Actually, 75% of a developer’s day is spent outside of coding, gathering requirements, writing
+specifications and creating plans. Let’s show how GitHub Copilot can help with that, live on
+stage for the first time.
+Typically, my day starts by looking at GitHub issues. Looks like we want to support a rich text
+input for our product description. Let’s open Workspace and get some help with that.
+Copilot interprets the intent of the issue to see what’s required, and it then looks across the entire
+
+are, or I could diagnose issues with my environment.
+And this isn’t just for Azure. As Satya announced, any developer can now create extensions for
+GitHub Copilot, and that includes any tool in your stack, including your in-house tools, keeping
+you in the flow across your entire day.
+Actually, 75% of a developer’s day is spent outside of coding, gathering requirements, writing
+specifications and creating plans. Let’s show how GitHub Copilot can help with that, live on
+stage for the first time.
+Typically, my day starts by looking at GitHub issues. Looks like we want to support a rich text
+input for our product description. Let’s open Workspace and get some help with that.
+Copilot interprets the intent of the issue to see what’s required, and it then looks across the entire
+
+Answer:
+As Satya Nadella, CEO of Microsoft, I believe that creating a JIRA task for supporting rich text input for our product description is an essential step in empowering developers to focus on coding and innovation. By leveraging Microsoft 365 Copilot, we can streamline workflows and reduce administrative tasks, allowing us to achieve more with less effort.
+
+Footnotes:
+1. [linkedin_post1.txt](https://internal/CEO/linkedin_post1.txt)
+2. [ms_blog_surface_ai.txt](https://internal/Product/ms_blog_surface_ai.txt)
+3. [keynote_captions.txt](https://internal/CEO/keynote_captions.txt)
+
+Feedback: 🔄
+Score: 0.65

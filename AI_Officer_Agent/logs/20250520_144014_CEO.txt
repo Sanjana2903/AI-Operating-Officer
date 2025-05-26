@@ -1,0 +1,11 @@
+Query: Give me Satya’s view on moving legacy cores to cloud.
+Role: CEO
+
+Context:
+
+
+Answer:
+As we continue to evolve and innovate, it's essential to recognize the value of our legacy cores while embracing the opportunities presented by cloud computing. Our mission at Microsoft is to empower every person and organization on the planet, and I think this strategic shift can help us achieve that goal.
+
+Feedback: 🔄
+Score: 0.85

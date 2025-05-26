@@ -1,0 +1,310 @@
+CHRISTIAAN BRINKHOFF: Hi, folks.
+Welcome to another "Windows in the Cloud" episode.
+This time a very special one as I'm pumped to be joined
+by Pavan Davuluri, a long-term Microsoft veteran
+and now corporate vice president for Windows, Surveys,
+Mixed Reality, and Windows Cloud.
+We will be talking about Windows Cloud and how AI
+and silicon play an important role as part of our future.
+So let's get started.
+[Show theme music]
+Hey! Welcome, Pavan. I'm super excited.
+I'm pumped that you are here
+in this Microsoft Redmond studio.
+And can you tell a little bit to the audience who you are?
+We have been partnering over the last period of time
+on several Windows Cloud product integrations
+with Windows 365.
+PAVAN DAVULURI: Absolutely. CHRISTIAAN: So, can you tell
+a little bit more about yourself?
+PAVAN: For sure. Yeah.
+First of all, thank you for having me, Christiaan.
+I appreciate being here
+and getting a moment with you today.
+My journey at Microsoft has been an amazing one.
+I joined the company as a college hire.
+I was in the business of building PC peripheral products
+back then, if you can believe it--
+mice and keyboards and game controllers and webcams.
+CHRISTIAAN: That's cool. PAVAN: And I spent then
+about 10 years or so in the Surface organization.
+I led the development efforts for a variety
+of generational devices back then.
+And then, for the last 3 or 4 years
+or so, I've been working in silicon
+and platform engineering inside the Windows organization
+prior to taking on the Windows and devices role.
+I am grateful to be here.
+It's been an incredible journey,
+and I feel like we have an incredible team
+and incredible vision, mission ahead of us and
+we have the opportunity to do this in an amazing company.
+CHRISTIAAN: Yeah, that's great.
+We went through a great journey together.
+And it's really cool that you have been part
+of that silicon part, the part that you don't always see
+that's there, but it is. PAVAN: Yeah.
+It's kind of underneath the hood. Yeah.
+CHRISTIAAN: So before we go into that cool part of the
+conversation, let's start with an icebreaker.
+And I wanted to know who's your favorite person
+or hero in your life.
+Could be a fictional person or a real person.
+PAVAN: A superhero maybe? CHRISTIAAN: Superhero.
+So I'll start with mine first.
+I'm always get compared with Batman
+as I'm always there but not always visible.
+So I'm curious: What's yours.
+[Pavan laughing]
+PAVAN: So, okay, you picked Batman.
+I want to then say I feel like I should be
+in the DC universe at some level, and then my instinct
+would be to say something like Wonder Woman,
+honestly, their marquee character.
+But these days, I just have to go with Taylor Swift.
+I feel like she's holding up the economy,
+generating a wave of energy across the world.
+Certainly superhero status, from what I can see.
+CHRISTIAAN: Ah, that's great.
+I'm not going to ask you your favorite song.
+PAVAN: Thank you. CHRISTIAAN: So, let's go to the next...
+PAVAN: I may not qualify beyond that, so thank you.
+[pair laughing]
+CHRISTIAAN: So, AI is everywhere these days.
+The Copilot and everything.
+And it's coming in Windows and everything.
+Can you shed some light on how AI becomes part
+of our future of Windows, Windows Cloud,
+and other products that you're leading?
+PAVAN: Yeah. I think AI, from what we can see across the
+board and certainly within the company,
+I think AI is a tidal wave of a technology change for us.
+Very similar to eras of change we saw with PC
+and mobile, cloud, and now computing moving
+into the world of AI for sure.
+For us at Microsoft, I think the marquee AI experience
+for us is Copilot.
+And in Windows, very much
+like the Start button is the entry into Windows,
+for me, Copilot is your entry point
+into the world of AI on your PC.
+And I think work we are doing both on the device side
+and the cloud side is really to enhance
+what that AI experience can look like
+and what those Copilot capabilities can look like
+on Windows devices, both in the cloud and on the edge.
+CHRISTIAAN: That's pretty cool.
+So, over the last 10 years, the strategy
+in Microsoft under such as leadership really changed,
+and the move to Cloud is stronger than ever before
+with AI and everything coming together.
+How have you seen that shift in culture
+and strategy being a pivot or an important role
+in terms of the shift of Windows moving to the cloud?
+PAVAN: Sure.
+One of the things that people talk about, Christiaan,
+is this notion that culture eats strategy for breakfast.
+And I think that has been particularly true
+for us at Microsoft in the last 10 years or so.
+One of the ideas that has really helped us move forward,
+I think, is this notion as I just talked about
+around growth mindset.
+And for us, with growth mindset, it has given us the space
+to be curious, to learn, to iterate, to fail.
+And I think that kind of environment in itself allows
+for innovation and taking risks
+and coming up with new bold ideas.
+And a lot of the work, quite frankly,
+your organization is doing in my mind is a product
+of the fact that we have that kind of attitude
+to learn, to grow, obsessed with our customers,
+and then drive innovation and deliver real value.
+So I think it's happening. It's exciting to see.
+CHRISTIAAN: That's awesome, you acknowledging that the
+partnership has been super strong between you, your team,
+even before you came in the business unit, onboard, leading
+this big charter that I just mentioned, too.
+How do you compare other products or services
+in Microsoft going through a similar transition
+from the past as well to the future of cloud
+and software as a service in relationship to Windows 365?
+PAVAN: It's a great question.
+I think one of the best patterns we have within the company
+is the transition that happened in Office for us,
+where we had Office on prem, alone, as a product.
+And today, we have a diverse spectrum
+of options, from Office on prem through being able
+to deliver Microsoft 365 as a collective solution
+for a class of customers.
+And I think we see this opportunity with Windows, as well,
+where we have great Windows devices coming to market,
+we're driving innovation in the ecosystem,
+but we also have the opportunity
+to have delivered Windows experiences to the cloud
+and meet customers where they're at.
+Especially when you think about the diversity
+of the ecosystem ahead of us, I think we have an opportunity
+to deliver Windows in a variety
+of different options going forward.
+CHRISTIAAN: That's amazing. And I hear that from customers,
+as well. They see that reflection, too.
+And what we really feel with customers is that
+they see Windows 365 and they are super excited about it.
+And then, they expand, as well, to more use cases and such.
+That's really cool.
+And the reflection point with Office
+and other products in Microsoft:
+I really feel that that's happening right now, too.
+PAVAN: That it is. It's kind of exciting.
+It's kind of exciting. And to your point,
+it's being driven by customer demand,
+which is also super empowering,
+I think, for us, as well. CHRISTIAAN: Exactly.
+More and more customers are looking
+for unification and simplification.
+And this is really an example of that.
+PAVAN: That's right. Our AVD and 365 propositions.
+CHRISTIAAN: Yeah.
+And that's a good segue in the next question
+that I want to ask you.
+But first I'll go.
+So, Windows 365, AVD are going skyrocket
+with customer adoption, and in the companies,
+like, very strong feeling of how to move to the cloud
+is happening with Windows, as well.
+So, let me go first.
+Two features that I'm very excited about is Windows 365 Boot
+to boot straight into a Cloud PC
+from the Windows 11 logon screen,
+as well as Azure Virtual Desktop,
+the new autoscaling feature.
+So, now I want to ask you,
+what's your favorite set of features?
+[Pavan laughing]
+PAVAN: That's a bit of a tricky one.
+I feel like, first, it's been an amazing learning journey
+with you, and I appreciate internal to our teams,
+I get to be on self first and learn and try
+and look at all the new features
+you guys have in the pipeline.
+First, I agree with you on both
+those features being great ones, and I love them, as well.
+Especially now, I feel like with my new machines,
+I enjoy Windows Boot and Windows Switch every day.
+The integration of Windows 365 into Windows 11
+that we're seeing, especially in the last
+2023 window of time, fantastic.
+I also love most recently the work we've done
+on the Windows app and the fact that Windows app now
+is available on Windows, on web, Mac, other platforms.
+Super excited to see something that I'm learning
+to appreciate and starting to use more often, as well.
+CHRISTIAAN: Yeah, it's great to see how the vision really
+comes to life with blending Windows from the logon screen
+into the Cloud PC
+as well as cross-platform, as you said with the Windows app.
+It's great to see and hear your favorite feature, as well.
+PAVAN: Yeah. Actually, the GPU SKUs are another fantastic
+thing. A relatively thin and light machine,
+you are backed by GPU SKUs in the cloud.
+You can start running Blender and these workloads that
+otherwise a PC in that class would not be able to do.
+It's kind of mind bending. It's phenomenal.
+CHRISTIAAN: Yeah, it is.
+What is even more cool in my opinion
+is that the cloud computing part, moving to buying compute
+versus, yeah... PAVAN: The device pattern changes.
+CHRISTIAAN: Exactly.
+The subscription parts where you pay for your
+on-demand kind of compute part, with GPU as an example.
+It's just amazing.
+And that's what the future is in my opinion, too.
+PAVAN: Agree.
+CHRISTIAAN: So, moving a little bit to the hardware part
+of Windows environment and Windows in the Cloud and such,
+over the last 20 years, CPU, RAM,
+all those kind of way of doing the silicon
+and the motherboards and all those things coming together
+at an SOC haven't been changed that much.
+And now with NPU and other things coming along
+and innovation there, can you shed some light how
+that will change the future of Windows streaming
+and Windows Cloud and AI?
+PAVAN: Yeah. I think that's a great question, Christiaan.
+I think you're right.
+In the last couple years, with the advent of AI
+and AI spanning both the cloud and the client,
+one of the places of innovation we're seeing
+in the Windows silicon platform
+and ecosystem space is the rise of neural engines.
+And I think neural engines give us the ability
+to run AI models--inference, specifically--
+at a level of power and performance that you don't have
+through other infrastructures like CPUs
+and GPUs alone in themselves.
+And so we in Windows are busy at work putting infrastructure
+in place to take advantage of the power of these NPUs
+and having developers and developers create platforms
+and applications that take advantage
+of these AI capabilities on the edge.
+One of the other big things we're investing
+in is idea-hybrid AI loop pattern.
+And the reason why this is magical for us,
+it takes advantage of both compute in the cloud
+as well as compute locally.
+Compute locally is important for things
+like responsiveness, enhanced privacy, being able
+to provide low-latency-type responses.
+And then, you take advantage of compute in the cloud,
+where you house massive data sets,
+you run cross-platform infrastructure,
+large-scale inference.
+And with the hybrid AI loop, we're able
+to bring the best of both worlds together.
+And for us, with Windows 365,
+we can now deliver these Copilots
+and these hybrid capabilities both on local devices
+as well as through Windows 365,
+and that to me is super exciting.
+CHRISTIAAN: It's really cool to hear that,
+and it's super cool, as well,
+to hear your passion in this space
+and your experience really comes to its life here
+as a leader and your past experiences, too.
+PAVAN: It's a beautiful synergy, I think, of
+where our past investments are going to
+come into play for our future bets.
+CHRISTIAAN: Exactly.
+So, the device still remains very important
+for that local experience, but the data centers
+that we have with Azure are also important.
+So, blending those with hybrid AI
+and everything is super exciting.
+PAVAN: It's kind of exciting. I agree.
+CHRISTIAAN: Yeah. So, I will have you back
+at some point to do an update there...
+PAVAN: I would love to. CHRISTIAAN: ...on where we are.
+So before we close, any holiday plans for you?
+Like, do you have some plans with your family?
+Christmas plans or something like that?
+PAVAN: Yes.
+Last couple months, as you can imagine,
+have been a little intense,
+so certainly going to get a few minutes.
+I'm going to spend some time with family,
+and I encourage you and all of you all to get a chance
+to get a break over the holidays, if you can, of course.
+CHRISTIAAN: Great. So how can people stay in touch with you?
+PAVAN: I would suggest folks just use LinkedIn for now.
+It's a great way for me to listen, learn, I think,
+and just see how people are feeling
+with our products and experiences.
+So, LinkedIn is a great way to find me.
+CHRISTIAAN: Okay. Great.
+Thanks again for being the last guest of 2023.
+PAVAN: Thank you. CHRISTIAAN: And I want to wish
+you, everyone watching, a happy holidays
+and the best for 2024.
+See you back next year as we have a very special episode
+about Windows 365 and Intune Suite coming up.
+So, happy holidays.

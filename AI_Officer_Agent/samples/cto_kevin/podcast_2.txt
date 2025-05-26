@@ -1,0 +1,515 @@
+Behind the Tech with Kevin Scott
+Ask Me Anything
+CHRISTINA WARREN: Welcome to Behind the Tech. I’m your cohost, Christina
+Warren, Senior Developer Advocate at GitHub.
+KEVIN SCOTT: And I’m Kevin Scott.
+[MUSIC]
+CHRISTINA WARREN: And it is time now for our AMA episode. And so, for the past
+couple of months, listeners have been sending in some really fantastic questions. And we
+cannot answer every single one that we got, but we are so appreciative of all of you who
+sent in your questions. And so, this is going to be a super-interesting conversation.
+So, to get us started, here’s our question from Ravinder. “How has your pace of learning
+changed in the era of AI? What’s been the coolest thing you’ve done with AI,
+personally?”
+KEVIN SCOTT: Yeah, I’ve definitely been using AI a ton for the projects that I’m
+doing outside of work, even, so, like, the bunch things that it gets used for at work that
+are hugely useful, but the outside of work ones I think are kind of fun.
+So, like, maybe the coolest thing that I’ve done is I have gotten really into making
+Japanese tea bowls in my ceramics studio this past year. And I have been researching
+how to replicate some of the results in traditional, classic Japanese Raku tea bowl
+making, which has involved me making my own kiln, devising my own glaze recipe, and
+even devising a way to take a clay body that you make the bowls out of and making it
+tougher so that it can handle all the thermal cycling in this crazy firing process.
+And I will tell you that Copilot was amazingly useful in all of that, like, particularly with
+the kiln design and with helping get some ideas and, you know, make progress on the
+glaze chemistry for this glaze.
+CHRISTINA WARREN: That’s so interesting. So, like, what do you do with Copilot
+that you just – do you just have a conversation and just ask questions, kind of back and
+forth about, you know, maybe how you want to design stuff?
+KEVIN SCOTT: Yeah, I mean, I – basically, for the glaze design, I told or I asked
+Copilot. I was like, I’ve got a set of tea bowls that I am firing in the classic Raku style at
+1,100 degrees Celsius, where I’m going to take the glazed vessel, put it directly in the at-
+temperature kiln, like, leave it for three minutes until the glaze goes cherry red, and then
+pull it out to air quench. And I gave it a few hints about what I had been thinking about,
+like, what I know of the Japanese – like, this is the interesting bit.
+The traditional Japanese Raku glazes use lead in them to get the elements of the glaze to
+melt at a lower temperature.
+CHRISTINA WARREN: Oh, okay.
+KEVIN SCOTT: And obviously, I don’t want to be using lead in my tea bowls, even
+though there are, like, safer variants of, you know, lead that you can use that are safe in
+ceramics, but I didn’t want to. And so, you need to use something else, like boron.
+And so, figuring out how much boron you use and in what form the boron comes in, in
+the glaze is, like, a little bit tricky. And, like, it was super helpful, an it felt like a real
+conversation that I was having with someone who knew a little bit something different
+about glaze chemistry than I know.
+CHRISTINA WARREN: But that’s – genuinely, this is so fascinating. And also, thank
+you for sharing all of your many interests with us, because you’re such an interesting
+person. And I never would have thought, like, that from all – I know how much of the
+maker stuff you’re into but building your own kiln and making Japanese tea bowls, and
+using AI to get more information about this, I love it.
+KEVIN SCOTT: Yep.
+CHRISTINA WARREN: That’s a great use case of AI. I love that. Great, great stuff.
+Thank you again for that question.
+All right. This question is now from Rafael, and he asks, “Do you believe that in the
+future, AI will completely reshape the way that we produce software?” And he goes on to
+say, you know, I mean, “Could we eventually get rid of the development tools that we
+use today and rethink the entire process from scratch, creating a completely new
+approach to software development?”
+KEVIN SCOTT: It seems likely.
+CHRISTINA WARREN: Yeah.
+KEVIN SCOTT: I mean, and I’m an old enough fart where, I mean, it sounds disturbing
+to say, but, like, I’ve been programming for 40 years. So, I’m 52. I started when I was 12.
+And in 40 years, like, particularly the past 40 years, like, it – software development now,
+even without AI, doesn’t really resemble much at all what software development looked
+like in the 1980s.
+And so, I think it’s a safe bet that software development is going to reform itself over the
+next handful of years. And I’m, I think, just super clear that AI is going to change the
+way that we write software.
+I think you know, there are just sort of all of the obvious ways, you know, that it’s going
+to change things. You know, coding is a complicated activity, and, like, it always has
+been, like, this thing where you’ve got an idea in your head that, you know, needs to be
+sharpened, and then you need to get the sharpened idea out in to a form that the computer
+can go execute.
+Yeah, the thing that’s really changed, and I’ve said this before in public, I think, is the
+way that we’ve been building software hasn’t really changed since Ada Lovelace.
+CHRISTINA WARREN: Right.
+KEVIN SCOTT: Like, this whole process of, you know, algorithmic thinking, and of,
+you know, understanding the complexity of a machine, like, all the way down to, like, its
+atomic details, and then using that understanding of the machine to, like, transform, you
+know, this idea that you framed algorithmically into a program that the computer could
+write, like, we’ve been doing that for almost two centuries now.
+And there really hasn’t been much of an alternative. Like, our tools have become
+increasingly more powerful, but it’s like, it’s basically that. You want a computing device
+to do something for you? You either, like, figure out how to do that process yourself, or
+you have to hope that someone who understands how to do that has written a program
+that you can run yourself.
+And I think, you know, the big thing that’s changed with AI is now, you have a thing
+where you can describe a thing that you want accomplished, not necessarily even in
+algorithmic terms, and then AI can do some or all of that mapping to get the computer to
+actually do the thing for you. And, like, that really, really dramatically changes, you
+know, how we think about software development, and who’s a developer. It changes,
+like, what it means that we’re building.
+So, you know, for instance, I was just having this conversation with a bunch of engineers.
+Like, I don’t know that you need apps in this world. So, like, an application is a
+byproduct of this early thing that I just described, that someone has to understand a set of
+problems that a group of people want to accomplish, and then they just sort of edit a
+bunch of code together into this thing called an application, that does those things in a
+general enough way that those people can get some value out of it and be able to use it.
+And I don’t know that you are going to need that too much further in the future. Like,
+you’ll still need, like, the capabilities that are in the applications, but the user interface,
+like, telling someone they got to go learn all the complexity of some software because
+they’ve got to navigate some weird user interface –
+CHRISTINA WARREN: Right.
+KEVIN SCOTT: – information architecture to get a thing done, versus just say what
+they want done, like, that’s changing, clearly.
+CHRISTINA WARREN: Yeah.
+KEVIN SCOTT: And, like, that has an implication for the software development as
+well.
+CHRISTINA WARREN: Yeah. Yeah, it does. I mean, that’s what I kind of think about,
+right, because obviously, I think you’re right. Like, it could change completely how we
+define a developer, which is something that we’ve been trying to do in various ways for a
+long time. But now, we finally feel like we’re maybe on the cusp of really, you know,
+broadening that concept. It like, really feels like that could be a reality.
+But it does make me think about on other levels, okay, so, how do you design
+programming languages, or do you, or how does that change, right? Like, what matters
+then, about the underlying code, beyond that, you know, if we are able to just, you know,
+create things based on our natural language and based on what we want, and make
+updates, you know, iteratively with multiple people at once? Like, how does that change
+how we design those underlying systems? I think that’s really interesting to think about,
+too.
+KEVIN SCOTT: Yeah. Yeah, 100%, and super useful stuff to think about. And, like, the
+– you know, the trick is, and this has been true about software development forever, is,
+like you want things to compose. So, AI is still a pretty far ways away from doing, you
+know, this grand vision that I just articulated.
+And so, like, you know, what we really need to be thinking about between now and, like,
+whenever that happens, if it actually happens the way that I imagine, is, like, how do you
+take tools that are on some spectrum of, you know, classical software development tools
+to, you know, this new AI future, and make sure that all of the things compose together in
+reasonable ways, so that developers can then take all of this stuff that’s in their toolkit
+and, like, get the thing built that, you know, they’re hoping to be able to build.
+CHRISTINA WARREN: Yeah, yeah, totally. I mean lots of things to think about, and –
+and I totally agree with you on that.
+All right, we’ve got this question from Veronica, shifting talk just a little bit, still around
+AI. And she wants to know, “How do you suggest we regulate AI? Should this be done at
+the federal or state level? And how can we ensure that AI is safe and secure, both from a
+public and private standpoint? Great question.
+KEVIN SCOTT: Yeah, I think it’s a super-great question. You know, again, I’ve said
+this as well, and, like, I think I talked about it even some in my book. Like, of course, any
+technology as powerful as AI needs to be regulated. And it would be just an odd thing in
+the course of human history if you had something this powerful, and it wasn’t regulated.
+You know, the thing that you want to do, though, with regulation is, I think consistency is
+helpful. Like, that’s where, you know, sort of, you know, federal regulation that is, you
+know, consistent across all the states and even, you know, sort of international standards
+would be super, super useful, you know, because regulation, like good regulation’s intent
+is to, like, get beneficial technologies deployed to those who will benefit from it as
+quickly and safely as humanly possible.
+And so, you don’t want unnecessary complexity in the regulation itself, because, like,
+that prevents, you know, the – the whole, you know, beneficial technologies getting to
+whom it benefits.
+But yeah, I mean, I think in general, we will need our regulators to be pretty agile in
+making regulation that can encourage the most beneficial things for the broadest number
+of people to get to the market as quickly as possible, while at the same time, being careful
+about what the downside risks are to a bunch of things.
+And in a bunch of places, like, the biggest downside risk honestly, is failure to deploy
+quickly enough. Like, there are, for instance, like, a whole bunch of medical things right
+now where the models are strongly super human, you know, And I’ve had some
+experience with my own mother in the past year with the health care system, where if she
+had had access to the most advanced AI tools, a whole lot of suffering could have been
+reduced.
+You know, it’s… lots and lots and lots and lots of people are in similar situations, where
+it’s not some theoretical future where stuff could be beneficial. It’s now that it could be
+beneficial.
+CHRISTINA WARREN: Right. How do you think we go about, I guess, educating or
+ensuring that our legislators are aware of what the potential, I guess, both, you know,
+opportunities and risks are in this area, right, because this is something I think about a
+lot? I agree with you. Regulation is super important, and it needs to be consistent, but I do
+sometimes wonder, I mean, it’s hard enough for us as technologists to keep up with all
+these things. How can we do a good job of making sure that the legislators are informed?
+KEVIN SCOTT: Yeah, I will say the thing that I’m most encouraged by on this front
+with AI is more so than any previous technology that I’m aware of, you have
+practitioners in the field, spending a whole bunch of time talking with people in the
+academy and people in government, trying to make sure that they have the information
+that they need in order to make good decisions. And I see people doing it in very
+respectful ways.
+Now, you know, obviously, everybody who’s coming at it, like, whether you’re in the
+government or you’re in the academy or you’re in the industry, like, you’re obviously
+biased in some way. And so –
+CHRISTINA WARREN: Sure.
+KEVIN SCOTT: You know, we all need to be as clear as we possibly can about our
+biases and sort of lay them on the table. But, like, just because you’re biased, like,
+doesn’t mean that you can’t get information out there and then have someone, you know,
+adjust for the biases, look for, you know, what the throughline is and everything, and then
+make good policy decisions. Like, that’s a way better way to be than to, like, not be
+transparent about what’s going on –
+CHRISTINA WARREN: Yeah.
+KEVIN SCOTT: – or, you know, decide that you’re not going to talk to somebody
+because it’s not your job. Like, I think right now in tech, anybody’s working on AI, like,
+part of your job is to, when required, patiently explain what it is you’re doing, why
+you’re doing it, and how it works. (Laughter.)
+CHRISTINA WARREN: Great stuff. All right, so this is a question from Muhigiri, and
+this is really good. “How can large language models be scaled effectively across regions
+with limited technological infrastructure?” So, think about places like African nations.
+Like, what are some of the biggest hurdles for AI-powered educational solutions to move,
+you know, beyond prototyping and into full scale deployments in underserved regions?
+And how can these challenges be overcome?
+KEVIN SCOTT: Well, you know, I think the news there is probably pretty good. So, if
+what you want to do is to build an AI application, it has never been easier than it is right
+now to go build one. You have more choices about very powerful models to access. You
+have models that are available behind APIs that are hosted, where you sign up for a
+developer key and just start making requests. You have, like, a huge catalog of open
+source models that are, you know, on a spectrum from, you know, general purpose to,
+like, very specific tasks, design things.
+And so, like, you just have a lot of choice, where you don’t have to start by saying, I’ve
+got to train a model from scratch.
+CHRISTINA WARREN: Right, right.
+KEVIN SCOTT: And so, I think that is a huge advantage. Like, it’s definitely not the
+way things were 20 years ago when I wrote my first machine learning programs. You
+know, it isn’t even how things were three or four years ago.
+CHRISTINA WARREN: Right, right. I was going to say, it’s a lot different even than
+then, right? It’s much easier for people to build really good things now versus, you know,
+three or four years ago, to your point.
+KEVIN SCOTT: Yeah. I mean, my boss, Satya Nadella, tells stories about his visits to
+India recently, where he has seen the just rapid diffusion of AI applications, you know, at
+a pace that, you know, he’s never seen before.
+Like, you know, the thing that he, you know, says, which I think is really good, is, you
+know, there are parts of rural India where the Industrial Revolution still hasn’t shown up
+after 250 years, where they already are seeing the diffusion of AI, where a farmer,
+through their mobile device, can access a powerful AI system that will help them
+understand how they are entitled to government programs, and then go sign them up for
+them, so that they get these benefits that their government intended them to have. And,
+like, that’s just kind of a shocking rate of diffusion.
+You know, but look, it’s also not all good news. Like, I think while, you know, the
+expertise required to build an AI application is democratizing super-fast, and you’ve got,
+like, high levels of accessibility to the APIs and basic infrastructure required to go build
+them, you still have to be connected.
+CHRISTINA WARREN: Right.
+KEVIN SCOTT: You still have to, like, have some baseline level of technology fluency
+in order to be able to use the systems. And, like, the reality is, there are large parts of the
+world that are not yet sufficiently connected, and where, like, that technology fluency
+isn’t as good as it should be.
+And so, you know, I think, yeah, there’s a bunch of, at this point, deeply unsexy work
+that we still need to prioritize and make sure that we’re focusing on things like just rural
+broadband.
+You know, like, I’ve definitely told this story before, but, you know, my mom and
+brother have good internet in this rural town that they live in, in central Virginia, because
+they’re lucky enough to live within 100 yards of the local telco exchange. My uncle, who
+lives just a few miles away from them, is still on some kind of, like, crazy 300k DSL
+connection. And, you know, his internet is barely usable. And so, yeah, he has to come to
+my mom’s house to do things on the internet. It’s nuts.
+And so, like, that’s the sort of thing that I think we really have to pay attention to,
+because as the things that you can do and the capabilities you can access with that
+connectivity become more powerful, like, absence of connectivity, like, comes a bigger
+and bigger disadvantage.
+CHRISTINA WARREN: Yes. No, I mean, I think you’re exactly right. And this is a
+conversation I feel like, you know, we’ve definitely talked about this on this podcast, but
+I feel like we, collectively as, you know, an industry and society, have been talking about
+this for at least 20 years. And it’s only becoming more and more important, right, to start
+to really invest in overcoming these infrastructure challenges, just because connectivity is
+only going to be more important, right?
+I think that’s a great distinction, that it’s easier than ever to, you know, build, you know,
+applications and things with these tools, but actually getting it to people and making it so
+that they can interact with them is the maybe the less fun part, but arguably even more
+important, because without that, we – you know, all of this is moot. Yeah.
+KEVIN SCOTT: Yep.
+CHRISTINA WARREN: Question from Peter: “I am curious about how Microsoft
+approaches running technical tests against its own infrastructure, LinkedIn, Xbox, Office
+365, and others. Given the scale and complexity of these systems, how many lessons
+have you learned over the years while managing that infrastructure?” And then he goes
+on to ask, “And for those of us in DevOps, what’s the most surprising lesson you’ve
+encountered that might catch us off guard?”
+KEVIN SCOTT: Oh, God. That’s a super-good question, like, very complicated –
+CHRISTINA WARREN: Yeah.
+KEVIN SCOTT: So, I don’t know whether I’m going to be able to answer the whole
+thing.
+CHRISTINA WARREN: I was going to say, if you want to take this in parts, do that, do
+that. That’s okay.
+KEVIN SCOTT: Yeah. Look so I had a boss who was, like, maybe the best DevOps
+leader I’ve ever worked for or with in my career. And, you know, like, he had a bunch of,
+like, very simple things that he would say about, you know, philosophically, how you
+should approach DevOps.
+Yeah, like, one of the things he says is – or said, is you can’t fix something or improve it
+if you’re not measuring it. So, a lot of the answer to the question, just boils down to, like,
+are your metrics good? Are you measuring everything that’s happening in your system?
+Do you have good, you know, monitoring built on top of the metrics? Like, do you have
+good visibility into the internal state of all of the systems? Like, that’s one thing that’s
+super important.
+Another thing is, like, complexity needs to have a reason. And so, a lot of times, you
+know, complexity just sort of emerges because, like, the most convenient thing to do to
+systems, architecturally, is often to just append new stuff on to old, rather than to do the
+harder work of, okay, like, we’ve got some evolved requirements here. You know, things
+are different from when we originally designed this system. Like, now we need to, like,
+just push pause and go refactor the whole system and make sure that it’s designed in the
+simplest possible way to meet the new set of requirements that we now understand.
+And so, like, one of the things that I’ve always tried to do in the organizations that I’ve
+led is to make sure that you are reserving some amount of your engineering capacity to
+go deal with tech debt, you know, that you’ve got teams who are building shared
+infrastructure, whose job it is not just to provide a set of services to everyone, but to, like,
+be building things in a really architecturally simple way, and to, like, make sure that
+things are robust, maintainable, scalable, secure, fault tolerant, you know, like, all of the
+things that you want out of your systems.
+And, like, you’ve just got to rebuild stuff every now and again. Like, it’s – painful as it
+may sound, you know, when you’ve got product managers screaming at you that you –
+like, you need to go ship, you know, this new feature, or you’re eyeballing, you know,
+short-term revenue or something like that, to, like, go tell all of your stakeholders, hey,
+we’ve got to go push pause on this for a little while, while we, like, rearchitect this thing,
+you just have to do it, because complexity really is the – it’s the killer.
+Yeah, there’s a bunch of stuff that we’re doing with AI right now, though, to deal with
+some of the complexity. So, like, it can – you know, when you have complexity in
+systems that’s irreducible, like, you just can’t figure out how to design away from it, like,
+AI can help manage, you know, some of the complexity.
+And it’s, like, not in a way where you’re, you know, letting this AI be an abstraction
+layer that sits between you and your understanding of your system, but to, like, help you
+just very quickly, like, you know, triage things, or, you know, figure out, like, how to root
+cause operational issues or whatnot. It can be super helpful with stuff like that.
+Yeah. I mean, like, I could go on all day about this particular bag of issues. But, yeah, I
+mean, like, you’ve just got to test, test, test.
+And, like, you know, here’s a, you know, a thing. Maybe this is – I have gone into
+situations before where people have built systems or built functionality that are designed
+to do a thing in rare circumstances, like, you know, sort of data center-level fault
+tolerance, for instance. So, like, what happens if this whole data center goes down, if it
+loses power, or if, like, there’s a fiber cut or something, where the team tests the
+functionality once and then assumes that it’s going to be available forever and ever, just
+because it worked one time.
+CHRISTINA WARREN: Right. Right, right.
+KEVIN SCOTT: (Laughter.) And so, yeah, you’ve just got to test for infrequently
+occurring things and make sure that when the infrequently occurring thing happens, that
+you are ready to go, which basically means you need to simulate the infrequent thing
+more frequently than it will naturally happen. (Laughter.) And that’s, like, a
+counterintuitive thing, I think, for some folks.
+CHRISTINA WARREN: Yeah, no, that is. But I like that. I think it probably answers
+the question really well, because that does seem counterintuitive, but it makes sense,
+right? Like, you need to make sure that when this actually occurs, that it’s going to work.
+But to do that, got to have – it’s kind of like fire drills, right? Like, you know, you do
+them –
+KEVIN SCOTT: Yes.
+CHRISTINA WARREN: – hopefully, much more, you know, frequently than they
+actually occur, just in case, just if you need to be ready.
+KEVIN SCOTT: Yeah, no, I – I was just going to say, like, at LinkedIn, we used to, at
+random points every week, just take a whole data center offline to make sure that all the
+fault tolerance systems would work.
+CHRISTINA WARREN: (Laughter.) Okay, that’s awesome. That’s wild. And was that
+a process that started before you joined, or was that something that you asked them to do?
+I’m just curious.
+KEVIN SCOTT: That was a thing I asked them to do.
+CHRISTINA WARREN: Amazing, amazing. And was it for that reason, just because
+you wanted to ensure that, you know, that there was resiliency?
+KEVIN SCOTT: Yeah, it was – correct. It was because resiliency is a super hard thing
+to achieve, so it is not a service that you can just sign up for and get resilience.
+CHRISTINA WARREN: (Laughter.) Right.
+KEVIN SCOTT: It basically means that every single thing that’s running in the data
+center has to be resilient. It has to be prepared to deal for things to fail in the worst
+possible way, which means, like, obvious things for things like databases, and networks,
+and storage systems and whatnot. And, like, there’s a bunch of super-classic computer
+science and engineering stuff that you can go do to make those things fault tolerant. But
+you also have to make your applications fault tolerant.
+CHRISTINA WARREN: Yes.
+KEVIN SCOTT: Like, what happens if, like, an application server that’s rendering the
+user experience to a user, like, what happens if it loses, like, all network connectivity?
+Like, what happens then? You know, is there some routing layer somewhere, like, maybe
+in the end user application that the user is using, that will notice that its connection back
+to its application server is no longer responsive, and it routes it sideways to another server
+somewhere in the service catalog, in another data center?
+You know, so, like, you just have to think through all of this stuff, like, how is every
+single piece of this system? And you have to have every single service owner accountable
+for having done that work. And, like, a real good way to make sure that they’ve done the
+work is without telling them, you just kill the whole system. (Laughter.)
+CHRISTINA WARREN: Just kill it. (Laughter.)
+KEVIN SCOTT: And, like, you’ll know real quick whether their application’s robust or
+not. (Laughter.)
+CHRISTINA WARREN: Yeah. I love it. I love it, and I’m glad that you implemented
+that. I mean, I think that is a testament to LinkedIn, that it is one of – I’ve covered many
+of these services, and, you know, worked at companies, you know, that need to be online
+a lot that have not always had great uptime. LinkedIn is one of the ones that has, at least
+in my experience, at very, very good uptime in those sorts of things. And I think that’s
+probably a testament to the – to the drills
+KEVIN SCOTT: Now, but not – not always. (Laughter.)
+CHRISTINA WARREN: Yeah. Well, but that’s how you get there, right, I guess, is by
+having it just at the drop of a hat, it could be gone. How are you going to recover?
+KEVIN SCOTT: Yep.
+CHRISTINA WARREN: I love that. I love that. All right, this question is from
+Samantha, and she asks, “I’ve noticed you’ve had a few recent guests that aren’t typical
+technologists, like Ben Laude and Refik Anadol. Could you share more about your
+thinking and perspective on how more creative leaders are working in the era of tech and
+AI?
+KEVIN SCOTT: Yeah, look, a part of it is, like, just to be perfectly honest, like, these
+are people that I want to talk to.
+CHRISTINA WARREN: Yeah.
+KEVIN SCOTT: And I think the conversations are interesting, and I want to share them.
+But I think, you know, there is this thing that we have been talking about, which, in the
+era of AI, this distinction between, you know, like, who’s a technologist and who isn’t, is,
+like, blurring in a really profound way.
+And so, I think it’s good to be talking to a broader variety of people, because you have,
+like, Refik, for instance, is a trained artist, but he’s using technology in incredibly
+sophisticated ways to realize this artistic vision that he has. And I think there’s just going
+to be more and more and more of that over time, because this previously, you know,
+daunting and inaccessible technology is becoming less daunting and more accessible, and
+– which means that more people are going to be using it to do a broader swath of things.
+So, is Refik an artist or a technologist? Like, yeah, maybe it doesn’t matter.
+CHRISTINA WARREN: Right.
+KEVIN SCOTT: He’s just doing amazing stuff, you know. And, like, this conversation I
+had with Ben Laude is, like, I think all the time about what the nature of art is, and, like,
+what are the things… What’s the difference between, you know, art and instrument? And,
+like, what’s the – you know, what’s the boundary between performer and instrument?
+And so, I think, yeah, it’s interesting to have artists come in and talk about how they’re
+thinking about those relationships, you know, that they have had in their art and in their
+craft for a very long while, and then, you know, how that thinking is changing in an era
+of AI. So, I don’t know, I just feel like they’re super important conversations to have
+right now.
+CHRISTINA WARREN: No, I think you’re right. And I think that, you know, kind of
+breaking down, maybe kind of this demarcation in place, is, like, I don’t know if that – if
+it matters, you know, yes, right? That – that could be the – the answer to both questions.
+And because these lines, I mean, when technology truly becomes accessible, and kind of
+something that we all sort of kind of imbibe, it’s – it’s not – it becomes just a part of us,
+right? Like, and I think that the oftentimes artificial barriers that we put into place
+disappear, and it’s just like, you’re a creator. You’re a person, you know, regardless of
+how you get there and what you do. You know, it doesn’t have to be, oh, I have to be in
+this box or this box. It’s like, no, I’m just, you know – I’m just creating.
+KEVIN SCOTT: the thing that I will also say is, like, I have super strong opinions about
+some things. Like, for instance, like, I’m not interested in AI at all, absent a human
+wielding the AI to do something interesting.
+CHRISTINA WARREN: Right. Right.
+KEVIN SCOTT: Now, I’m not claiming that everybody needs to be my way, but, like,
+it’s just interesting to me that, like, this isn’t like, a point of view that I came to through
+some, like, huge process of deliberation. It’s just, like, I am not interested in the idea of
+some autonomous AI, like, spitting out art or music or whatnot – (laughter) –
+CHRISTINA WARREN: Right.
+KEVIN SCOTT: – absent, you know, the hand of a human creator, because, like, I’ve
+sort of discovered, like, part of my connection to the experience of – or, like, of
+experiencing art in the first place is like, I like to know, like, oh, this is the human and
+this is how they made it. And this is, you know, like, imagining what they must have
+been thinking. And, like, you know, are we alike, are we different? And that’s art –
+CHRISTINA WARREN: You like the story.
+KEVIN SCOTT: Yeah, I like the story. And the story –
+CHRISTINA WARREN: Yeah, no, I think –
+KEVIN SCOTT: You know, the robot made this? Who cares. (Laughter.)
+CHRISTINA WARREN: Right, no, and I think that’s a great point, right? And that’s a
+really interesting perspective, because obviously, I mean, I think there’s an argument
+made that there is something artistic that could be made if it were completely, you know,
+autonomously generated.
+KEVIN SCOTT: Yep.
+CHRISTINA WARREN: And that’s an interesting thing to have, but I tend to agree
+with you. Like, the stuff that I’m interested in consuming the most, outside of kind of like
+an abstract level, is definitely the stuff that has been guided by a human. But if the
+technology, the AI, can make things more unique or effective, or just add a different
+nuance to something, that can lead to a great, you know, outcome. So, or interesting,
+anyway. So, yeah.
+KEVIN SCOTT: Yeah, it’s an interesting debate, because I don’t know whether I’m
+right, you’re right, or, you know… I do actually have this argument with people who,
+like, will say, like, hey, you’re crazy. Like, you know, you know, you could have
+something that’s interesting and artistic and merit worthy, that doesn’t have – it’s like,
+okay, great.
+CHRISTINA WARREN: Yeah.
+KEVIN SCOTT: And, like, the argument is interesting, right?
+CHRISTINA WARREN: It is, it is.
+KEVIN SCOTT: Like, it sort of tells us – it tells us something about, you know, what –
+what is the nature of these things.
+CHRISTINA WARREN: No, I think it does, right? And, yeah, because I can see both
+perspectives. I tend to, I think, align more with you, but I can understand, like, the
+philosophical argument about it. But I think that for a lot of us, still, what ultimately
+binds us to things is not just the output itself, but the – everything that comes before it,
+which is the story and is the thinking about what went into it, and is, frankly, in some
+cases, the imperfections, right?
+And that is something that, not to say that it couldn’t be there, because who knows where
+– where AIs might be in, you know, decades, but that’s not – that doesn’t seem to be the
+direction that a lot of those things are now. And so, instead, though, I think it’s interesting
+to think about, like, how these tools can be used, not to just clean up imperfections, but to
+maybe continue to let those things be there, but maybe, you know, show off other ideas. I
+don’t know.
+All right, this question is from Kathleen, and she says, “I’ve been hearing a lot about
+agents being the next AI frontier. What can you tell us about what that will look like?
+And when can we expect to use AI in that capacity?” So, great question. We all want to
+know, when are the AI agents going to be able to run our lives, Kevin?
+KEVIN SCOTT: (Laughter.) I don’t know for sure, but look, I – so, I think it’s, like,
+important to be more specific about what it is we think agents are.
+So, in a way, like, copilots are agents, but they’re sort of agents that can help you, you
+know, with, relatively speaking, small tasks. There might be a lot of them that you’re
+doing, and they may be very important, but right now, like the things that we can delegate
+to AI are relatively small, like small software development tasks, like small productivity
+tasks.
+And, like, what eventually – like, if you are excited about this notion of agents, what you
+want to be able to do is to sort of think about an agent as, like, a real, fully capable peer
+or collaborator or coworker, and, like, you want, you know, it to be able to collaborate
+with you in, like, very broad and very capable ways, or you want to be able to, like,
+delegate, like, big things, you know.
+So, like, for, you know, not just five-minute tasks, but five-day tasks, you know, like, go
+completely autonomously build, you know, this whole application for me and, like, come
+back with the – you know, with a PR you want me to review, and, you know, something
+that I can test, you know, which you might do to one of your fellow software developers,
+right?
+CHRISTINA WARREN: Right.
+KEVIN SCOTT: And so, look, I think we’re definitely moving in the right trajectory to,
+like, have these agents, you know, which, you know, in our parlance, we call copilots,
+become more and more powerful and capable over time.
+So, you know, I think we’re feeling really good about reasoning capability. We are
+beginning to make progress on actions and tool use. Like, we’ve seen a little bit of that in
+the past year, and I think you’re going to see a bunch of it in the coming year.
+We are seeing, like, really interesting things happening, I think, and, like, have a lot of
+things that we can expect to see in the next year on memory. Like, a lot of what happens
+now with these agents is they’re very transactional. So, like, they you know, they have
+enough information to do a very specific, you know, task in a very specific context. But,
+you know, in order to have them be more generally powerful, like, they have to, like,
+really have complete memories and persist over time.
+And then, you know, like, we’ve got a whole bunch of, you know, plumbing work to go
+do. Like, you, in order for the agents to be able to do things, like just even beyond basic
+tool use, where they can take action on your behalf or where they can go, you know, use
+a tool to assist them in accomplishing the tasks that you set them off to go do, like, you
+really do have to think about, like, what entitlements, you know, look like in this
+universe, like, how do you make sure that the agent has access to what it needs to have
+access to in order to complete the task it’s been asked to do. And, like, how do we, the
+humans, reason over those entitlements and get things, you know, both available and
+permissioned correctly?
+Yeah, so, but look, I’m seeing lots and lots of progress. And, like, it’s hard to predict,
+like, the date when, you know, agent with capability level X is going to be there, but I
+think it’s safe to assert that we will see increasingly powerful agents in a variety of
+different forms emerge over the next year.
+CHRISTINA WARREN: Sounds good, sounds good. I think that’s probably a good
+hedge. And I do look forward to the day that, like, the robot overlords do truly control my
+life, but until then, I’ll be – (laughter) – I’m kidding, but I’m glad that progress is being
+made.
+Okay, that does it for our AMA episode. Thank you again so much to everyone who sent
+in these excellent questions, really, really good stuff. And thank you, Kevin, for your
+answers, really, really interesting. Please make sure to follow Behind the Tech on
+YouTube or wherever you listen to podcasts. And if you have anything that you would
+like to share with us, you can email us anytime at behindthetech@microsoft.com. Thank
+you so much for listening.
+KEVIN SCOTT: See you next time.

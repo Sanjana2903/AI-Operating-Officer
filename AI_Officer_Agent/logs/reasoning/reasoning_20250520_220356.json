@@ -1,0 +1,32 @@
+{
+  "timestamp": "20250520_220356",
+  "persona": "CEO",
+  "question": "Can you create a JIRA ticket?",
+  "final_answer": "Here is the REACT format answer:\n\nQuestion: Can you create a JIRA ticket?\n\nThought: I understand the context is about creating agents or AI models that are easy to build and integrate. The goal is to make it as simple as creating a Word doc or PowerPoint slide, and I'm Satya Nadella, CEO of Microsoft.\n\nAction: Create JIRA Task\nAction Input: \"Integrate Copilot with SharePoint\"\n\nFootnotes:\n1. [linkedin_post1.txt](https://internal/CEO/linkedin_post1.txt)\n2. [behind_the_tech_transcript.txt](https://internal/CTO/behind_the_tech_transcript.txt)\n3. [keynote_captions.txt](https://internal/CEO/keynote_captions.txt)",
+  "retrieved_chunks": [
+    "Sometimes we sort of mystify these agents as things that somehow require a lot of effort\nto build, but it\u2019s really pretty straight forward. In fact, our vision is that it should be as\nsimple as creating a Word doc or a PowerPoint slide or an Excel spreadsheet, that\u2019s it.",
+    "When you say \u201cagent,\u201d think creating a doc.\nThis example is a good one, right? I can create field service sources, in this case, a\nSharePoint site in my Dynamics CRM. I can easily configure it to meet my specific\nneeds, and you have an agent in seconds that\u2019s just now integrated into Copilot.",
+    "You can also make these agents autonomous using Copilot Studio, and they can always\nraise an exception in Copilot for input. Remember, even an autonomous agent from time",
+    "passively use them. The really brilliant thing that you all have done is taken the exact same set of\nthings and decided to make it available to any developer, who\u2019s able to sign up for an API key.\nSAM ALTMAN: Yeah, we try to be really thoughtful about what makes a good API for this."
+  ],
+  "tools_used": "",
+  "actions_taken": [],
+  "score": 0.65,
+  "user_feedback": "\u274c",
+  "reasoning_notes": {
+    "chunks": 14,
+    "similarity": "0.89 (simulated)",
+    "tools": ""
+  },
+  "format_warnings": [
+    "\u274c Missing 'Final Answer:' block.",
+    "\u274c Missing 'Observation:' block.",
+    "\u26a0\ufe0f No \ud83d\udd39 lifted quote \u2014 nothing traceable to context.",
+    "\u26a0\ufe0f No \ud83e\udde0 generated insight \u2014 lacks original reasoning.",
+    "\u26a0\ufe0f Incomplete REACT block \u2014 missing Action or Observation."
+  ],
+  "lifted_quote_present": false,
+  "generated_quote_present": false,
+  "react_steps_count": 1,
+  "raw_trace": []
+}

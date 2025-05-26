@@ -1,0 +1,28 @@
+{
+  "timestamp": "20250520_153404",
+  "persona": "CEO",
+  "question": "Give me Satya\u2019s view on moving legacy cores to cloud and open a PoC task.",
+  "final_answer": "Agent stopped due to iteration limit or time limit.",
+  "retrieved_chunks": [],
+  "tools_used": "",
+  "actions_taken": [],
+  "score": 0.85,
+  "user_feedback": "\u274c",
+  "reasoning_notes": {
+    "chunks": 0,
+    "similarity": "0.89 (simulated)",
+    "tools": ""
+  },
+  "format_warnings": [
+    "\u274c Missing 'Final Answer:' block.",
+    "\u274c Missing 'Thought:' block.",
+    "\u274c Missing 'Action:' block.",
+    "\u274c Missing 'Observation:' block.",
+    "\u26a0\ufe0f No \ud83d\udd39 lifted quote \u2014 nothing traceable to context.",
+    "\u26a0\ufe0f No \ud83e\udde0 generated insight \u2014 lacks original reasoning."
+  ],
+  "lifted_quote_present": false,
+  "generated_quote_present": false,
+  "react_steps_count": 0,
+  "raw_trace": []
+}
