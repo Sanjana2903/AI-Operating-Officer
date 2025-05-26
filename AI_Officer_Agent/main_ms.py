@@ -212,8 +212,8 @@ def calculate_ragas_metrics(query: str, contexts_str_list: list[str], answer_str
 
     try:
         results = ragas_evaluate(dataset, metrics=metrics_to_run)
-        faith_score = results['faithfulness'] if 'faithfulness' in results else 0.0
-        ans_rel_score = results['answer_relevancy'] if 'answer_relevancy' in results else 0.0
+        faith_score = results[0]['faithfulness'] if 'faithfulness' in results else 0.0
+        ans_rel_score = results[0]['answer_relevancy'] if 'answer_relevancy' in results else 0.0
 
         # ctx_recall = results.get('context_recall', 0.0)
         # ctx_precision = results.get('context_precision', 0.0)
@@ -378,7 +378,7 @@ def ask_question(query: str, role: str) -> dict:
             #fallback_retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 10, "fetch_k": 30})
             fallback_retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 10})
 
-            fallback_docs = fallback_retriever.invoke(query)
+            fallback_docs = fallback_retriever.invoke(query, filter={"persona": role.lower()})
             fallback_chunks_str_list = [doc.page_content for doc in fallback_docs]
 
             if fallback_chunks_str_list:
@@ -413,6 +413,16 @@ def ask_question(query: str, role: str) -> dict:
 
         agent_final_answer_str = raw_agent_trace.get("output", "The agent could not determine a final answer.")
         logger.info(f"[ReqID: {request_id}] Agent final answer: {agent_final_answer_str[:200]}...")
+        # Append citations from evaluation summary to the end of the answer
+        # Add inline footnote references [1], [2], then footnotes block
+        used_quote_ids = sorted(set(map(int, re.findall(r"\[(\d+)\]", agent_final_answer_str))))
+        if used_quote_ids:
+            agent_final_answer_str += "\n\n📚 Footnotes:\n"
+            for qid in used_quote_ids:
+                match = next((c for c in eval_citations_list if c.startswith(f"[{qid}.")), None)
+                if match:
+                    agent_final_answer_str += f"- {match}\n"
+
 
         # 6. Process Agent Output for Display
         # The agent is prompted to use 🔹 and 🧠. The UI should render these.
