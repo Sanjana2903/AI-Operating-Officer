@@ -217,17 +217,37 @@ def run_app():
         # --- Feedback Section ---
         st.subheader("🗣️ Was this response helpful?")
         fb_col1, fb_col2, fb_col3 = st.columns(3)
-        
-        # Using unique keys for feedback buttons based on current response
+
         if fb_col1.button("✅ Yes", key=f"{feedback_key_base}_yes", use_container_width=True):
             save_reasoning_json_feedback("✅")
             st.toast("Thank you for your feedback!", icon="👍")
-        if fb_col2.button("🤔 Needs Improvement", key=f"{feedback_key_base}_improve", use_container_width=True):
+
+        elif fb_col2.button("🤔 Needs Improvement", key=f"{feedback_key_base}_improve", use_container_width=True):
             save_reasoning_json_feedback("🤔")
             st.toast("Thanks! We'll use this to improve.", icon="💡")
-        if fb_col3.button("❌ No", key=f"{feedback_key_base}_no", use_container_width=True):
+            with st.spinner("🔄 Re-evaluating your question..."):
+                try:
+                    st.session_state.feedback_key_suffix += 1
+                    previous_query = st.session_state.current_result.get("query", "")
+                    previous_role = st.session_state.current_result.get("role", "")
+                    result_data = ask_question(previous_query, previous_role)
+                    st.session_state.current_result = result_data
+                except Exception as e:
+                    st.error(f"Retry failed: {e}")
+
+        elif fb_col3.button("❌ No", key=f"{feedback_key_base}_no", use_container_width=True):
             save_reasoning_json_feedback("❌")
             st.toast("We appreciate the input.", icon="📝")
+            with st.spinner("🔄 Re-evaluating your question..."):
+                try:
+                    st.session_state.feedback_key_suffix += 1
+                    previous_query = st.session_state.current_result.get("query", "")
+                    previous_role = st.session_state.current_result.get("role", "")
+                    result_data = ask_question(previous_query, previous_role)
+                    st.session_state.current_result = result_data
+                except Exception as e:
+                    st.error(f"Retry failed: {e}")
+
 
     # --- Chat History (Optional Display) ---
     if st.session_state.chat_history:
