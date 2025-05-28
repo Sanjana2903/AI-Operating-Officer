@@ -1,0 +1,39 @@
+ # Environment variables
+    .env
+    *.env
+    .env.*
+
+    # Python bytecode and caches
+    __pycache__/
+    *.pyc
+    *.pyo
+    *.pyd
+    .Python
+
+    # Virtual environment
+    .venv/
+    venv/
+    ENV/
+
+    # IDE and editor files
+    .vscode/
+    .idea/
+    *.swp
+    *.swo
+
+    # OS-specific
+    .DS_Store
+    Thumbs.db
+
+    # Logs
+    logs/
+    *.log
+    # Allow logs/reasoning/.gitkeep if you want to keep the dir in git but not its contents
+    # !logs/reasoning/.gitkeep 
+
+    # Evaluation reports (if generated locally and not versioned)
+    eval_report.csv 
+    # Add other generated files you don't want to commit
+
+    # Local Chroma DB
+    db/ 
