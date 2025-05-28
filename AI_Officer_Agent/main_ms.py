@@ -21,10 +21,14 @@ from langchain.callbacks import get_openai_callback # For token usage if using O
 # RAGAS and DeepEval
 from ragas import evaluate as ragas_evaluate
 from ragas.metrics import faithfulness, answer_relevancy, context_recall, context_precision
+from ragas.llms import LangchainLLMWrapper
 from datasets import Dataset
 from deepeval import assert_test
 from deepeval.metrics import FaithfulnessMetric, AnswerRelevancyMetric, ContextualPrecisionMetric
 from deepeval.test_case import LLMTestCase
+#from deepeval.integrations.langchain import LangchainLLM as DeepEvalLangchainLLM
+
+from deepeval.models import LangchainLLM as DeepEvalLangchainLLM
 
 # Project-specific modules
 from utils.react_validator import validate_trace_output
@@ -197,23 +201,20 @@ def calculate_ragas_metrics(query: str, contexts_str_list: list[str], answer_str
     logger.info("Calculating RAGAS metrics...")
     dataset_dict = {'question': [query], 'answer': [answer_str], 'contexts': [contexts_str_list]}
     dataset = Dataset.from_dict(dataset_dict)
-    
-    # Configure RAGAS LLM if needed (many metrics are LLM-based)
-    # from ragas.llms import LangchainLLMWrapper
-    # ragas_llm_wrapper = LangchainLLMWrapper(llm) # Use the global llm instance
-    # metrics_to_run = [
-    #     faithfulness.configure(llm=ragas_llm_wrapper),
-    #     answer_relevancy.configure(llm=ragas_llm_wrapper),
-    #     context_recall,
-    #     context_precision
-    # ]
-    # For simplicity, using default RAGAS behavior for LLM use in metrics for now
-    metrics_to_run = [faithfulness, answer_relevancy]
+    ragas_llm_wrapper = LangchainLLMWrapper(llm) # llm is your global ChatOllama instance
+    metrics_to_run = [
+        faithfulness.configure(llm=ragas_llm_wrapper),
+        answer_relevancy.configure(llm=ragas_llm_wrapper)
+        # If you want context_recall and context_precision, configure them similarly:
+        # context_recall.configure(llm=ragas_llm_wrapper),
+        # context_precision.configure(llm=ragas_llm_wrapper)
+    ]
 
     try:
         results = ragas_evaluate(dataset, metrics=metrics_to_run)
-        faith_score = results[0]['faithfulness'] if 'faithfulness' in results else 0.0
-        ans_rel_score = results[0]['answer_relevancy'] if 'answer_relevancy' in results else 0.0
+        faith_score = results.get('faithfulness', 0.0)
+
+        ans_rel_score = results.get('answer_relevancy', 0.0) 
 
         # ctx_recall = results.get('context_recall', 0.0)
         # ctx_precision = results.get('context_precision', 0.0)
@@ -244,10 +245,11 @@ def run_deepeval_assertions(query: str, agent_final_answer: str, retrieved_conte
     # deepeval_llm_wrapper = LangchainLLM(llm) # llm is global ChatOllama
     
     # Using default DeepEval behavior for model selection for now
+    deepeval_llm_wrapper = DeepEvalLangchainLLM(llm) # llm is your global ChatOllama
     metrics_for_deepeval = [
-        FaithfulnessMetric(threshold=0.75, include_reason=True), # model=deepeval_llm_wrapper
-        AnswerRelevancyMetric(threshold=0.75, include_reason=True), # model=deepeval_llm_wrapper
-        ContextualPrecisionMetric(threshold=0.75, include_reason=True) # model=deepeval_llm_wrapper
+        FaithfulnessMetric(threshold=0.75, include_reason=True, model=deepeval_llm_wrapper),
+        AnswerRelevancyMetric(threshold=0.75, include_reason=True, model=deepeval_llm_wrapper),
+        ContextualPrecisionMetric(threshold=0.75, include_reason=True, model=deepeval_llm_wrapper)
     ]
     
     passed_status = False
@@ -413,16 +415,6 @@ def ask_question(query: str, role: str) -> dict:
 
         agent_final_answer_str = raw_agent_trace.get("output", "The agent could not determine a final answer.")
         logger.info(f"[ReqID: {request_id}] Agent final answer: {agent_final_answer_str[:200]}...")
-        # Append citations from evaluation summary to the end of the answer
-        # Add inline footnote references [1], [2], then footnotes block
-        used_quote_ids = sorted(set(map(int, re.findall(r"\[(\d+)\]", agent_final_answer_str))))
-        if used_quote_ids:
-            agent_final_answer_str += "\n\n📚 Footnotes:\n"
-            for qid in used_quote_ids:
-                match = next((c for c in eval_citations_list if c.startswith(f"[{qid}.")), None)
-                if match:
-                    agent_final_answer_str += f"- {match}\n"
-
 
         # 6. Process Agent Output for Display
         # The agent is prompted to use 🔹 and 🧠. The UI should render these.
