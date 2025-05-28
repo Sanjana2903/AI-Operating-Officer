@@ -217,37 +217,17 @@ def run_app():
         # --- Feedback Section ---
         st.subheader("🗣️ Was this response helpful?")
         fb_col1, fb_col2, fb_col3 = st.columns(3)
-
+        
+        # Using unique keys for feedback buttons based on current response
         if fb_col1.button("✅ Yes", key=f"{feedback_key_base}_yes", use_container_width=True):
             save_reasoning_json_feedback("✅")
             st.toast("Thank you for your feedback!", icon="👍")
-
-        elif fb_col2.button("🤔 Needs Improvement", key=f"{feedback_key_base}_improve", use_container_width=True):
+        if fb_col2.button("🤔 Needs Improvement", key=f"{feedback_key_base}_improve", use_container_width=True):
             save_reasoning_json_feedback("🤔")
             st.toast("Thanks! We'll use this to improve.", icon="💡")
-            with st.spinner("🔄 Re-evaluating your question..."):
-                try:
-                    st.session_state.feedback_key_suffix += 1
-                    previous_query = st.session_state.current_result.get("query", "")
-                    previous_role = st.session_state.current_result.get("role", "")
-                    result_data = ask_question(previous_query, previous_role)
-                    st.session_state.current_result = result_data
-                except Exception as e:
-                    st.error(f"Retry failed: {e}")
-
-        elif fb_col3.button("❌ No", key=f"{feedback_key_base}_no", use_container_width=True):
+        if fb_col3.button("❌ No", key=f"{feedback_key_base}_no", use_container_width=True):
             save_reasoning_json_feedback("❌")
             st.toast("We appreciate the input.", icon="📝")
-            with st.spinner("🔄 Re-evaluating your question..."):
-                try:
-                    st.session_state.feedback_key_suffix += 1
-                    previous_query = st.session_state.current_result.get("query", "")
-                    previous_role = st.session_state.current_result.get("role", "")
-                    result_data = ask_question(previous_query, previous_role)
-                    st.session_state.current_result = result_data
-                except Exception as e:
-                    st.error(f"Retry failed: {e}")
-
 
     # --- Chat History (Optional Display) ---
     if st.session_state.chat_history:
@@ -258,54 +238,28 @@ def run_app():
                 st.markdown("---")
 
 def save_reasoning_json_feedback(feedback_value: str):
-    """Saves feedback to the last generated reasoning log if available."""
-    # This function needs access to all the parameters `save_reasoning_json` expects.
-    # It's tricky to call it from here without re-fetching/storing all that data.
-    # A better approach would be to:
-    # 1. Generate a unique ID for each `ask_question` result.
-    # 2. When feedback is given, send this ID and feedback_value to an API endpoint.
-    # 3. The API endpoint then loads the corresponding JSON log and appends/updates feedback.
-    # For now, this is a placeholder, as directly calling save_reasoning_json is complex here.
-    logger.info(f"Feedback received: {feedback_value}. (Note: Full log update not implemented directly in UI feedback button).")
-    # To actually save it, you'd need to retrieve all params for save_reasoning_json
-    # from st.session_state.current_result and call it.
-    current_res = st.session_state.current_result
-    if current_res:
-        try:
-            # This is a simplified call, assuming `main.save_reasoning_json` can handle partial updates
-            # or that you reconstruct all necessary arguments.
-            # This specific call will likely fail if save_reasoning_json isn't designed for it.
-            # The main `save_reasoning_json` is already called in `ask_question`.
-            # This would be about *updating* that log or creating a separate feedback event.
-            
-            # For simplicity in this example, we assume the log was already saved by `ask_question`.
-            # This function would ideally update that specific log file.
-            # Let's simulate finding the latest log and appending feedback.
-            log_dir = "logs/reasoning"
-            log_files = sorted([os.path.join(log_dir, f) for f in os.listdir(log_dir) if f.startswith("reasoning_log_") and f.endswith(".json")])
-            if log_files:
-                latest_log_file = log_files[-1]
-                # Crude update: just append feedback to a field or as a new key.
-                # This is NOT robust for concurrent use or complex updates.
-                try:
-                    with open(latest_log_file, 'r+') as f:
-                        log_data = json.load(f)
-                        log_data['user_feedback_ui'] = feedback_value 
-                        log_data['feedback_timestamp_ui'] = datetime.now().isoformat()
-                        f.seek(0)
-                        json.dump(log_data, f, indent=2, ensure_ascii=False)
-                        f.truncate()
-                    logger.info(f"Appended UI feedback to {latest_log_file}")
-                except Exception as e_log_update:
-                     logger.error(f"Could not update log file {latest_log_file} with UI feedback: {e_log_update}")
+            current_res = st.session_state.current_result
+            if current_res and "log_file_path" in current_res:
+                log_file_to_update = current_res["log_file_path"]
+                if os.path.exists(log_file_to_update):
+                    try:
+                        with open(log_file_to_update, 'r+', encoding='utf-8') as f:
+                            log_data = json.load(f)
+                            log_data['user_feedback_ui'] = feedback_value
+                            log_data['feedback_timestamp_ui'] = datetime.datetime.now().isoformat()
+                            f.seek(0)
+                            json.dump(log_data, f, indent=2, ensure_ascii=False)
+                            f.truncate()
+                        logger.info(f"Appended UI feedback to {log_file_to_update}")
+                        st.toast("Feedback saved to log!", icon="💾")
+                    except Exception as e_log_update:
+                        logger.error(f"Could not update log file {log_file_to_update} with UI feedback: {e_log_update}")
+                        st.error("Failed to save feedback to log.")
+                else:
+                    logger.warning(f"Log file {log_file_to_update} not found to append UI feedback.")
+                    st.warning("Original log file not found.")
             else:
-                logger.warning("No reasoning log found to append UI feedback to.")
-
-        except Exception as e:
-            logger.error(f"Error trying to save feedback via UI: {e}")
-    else:
-        logger.warning("No current result in session state to associate feedback with.")
-
-
+                logger.warning("No current result or log_file_path in session state to associate feedback with.")
+                st.warning("Cannot save feedback; no active result log.")
 if __name__ == "__main__":
     run_app()
